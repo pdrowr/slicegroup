@@ -1,0 +1,9 @@
+= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+  = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+  = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
+  = Haml::Engine.new(File.read("app/partials/_header.haml")).render
+
+= Haml::Engine.new(File.read("app/partials/_about.haml")).render
+
+= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
