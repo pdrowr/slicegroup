@@ -1,0 +1,13 @@
+= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+  -# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+
+  #social
+    .container
+      %center
+        %img{src: "assets/img/slice.png", style: "width: 50%"}
+      .section-description.text-center
+        %strong Keppler
+        es una plataforma desarrollada por el equipo de
+        %strong Slice Group.
+        Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de forma que facilita el trabajo del webmaster o encargado de administrar un portal web.

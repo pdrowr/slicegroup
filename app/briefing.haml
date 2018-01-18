@@ -1,0 +1,49 @@
+= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+  -# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+  -# = Haml::Engine.new(File.read("app/partials/_header.haml")).render
+
+  #briefing
+    .service-section.primary-section
+      %center.service-image
+        %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+        .service-content.text-center.wow.fadeInRight
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+
+        %a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
+          SIGUIENTE
+          %i.fa.fa-chevron-right
+
+    .service-section.secondary-section
+      %center.service-image
+        %img.wow.fadeInRight{src: "assets/img/slice.png", style: "width: 50%"}
+        .service-content.text-center.wow.fadeInLeft
+          Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios relacionados con el manejo de redes sociales, planes de marketing digital, campañas publicitarias en redes sociales,, asesoría estratégica para marketing digital y más.
+
+        %a.btn.btn-primary.service-btn.social-btn.wow.fadeInUp{href: "social.html"}
+          SIGUIENTE
+          %i.fa.fa-chevron-right
+
+    .service-section.primary-section
+      %center.service-image
+        %i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
+        -# %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+        .service-content.text-center.wow.fadeInRight
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+
+        .btn.btn-primary.service-btn.e-commerce-btn.wow.fadeInUp
+          SIGUIENTE
+          %i.fa.fa-chevron-right
+
+    .service-section.secondary-section
+      %center.service-image
+        %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+
+        .service-content.text-center.wow.fadeInRight
+          ¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
+
+        .btn.btn-primary.service-btn.other-btn.wow.fadeInUp
+          SIGUIENTE
+          %i.fa.fa-chevron-right
+
+= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

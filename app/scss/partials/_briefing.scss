@@ -1,0 +1,63 @@
+#briefing {
+  // margin-top: 80px;
+
+  .service-section {
+    width: 100%;
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .service-content {
+    padding: 20px 0;
+  }
+
+  .service-btn {
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+
+    i {
+      position: absolute;
+      right: -15px;
+      transition: all ease .2s;
+      font-size: 18px;
+    }
+
+    &:hover {
+      box-shadow: 2px 3px 12px #a78f8f;
+
+      i {
+        right: 10px;
+        transition: all ease .2s;
+      }
+    }
+  }
+
+  .keppler-btn {
+    border: $keppler-color !important;
+    background: $keppler-color !important;
+  }
+
+  .social-btn {
+    background: $social-color;
+    border: $social-color;
+  }
+
+  .other-btn {
+    background: $primary-color;
+    border: $primary-color;  
+  }
+  .e-commerce-btn {
+    background: #3483cd;
+    border: #3483cd;
+  }
+
+  .primary-section {
+    background: #fafafa;
+  }
+
+  .secondary-section {
+    background: rgba(232, 228, 228, 0.3);
+  }
+
+}

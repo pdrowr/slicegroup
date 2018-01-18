@@ -31,5 +31,8 @@
     "jquery": "^3.2.1",
     "merge-stream": "^1.0.1",
     "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "node-font-awesome": "^1.0.2"
   }
 }

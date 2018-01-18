@@ -9,6 +9,7 @@ var runSequence = require('run-sequence');
 var merge = require('merge-stream');
 var bourbon = require('bourbon').includePaths;
 var neat = require('bourbon-neat').includePaths;
+
 //initialize server
 var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function() {

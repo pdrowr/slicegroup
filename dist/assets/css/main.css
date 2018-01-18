@@ -1,4 +1,3 @@
-/* Add here all your CSS customizations */
 /* -------------------------------------------------------------------------------------------------------
 * Template Helper Stylesheet
 *
@@ -10283,3 +10282,64 @@ ul.social-icons > li + li {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
+
+#briefing .service-section {
+  width: 100%;
+  height: auto;
+  padding: 40px 15px; }
+
+#briefing .service-content {
+  padding: 20px 0; }
+
+#briefing .service-btn {
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold; }
+  #briefing .service-btn i {
+    position: absolute;
+    right: -15px;
+    transition: all ease .2s;
+    font-size: 18px; }
+  #briefing .service-btn:hover {
+    box-shadow: 2px 3px 12px #a78f8f; }
+    #briefing .service-btn:hover i {
+      right: 10px;
+      transition: all ease .2s; }
+
+#briefing .keppler-btn {
+  border: #f50e1e !important;
+  background: #f50e1e !important; }
+
+#briefing .social-btn {
+  background: #81ac4d;
+  border: #81ac4d; }
+
+#briefing .other-btn {
+  background: #c15010;
+  border: #c15010; }
+
+#briefing .e-commerce-btn {
+  background: #3483cd;
+  border: #3483cd; }
+
+#briefing .primary-section {
+  background: #fafafa; }
+
+#briefing .secondary-section {
+  background: rgba(232, 228, 228, 0.3); }
+
+#keppler {
+  background: #f50e1e;
+  height: auto;
+  padding: 40px 5px;
+  color: #fff; }
+  #keppler .section-description {
+    padding-top: 30px; }
+
+#social {
+  background: #81ac4d;
+  height: auto;
+  padding: 40px 5px;
+  color: #fff; }
+  #social .section-description {
+    padding-top: 30px; }
