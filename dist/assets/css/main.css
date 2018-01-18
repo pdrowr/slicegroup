@@ -10343,3 +10343,78 @@ ul.social-icons > li + li {
   color: #fff; }
   #social .section-description {
     padding-top: 30px; }
+
+#blog h2 {
+  font-size: calc(1.8rem + 0.9999999999999998 * ((100vw - 42rem) / 86));
+  font-family: "Roboto Mono", Helvetica, Arial;
+  font-weight: 500;
+  color: #777; }
+
+@media screen and (min-width: 1280px) {
+  #blog h2 {
+    font-size: 2.8rem; } }
+
+@media screen and (max-width: 420px) {
+  #blog h2 {
+    font-size: 1.8rem; } }
+
+#blog img {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+#blog .post-date {
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-family: "Roboto Mono", Helvetica, Arial;
+  font-weight: 500;
+  color: #777; }
+
+@media screen and (min-width: 1280px) {
+  #blog .post-date {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 420px) {
+  #blog .post-date {
+    font-size: 1.2rem; } }
+
+#blog .read-more a {
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-family: "Roboto Mono", Helvetica, Arial;
+  font-weight: 400;
+  color: #81ac4d; }
+
+@media screen and (min-width: 1280px) {
+  #blog .read-more a {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 420px) {
+  #blog .read-more a {
+    font-size: 1.2rem; } }
+
+#blog .read-more a:hover {
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-family: "Roboto Mono", Helvetica, Arial;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #81ac4d; }
+
+@media screen and (min-width: 1280px) {
+  #blog .read-more a:hover {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 420px) {
+  #blog .read-more a:hover {
+    font-size: 1.2rem; } }
+
+html {
+  font-size: 10px !important; }
+
+body {
+  font-size: calc(1.3rem + 0.30000000000000004 * ((100vw - 42rem) / 86)); }
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 1.3rem; } }

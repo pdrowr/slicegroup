@@ -13,21 +13,13 @@
   <link href='favicon.ico' rel='icon' type='image/x-icon'>
   <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.svg'>
   <link href='assets/css/main.css' rel='stylesheet'>
 </head>
 
 </html>
 
 <body data-spy="scroll" data-target="#scrollspy">
-  <div id='preloader'>
-    <div class='pulse'></div>
-  </div>
-
+  <!-- /= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render -->
   <div id='body-content'>
     <section class='slidingbar-fixed' id='top-slidingbar-wrapper'>
       <div id='top-slidingbar'>
@@ -124,7 +116,7 @@
           </h2>
           <p class='intro-description wow fadeIn' data-wow-delay='2.2s'>Agencia Digital desde 2012</p>
           <div class='margin-top-30'>
-            <a class='btn btn-white-bordered btn-rounded sm-scroll wow bounceIn' data-wow-delay='0.8s' href='#section-2'>Our Services</a>
+            <a class='btn btn-white-bordered btn-rounded sm-scroll wow bounceIn' data-wow-delay='0.8s' href='blog.html'>Our Services</a>
             <a class='btn btn-primary btn-rounded sm-scroll margin-top-10 wow bounceIn' data-wow-delay='1s' href='#section-8'>Hire Us Now!</a>
           </div>
         </div>
@@ -175,7 +167,6 @@ Comencemos a trabajar
 
 <script src='assets/js/jquery.min.js'></script>
 <script src='assets/js/bootstrap.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'></script>
 <script src='assets/js/main.js'></script>
 <script src='assets/js/theme.js'></script>
 <script src='assets/js/custom.js'></script>

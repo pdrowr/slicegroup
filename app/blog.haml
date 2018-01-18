@@ -1,0 +1,41 @@
+= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+  -# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+  -# = Haml::Engine.new(File.read("app/partials/_header.haml")).render
+
+  #blog
+    .container
+      .row
+        .col-xs-12.col-md-8
+          %img.img-responsive{src: "assets/img/blog/blog-1.jpg"}
+          %h2 Nuevas ideas para la cria de gárgolas
+          %p
+            Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y
+            han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables...
+          %p.post-date
+            %i.fa.fa-calendar-o
+            Ene 15, 2018
+          %p.read-more.text-right
+            %a{href: "blog-post.html"}Leer más...
+          .row
+            .col-xs-12.col-md-6
+              %img.img-responsive{src: "assets/img/blog/blog-2.jpg"}
+              %h2 Slice Group analiza la compra de Google
+              %p
+                Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas.
+                Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza...
+              %p.post-date
+                %i.fa.fa-calendar-o
+                Ene 14, 2018
+            .col-xs-12.col-md-6
+              %img.img-responsive{src: "assets/img/blog/blog-3.jpg"}
+              %h2 Pandemía en Venezuela es conocida como "La Rebolucionaria"
+              %p
+                Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho,
+                que no es un hombre más que otro si no hace más que otro....
+              %p.post-date
+                %i.fa.fa-calendar-o
+                Ene 13, 2018
+        .col-xs-12.col-md-4
+
+= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
