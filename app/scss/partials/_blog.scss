@@ -1,31 +1,132 @@
-#blog {
-  h2 {
-    font-size: responsive 1.8rem 2.8rem;
-    font-family: $roboto;
-    font-weight: 500;
-    color: $gray-light;
-  }
-  img {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .post-date {
-    font-size: responsive 1.2rem 1.4rem;
-    font-family: $roboto;
-    font-weight: 500;
-    color: $gray-light;
-  }
-  .read-more a{
-    font-size: responsive 1.2rem 1.4rem;
-    font-family: $roboto;
-    font-weight: 400;
-    color: $social-color;
-  }
-  .read-more a:hover{
-    font-size: responsive 1.2rem 1.4rem;
-    font-family: $roboto;
-    font-weight: 400;
-    text-decoration: underline;
-    color: $social-color;
-  }
+#blog, #post {
+	h1 {
+		font-size: responsive 2.2rem 3.3rem;
+		font-family: $roboto;
+		font-weight: 500;
+		color: $social-color;
+	}
+	h2 {
+		font-size: responsive 1.8rem 2.8rem;
+		font-family: $roboto;
+		font-weight: 500;
+		color: $gray-light;
+	}
+	img {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.btn-link {
+		color: $social-color;
+	}
+	.meta-line > span {
+		margin-right: 1.5rem;
+		font-size: responsive 1rem 1.3rem;
+		color: $gray-light;
+
+		a {
+			color: $e-commerce-color;
+		}
+	}
+	.post-date {
+		font-size: responsive 1.2rem 1.4rem;
+		font-family: $roboto;
+		font-weight: 500;
+		color: $gray-light;
+	}
+	.post-entry-sidebar .left {
+		float: left;
+
+		img:hover {
+			opacity: 0.7;
+		}
+	}
+	.post-entry-sidebar .timestamp {
+		font-size: 1rem;
+		color: #999;
+	}
+	.post-entry-sidebar .right {
+		padding-left: 9rem;
+	}
+	.read-more a{
+		font-size: responsive 1.2rem 1.4rem;
+		font-family: $roboto;
+		font-weight: 400;
+		color: $social-color;
+	}
+	.read-more a:hover{
+		text-decoration: underline;
+	}
+	#recommended {
+		@include respond-to(xs) {
+			display: none;
+		}
+		@include respond-to(md) {
+			display: none;
+		}
+	}
+	.recommended-posts .post-title {
+		font-size: 1.2rem;
+		line-height: 1.7rem;
+		a {
+			color: #878787;
+		}
+		a:hover {
+			color: $e-commerce-color;
+		}
+	}
+	.tag-list {
+		padding-left: 5px;
+
+		li {
+			padding-right: 0;
+			display: inline-block;
+
+			a {
+				-moz-border-radius: 2px;
+				-webkit-border-radius: 2px;
+				border-radius: 2px;
+				display: block;
+				font-size: 1.2rem;
+				margin-bottom: 5px;
+				padding: 4px 10px;
+				background-color: #f2f2f2;
+				color: #8c8c8c;
+				transition: .5s all ease;
+			}
+			a:hover {
+				background-color: $primary-color;
+				color: white;
+				transition: .7s all ease;
+				text-decoration: none;
+			}
+		}
+	}
+	.category-list {
+		li {
+			padding-right: 0;
+			display: block;
+
+			a {
+				color: #8c8c8c;
+				transition: .2s all ease;
+			}
+			a:hover {
+				color: $e-commerce-color;
+				transition: .3s all ease;
+				font-weight: 500;
+				text-decoration: none;
+			}
+		}
+	}
+	.widget {
+		margin-top: 6rem;
+
+		.widget-title {
+			margin-bottom: 2rem;
+			margin-top: 0;
+			font-size: 2rem;
+			font-weight: 700;
+			color: $social-color;
+		}
+	}
 }
