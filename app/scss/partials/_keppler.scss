@@ -1,10 +1,45 @@
 #keppler {
-  background: $keppler-color;
-  height: auto;
-  padding: 40px 5px;
-  color: #fff;
+  background: #fff;
+  header {
+    background: $keppler-color;
+    height: auto;
+    padding: 40px 5px;
+    color: #fff;
 
-  .section-description {
-    padding-top: 30px;
+    .section-description {
+      padding-top: 30px;
+    }
+  }
+
+  #user-dates {
+    padding: 20px 0;
+
+    .file-input {
+      padding: 5px 10px;
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      padding-left: 10px;
+      border: 1px solid $keppler-color;
+      border-radius: 2px;
+
+      &:focus, &:active {
+        box-shadow: none !important;
+        outline: none;
+      }
+    }
+  }
+
+  #domain {
+    top: 0;
+    left: -100%;
+    position: fixed;
+    background: blue;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transition: all ease .3s;
   }
 }

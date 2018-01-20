@@ -1,0 +1,7 @@
+#map {
+  padding-top: 70px;
+
+  @include respond-to(xs) {
+    padding-top: 20px;
+  }
+}

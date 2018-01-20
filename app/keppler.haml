@@ -1,13 +1,35 @@
 = Haml::Engine.new(File.read("app/partials/_head.haml")).render
 %body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-  -# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+	-# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
 
-  #keppler
-    .container
-      %center
-        %img{src: "assets/img/keppler-front.png", style: "width: 60%"}
-      .section-description.text-center
-        %strong Keppler 
-        es una plataforma desarrollada por el equipo de
-        %strong Slice Group.
-        Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de forma que facilita el trabajo del webmaster o encargado de administrar un portal web.
+	#keppler
+		%header
+			.container
+				%center
+					%img.img-responsive{src: "assets/img/keppler-front.png", style: "width: 60%"}
+				.section-description.text-center
+					%strong Keppler
+					es una plataforma desarrollada por el equipo de
+					%strong Slice Group.
+					Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de forma que facilita el trabajo del webmaster o encargado de administrar un portal web.
+		#user-dates
+			.container
+				.row
+					.col-md-12.text-center
+						%h2.call-to-action-title.text-gray-5 ¡Comencemos!
+					.col-md-12.file-input
+						%input{type: "text", placeholder: "Nombre"}
+					.col-md-12.file-input
+						%input{type: "text", placeholder: "Email"}
+					.col-md-12.file-input
+						%input{type: "text", placeholder: "Teléfono"}
+					.col-md-12.file-input
+						%input{type: "text", placeholder: "Compañía/Empresa"}
+					.col-md-12.file-input
+						%center
+							.btn.btn-primary.service-btn.keppler-btn#next-1
+								SIGUIENTE
+								%i.fa.fa-chevron-right
+
+		#domain
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

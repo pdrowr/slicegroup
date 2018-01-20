@@ -2,7 +2,7 @@
 * Template Helper Stylesheet
 *
 * Helper classes. You are free to use these extra prepared helper classes to customize your web site.
-* Template main color: #f7465b;
+* Template main color: $primary-color;
 ------------------------------------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------- *
@@ -116,6 +116,7 @@
 	background-position: 50% 0%;
 	-webkit-background-size: cover;
 	background-size: cover;
+	height: 100vh;
 }
 
 
@@ -499,9 +500,9 @@
  *  Margins classes
 /* ------------------------------------------------------------- */
 
-.margin-auto { 
-	margin-left: auto !important; 
-	margin-right: auto !important; 
+.margin-auto {
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .margin-5 { margin: 5px !important; }
@@ -788,11 +789,11 @@
 .border-right-outset { border-right-style: outset !important; }
 
 /* border color classes */
-.border-main { border-color: #f7465b !important; } /* template main color */
-.border-top-main { border-top-color: #f7465b !important; } /* template main color */
-.border-bottom-main { border-bottom-color: #f7465b !important; } /* template main color */
-.border-left-main { border-left-color: #f7465b !important; } /* template main color */
-.border-right-main { border-right-color: #f7465b !important; } /* template main color */
+.border-main { border-color: $primary-color !important; } /* template main color */
+.border-top-main { border-top-color: $primary-color !important; } /* template main color */
+.border-bottom-main { border-bottom-color: $primary-color !important; } /* template main color */
+.border-left-main { border-left-color: $primary-color !important; } /* template main color */
+.border-right-main { border-right-color: $primary-color !important; } /* template main color */
 
 .border-white { border-color: #FFF !important; }
 .border-top-white { border-top-color: #FFF !important; }
@@ -879,7 +880,7 @@
  *  Text color classes
 /* ------------------------------------------------------------- */
 
-.text-main { color: #f7465b !important; } /* template main color */
+.text-main { color: $primary-color !important; } /* template main color */
 .text-white { color: #FFF !important; }
 .text-gray { color: #A4AAAD !important; }
 .text-gray-2 { color: #D1D5D6 !important; }
@@ -900,7 +901,7 @@
  *  Link color classes
 /* ------------------------------------------------------------- */
 
-.link-main a { color: #f7465b !important; } /* template main color */
+.link-main a { color: $primary-color !important; } /* template main color */
 .link-white a { color: #FFF !important; }
 .link-gray a { color: #A4AAAD !important; }
 .link-gray-2 a { color: #D1D5D6 !important; }
@@ -921,7 +922,7 @@
  *  Background color classes
 /* ------------------------------------------------------------- */
 
-.bg-main { background-color: #f7465b !important; } /* template main color */
+.bg-main { background-color: $primary-color !important; } /* template main color */
 .bg-white { background-color: #FFF !important; }
 .bg-gray { background-color: #A4AAAD !important; }
 .bg-gray-2 { background-color: #D1D5D6 !important; }
@@ -1318,19 +1319,19 @@
  * Use class "angle-left-top", "angle-right-top", "angle-left-bottom", "angle-right-bottom" to change section angle.
 /* ----------------------------------------------------------------------------------------------------------------- */
 
-.angle-left-top, 
-.angle-right-top, 
-.angle-left-bottom, 
+.angle-left-top,
+.angle-right-top,
+.angle-left-bottom,
 .angle-right-bottom {
 	position: relative;
 	overflow: hidden;
 	-ms-overflow-style: none;
 }
-.angle-left-top, 
+.angle-left-top,
 .angle-right-top {
 	padding-top: 180px;
-} 
-.angle-left-bottom, 
+}
+.angle-left-bottom,
 .angle-right-bottom {
 	padding-bottom: 180px;
 	border-bottom: none !important;
@@ -1347,7 +1348,7 @@
 	background-color: #FFF;
 	z-index: 999;
 }
-.angle-left-top:before, 
+.angle-left-top:before,
 .angle-left-bottom:after {
 	-webkit-transform: skewY(-2deg);
 	-moz-transform: skewY(-2deg);
@@ -1355,7 +1356,7 @@
 	-o-transform: skewY(-2deg);
 	transform: skewY(-2deg);
 }
-.angle-right-top:before, 
+.angle-right-top:before,
 .angle-right-bottom:after {
 	-webkit-transform: skewY(2deg);
 	-moz-transform: skewY(2deg);
@@ -1363,20 +1364,20 @@
 	-o-transform: skewY(2deg);
 	transform: skewY(2deg);
 }
-.angle-left-top:before, 
+.angle-left-top:before,
 .angle-right-top:before {
 	top: -65px;
 }
-.angle-left-bottom:after, 
+.angle-left-bottom:after,
 .angle-right-bottom:after {
 	bottom: -65px;
 }
 @media only screen and (max-width: 768px) {
-	.angle-left-top, 
+	.angle-left-top,
 	.angle-right-top {
 		padding-top: 140px;
-	} 
-	.angle-left-bottom, 
+	}
+	.angle-left-bottom,
 	.angle-right-bottom {
 		padding-bottom: 140px;
 	}
