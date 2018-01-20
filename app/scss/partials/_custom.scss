@@ -1,0 +1,66 @@
+#svg1 {
+  width: 100px;
+  height: auto;
+  margin-top: 15px;
+  transition: all ease 1s;
+
+  #isotipo {
+    position: relative;
+    transition: all .3s ease;
+    transform: perspective(600px);
+    transform-origin: 100% 50%;
+    transform-style: preserve-3d;
+  }
+
+  #isotipo .flip {
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+  }
+
+}
+
+#svg2 {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.keppler-btn {
+  border: $keppler-color !important;
+  background: $keppler-color !important;
+}
+
+.social-btn {
+  background: $social-color;
+  border: $social-color;
+}
+
+.other-btn {
+  background: $primary-color;
+  border: $primary-color;
+}
+.e-commerce-btn {
+  background: #3483cd;
+  border: #3483cd;
+}
+
+#preloader {
+  svg {
+    width: 250px;
+    margin-top: -70px;
+
+    #isotipo {
+      animation-name: change;
+      animation-duration: .3s;
+      // display: none;
+    }
+  }
+}
+
+@keyframes change {
+  0% {
+      fill: #fff !important;
+    },
+  10% {
+    fill: red !important;
+  }
+}

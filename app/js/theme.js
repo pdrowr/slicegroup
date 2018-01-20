@@ -1,24 +1,16 @@
-///////////////////////////////////////////////
-// Display loading animation while page loads
-///////////////////////////////////////////////
-
-// Wait for window load
 $(window).on('load',function() {
   // Animate loader off screen
   $("#preloader").fadeOut("slow");
 });
 
 
-//////////////////
-// Window resize 
-//////////////////
 $(window).resize(function() {
 
-  // Make ".intro-inner" margin-top equal to "#header" height
+
   $('.intro-inner').css( 'margin-top', $('#header').css('height'));
 
-  // Full height page 
-  $('.full-height').innerHeight($(window).height()); 
+
+  $('.full-height').innerHeight($(window).height());
 
 }).resize();
 
@@ -29,7 +21,7 @@ $(window).resize(function() {
 
 $(function() {
 
-  // Keeping dropdown submenu inside screen. 
+  // Keeping dropdown submenu inside screen.
   // More info: http://stackoverflow.com/questions/17985334/jquery-solution-for-keeping-dropdown-submenu-inside-screen
   $('.dropdown-toggle').parent().hover(function() {
     var menu = $('> .dropdown-menu',this);
@@ -37,7 +29,7 @@ $(function() {
 
     if (menupos.left + menu.width() > $(window).width()) {
       var newpos = -$(menu).width();
-      menu.css({ left: newpos });    
+      menu.css({ left: newpos });
     }
   });
 
@@ -53,7 +45,7 @@ $(function() {
 
 
 ///////////////////////////////////////////////////////////
-// Bootstrap submenu 
+// Bootstrap submenu
 // More info: (http://vsn4ik.github.io/bootstrap-submenu)
 ///////////////////////////////////////////////////////////
 
@@ -227,7 +219,7 @@ $('.dropdown-submenu > a').submenupicker();
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Fullscreen overlay menu 
+// Fullscreen overlay menu
 // More info: (http://www.jqueryscript.net/menu/Responsive-Fullscreen-Navigation-Menu-with-jQuery-CSS3.html)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -282,7 +274,7 @@ $(function() {
 
   function hasScrolled() {
     var st = $(this).scrollTop();
-     
+
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
        return;
@@ -329,11 +321,13 @@ $(function() {
 
   	function scrollPage() {
   	var sy = scrollY();
-  	if ($(this).scrollTop() > 150){  
+  	if ($(this).scrollTop() > 150){
   		$('#header.fixed-top, #header.show-hide-on-scroll').addClass("header-filled");
+      $('#isotipo').css('fill', '#fff');
   	}
   	else{
   		$('#header.fixed-top, #header.show-hide-on-scroll').removeClass("header-filled");
+      $('#isotipo').css('fill', '#c15010');
   	}
   		didScroll = false;
   	}
@@ -355,10 +349,11 @@ $(function() {
 
 $(function () {
 
+
     var megaDrop = $('.top-slidingbar-trigger');
     var megaContainer = $('#top-slidingbar');
-     
-    $(megaDrop).on('click',function() {
+
+    $(megaDrop).on('click', function() {
       $(megaContainer).slideToggle(300,function(){
           if ($(this).is(":hidden")) $(megaDrop).html("+");
           else $(megaDrop).html("×");
@@ -390,7 +385,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top 
+          scrollTop: target.offset().top
         }, 1500, 'easeInOutExpo');
         return false;
       }
@@ -519,7 +514,7 @@ $(function(){
 // More info: (http://designers.hubspot.com/docs/snippets/design/implement-a-parallax-effect)
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-$(function() { 
+$(function() {
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -542,7 +537,7 @@ $(function() {
     };
     jQuery(document).ready(function(){
         if( !isMobile.any() ){
-            
+
           // Begin Background Image Parallax
           (function($) {
 
@@ -577,7 +572,7 @@ $(function() {
 
               // Apply the Y Background Position to Set the Parallax Effect
               $this.css('background-position', 'center ' + yBgPosition + 'px');
-                          
+
                   });
                   });
               }
@@ -589,8 +584,8 @@ $(function() {
 
 
           // Call the parallax plugin
-          $('.bg-image-parallax').parallax({ 
-            speed : 0.5 
+          $('.bg-image-parallax').parallax({
+            speed : 0.5
           });
           // End Background Image Parallax
 
@@ -602,10 +597,10 @@ $(function() {
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //
 // Deferring embed videos (Youtube, Vimeo).
-// 
-// When you have videos from Youtube, Vimeo or just about any other provider embedded 
-// in your webpages it causes your page to load slower. Just about every video can be deferred 
-// until after your initial pageload which will allow your page to load quickly 
+//
+// When you have videos from Youtube, Vimeo or just about any other provider embedded
+// in your webpages it causes your page to load slower. Just about every video can be deferred
+// until after your initial pageload which will allow your page to load quickly
 // without having to gather all the files and resources that the video is requesting.
 //
 // More info: https://www.feedthebot.com/pagespeed/defer-videos.html

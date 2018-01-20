@@ -1,89 +1,89 @@
-%header#header-wrap
-	#header.header-md.fixed-top.header-dark.transparent
-		#scrollspy.container.header-container
-			.logo.font-alter-1
-				%a{:href => "index.html"}
-					%img.img-responsive{src: "assets/img/slice.png", style: "width: 80px"}
-			-# %nav.navbar.pull-right
-			-# 	.navbar-header
-			-# 		%button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#nav-main", "data-toggle" => "collapse", :type => "button"}
-			-# 			%span.sr-only Toggle navigation
-			-# 			%span.icon-bar
-			-# 			%span.icon-bar
-			-# 			%span.icon-bar
-			-#
-			-# 	#nav-main.collapse.navbar-collapse.mob-navbar-collapse-dark
-			-# 		%ul.nav.navbar-nav.navbar-right.nav-pills.pills-rounded
-			-# 			%li.active
-			-# 				%a.mlc.sm-scroll{:href => "#intro"} Home
-			-# 			%li
-			-# 				%span.nav-link-separator
-			-# 			%li.dropdown.dropdown-menu-dark.dropdown-hover
-			-# 				%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#0", :role => "button"}
-			-# 					About
-			-# 					%span.caret-2
-			-# 						%i.fa.fa-angle-down
-			-# 				%ul.dropdown-menu
-			-# 					%li
-			-# 						%a.mlc.sm-scroll{:href => "#section-1"} About Us
-			-# 					%li
-			-# 						%a.mlc.sm-scroll{:href => "#section-5"} Our Team
-			-# 					%li
-			-# 						%a.mlc.sm-scroll{:href => "#section-9"} Video Promo
-			-# 					%li
-			-# 						%a.mlc.sm-scroll{:href => "#section-7"} Testimonials
-			-# 					%li
-			-# 						%a.mlc.sm-scroll{:href => "#section-10"} Our Clients
-			-# 					%li.dropdown.dropdown-menu-dark.dropdown-submenu.dropdown-hover
-			-# 						%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#0", :role => "button"}
-			-# 							Submenu
-			-# 							%span.caret-2.margin-left-10
-			-# 								%i.fa.fa-angle-right
-			-# 						%ul.dropdown-menu
-			-# 							%li
-			-# 								%a.mlc{:href => "#"} Submenu Link 1
-			-# 							%li
-			-# 								%a.mlc{:href => "#"} Submenu Link 2
-			-# 							%li
-			-# 								%a.mlc{:href => "#"} Submenu Link 3
-			-# 							%li
-			-# 								%a.mlc{:href => "#"} Submenu Link 4
-			-# 							%li
-			-# 								%a.mlc{:href => "#"} Submenu Link 5
-			-# 							%li.dropdown.dropdown-menu-dark.dropdown-submenu.dropdown-hover
-			-# 								%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#0", :role => "button"}
-			-# 									3 Level Submenu
-			-# 									%span.caret-2.margin-left-10
-			-# 										%i.fa.fa-angle-right
-			-# 								%ul.dropdown-menu
-			-# 									%li
-			-# 										%a.mlc{:href => "#"} Submenu Link 1
-			-# 									%li
-			-# 										%a.mlc{:href => "#"} Submenu Link 2
-			-# 									%li
-			-# 										%a.mlc{:href => "#"} Submenu Link 3
-			-# 									%li
-			-# 										%a.mlc{:href => "#"} Submenu Link 4
-			-# 									%li
-			-# 										%a.mlc{:href => "#"} Submenu Link 5
-			-# 			%li
-			-# 				%span.nav-link-separator /
-			-# 			%li
-			-# 				%a.mlc.sm-scroll{:href => "#section-2"} Services
-			-# 			%li
-			-# 				%span.nav-link-separator /
-			-# 			%li
-			-# 				%a.mlc.sm-scroll{:href => "#section-3"} Portfolio
-			-# 			%li
-			-# 				%span.nav-link-separator /
-			-# 			%li
-			-# 				%a.mlc.sm-scroll{:href => "#section-4"} Pricing
-			-# 			%li
-			-# 				%span.nav-link-separator /
-			-# 			%li
-			-# 				%a.mlc.sm-scroll{:href => "#section-6"} Articles
-			-# 			%li
-			-# 				%span.nav-link-separator /
-			-# 			%li
-			-# 				%a.mlc.sm-scroll{:href => "#section-8"} Contact
-	= Haml::Engine.new(File.read("app/partials/_intro.haml")).render
+-# %header#header-wrap
+-# 	#header.header-md.fixed-top.header-dark.transparent
+-# 		#scrollspy.container.header-container
+-# 			.logo.font-alter-1
+-# 				%a{:href => "index.html"}
+-# 					= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
+-# 			%nav.navbar.pull-right
+-# 				.navbar-header
+-# 					%button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#nav-main", "data-toggle" => "collapse", :type => "button"}
+-# 						%span.sr-only Toggle navigation
+-# 						%span.icon-bar
+-# 						%span.icon-bar
+-# 						%span.icon-bar
+-#
+-# 				#nav-main.collapse.navbar-collapse.mob-navbar-collapse-dark
+-# 					%ul.nav.navbar-nav.navbar-right.nav-pills.pills-rounded
+-# 						%li.active
+-# 							%a.mlc.sm-scroll{:href => "#intro"} Home
+-# 						%li
+-# 							%span.nav-link-separator
+-# 						%li.dropdown.dropdown-menu-dark.dropdown-hover
+-# 							%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#0", :role => "button"}
+-# 								About
+-# 								%span.caret-2
+-# 									%i.fa.fa-angle-down
+-# 							%ul.dropdown-menu
+-# 								%li
+-# 									%a.mlc.sm-scroll{:href => "#section-1"} About Us
+-# 								%li
+-# 									%a.mlc.sm-scroll{:href => "#section-5"} Our Team
+-# 								%li
+-# 									%a.mlc.sm-scroll{:href => "#section-9"} Video Promo
+-# 								%li
+-# 									%a.mlc.sm-scroll{:href => "#section-7"} Testimonials
+-# 								%li
+-# 									%a.mlc.sm-scroll{:href => "#section-10"} Our Clients
+-# 								%li.dropdown.dropdown-menu-dark.dropdown-submenu.dropdown-hover
+-# 									%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#0", :role => "button"}
+-# 										Submenu
+-# 										%span.caret-2.margin-left-10
+-# 											%i.fa.fa-angle-right
+-# 									%ul.dropdown-menu
+-# 										%li
+-# 											%a.mlc{:href => "#"} Submenu Link 1
+-# 										%li
+-# 											%a.mlc{:href => "#"} Submenu Link 2
+-# 										%li
+-# 											%a.mlc{:href => "#"} Submenu Link 3
+-# 										%li
+-# 											%a.mlc{:href => "#"} Submenu Link 4
+-# 										%li
+-# 											%a.mlc{:href => "#"} Submenu Link 5
+-# 										%li.dropdown.dropdown-menu-dark.dropdown-submenu.dropdown-hover
+-# 											%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#0", :role => "button"}
+-# 												3 Level Submenu
+-# 												%span.caret-2.margin-left-10
+-# 													%i.fa.fa-angle-right
+-# 											%ul.dropdown-menu
+-# 												%li
+-# 													%a.mlc{:href => "#"} Submenu Link 1
+-# 												%li
+-# 													%a.mlc{:href => "#"} Submenu Link 2
+-# 												%li
+-# 													%a.mlc{:href => "#"} Submenu Link 3
+-# 												%li
+-# 													%a.mlc{:href => "#"} Submenu Link 4
+-# 												%li
+-# 													%a.mlc{:href => "#"} Submenu Link 5
+-# 						%li
+-# 							%span.nav-link-separator /
+-# 						%li
+-# 							%a.mlc.sm-scroll{:href => "#section-2"} Services
+-# 						%li
+-# 							%span.nav-link-separator /
+-# 						%li
+-# 							%a.mlc.sm-scroll{:href => "#section-3"} Portfolio
+-# 						%li
+-# 							%span.nav-link-separator /
+-# 						%li
+-# 							%a.mlc.sm-scroll{:href => "#section-4"} Pricing
+-# 						%li
+-# 							%span.nav-link-separator /
+-# 						%li
+-# 							%a.mlc.sm-scroll{:href => "#section-6"} Articles
+-# 						%li
+-# 							%span.nav-link-separator /
+-# 						%li
+-# 							%a.mlc.sm-scroll{:href => "#section-8"} Contact
+-# 	= Haml::Engine.new(File.read("app/partials/_intro.haml")).render

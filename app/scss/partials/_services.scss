@@ -1,0 +1,28 @@
+#services {
+
+  .angle-right-top:before {
+    background-color: rgba(0, 7, 10, 0.95) !important;
+  }
+
+  .angle-left-top:before, .angle-right-top:before {
+    background-color: rgba(0, 7, 10, 0.95) !important;
+  }
+
+  .angle-left-top {
+    padding: 90px;
+
+    @include respond-to(xs) {
+      padding: 45px 0px;
+      padding-bottom: 100px;
+    }
+  }
+
+  hr {
+    padding-bottom: 50px;
+
+    @include respond-to(xs) {
+      padding-bottom: 0px;
+    }
+  }
+
+}

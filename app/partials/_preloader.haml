@@ -1,2 +1,6 @@
 #preloader
-  .pulse
+  %center.vertical-align-center.horisontal-align-center
+    = Haml::Engine.new(File.read("app/partials/_brand.haml")).render
+  -# .pulse
+
+  .test.vertical-align-center

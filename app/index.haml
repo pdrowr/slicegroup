@@ -4,6 +4,14 @@
   = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
   = Haml::Engine.new(File.read("app/partials/_header.haml")).render
 
+= Haml::Engine.new(File.read("app/partials/_cta.haml")).render
+= Haml::Engine.new(File.read("app/partials/_services.haml")).render
+= Haml::Engine.new(File.read("app/partials/_how_we_do.haml")).render
 = Haml::Engine.new(File.read("app/partials/_about.haml")).render
+= Haml::Engine.new(File.read("app/partials/_map.haml")).render
+= Haml::Engine.new(File.read("app/partials/_team.haml")).render
+= Haml::Engine.new(File.read("app/partials/_clients.haml")).render
+
+-# = Haml::Engine.new(File.read("app/partials/_portfolio.haml")).render
 
 = Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
