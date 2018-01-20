@@ -33,6 +33,63 @@
   animation-duration: .75s;
 }
 
+@-webkit-keyframes color {
+  0% {
+    fill: "#fff !important";
+  }
+
+  20% {
+    fill: "red !important";
+  }
+
+  40% {
+    fill: "blue !important";
+  }
+
+  60% {
+    fill: "green !important";
+  }
+
+  80% {
+    fill: "red !important";
+  }
+
+  100% {
+    fill: "blue !important";
+  }
+}
+
+@keyframes color {
+  0% {
+    fill: "#fff !important";
+  }
+
+  20% {
+    fill: "red !important";
+  }
+
+  40% {
+    fill: "blue !important";
+  }
+
+  60% {
+    fill: "green !important";
+  }
+
+  80% {
+    fill: "red !important";
+  }
+
+  100% {
+    fill: "blue !important";
+  }
+}
+
+.color {
+  -webkit-animation-name: color;
+  animation-name: color;
+}
+
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -1216,7 +1273,7 @@
 }
 
 @-webkit-keyframes fadeIn {
-  from {
+  to {
     opacity: 0;
   }
 

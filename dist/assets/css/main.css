@@ -3,14 +3,6 @@
   height: auto;
   margin-top: 15px;
   transition: all ease 1s; }
-  #svg1 #isotipo {
-    position: relative;
-    transition: all .3s ease;
-    transform: perspective(600px);
-    transform-origin: 100% 50%;
-    transform-style: preserve-3d; }
-  #svg1 #isotipo .flip {
-    transform: perspective(600px) rotateY(-180deg) translateX(100%); }
 
 #svg2 {
   width: 100%;
@@ -36,16 +28,10 @@
 #preloader svg {
   width: 250px;
   margin-top: -70px; }
-  #preloader svg #isotipo {
-    animation-name: change;
-    animation-duration: .3s; }
 
-@keyframes change {
-  0% {
-    fill: #fff !important; }
-  
-  10% {
-    fill: red !important; } }
+.infinited {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 /* -------------------------------------------------------------------------------------------------------
 * Template Helper Stylesheet
@@ -3102,7 +3088,7 @@ img {
   background-color: #070F13;
   z-index: 99999; }
 
-#preloader .pulse {
+#preloader .pulsed {
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -7985,6 +7971,38 @@ ul.social-icons > li + li {
   -webkit-animation-duration: .75s;
   animation-duration: .75s; }
 
+@-webkit-keyframes color {
+  0% {
+    fill: "#fff !important"; }
+  20% {
+    fill: "red !important"; }
+  40% {
+    fill: "blue !important"; }
+  60% {
+    fill: "green !important"; }
+  80% {
+    fill: "red !important"; }
+  100% {
+    fill: "blue !important"; } }
+
+@keyframes color {
+  0% {
+    fill: "#fff !important"; }
+  20% {
+    fill: "red !important"; }
+  40% {
+    fill: "blue !important"; }
+  60% {
+    fill: "green !important"; }
+  80% {
+    fill: "red !important"; }
+  100% {
+    fill: "blue !important"; } }
+
+.color {
+  -webkit-animation-name: color;
+  animation-name: color; }
+
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -8770,7 +8788,7 @@ ul.social-icons > li + li {
   animation-name: bounceOutUp; }
 
 @-webkit-keyframes fadeIn {
-  from {
+  to {
     opacity: 0; }
   to {
     opacity: 1; } }

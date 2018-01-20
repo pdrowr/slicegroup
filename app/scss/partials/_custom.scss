@@ -4,18 +4,6 @@
   margin-top: 15px;
   transition: all ease 1s;
 
-  #isotipo {
-    position: relative;
-    transition: all .3s ease;
-    transform: perspective(600px);
-    transform-origin: 100% 50%;
-    transform-style: preserve-3d;
-  }
-
-  #isotipo .flip {
-    transform: perspective(600px) rotateY(-180deg) translateX(100%);
-  }
-
 }
 
 #svg2 {
@@ -47,20 +35,11 @@
   svg {
     width: 250px;
     margin-top: -70px;
-
-    #isotipo {
-      animation-name: change;
-      animation-duration: .3s;
-      // display: none;
-    }
   }
 }
 
-@keyframes change {
-  0% {
-      fill: #fff !important;
-    },
-  10% {
-    fill: red !important;
-  }
+
+.infinited {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }

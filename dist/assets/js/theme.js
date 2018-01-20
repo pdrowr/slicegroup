@@ -1,26 +1,18 @@
 $(window).on('load',function() {
-  // Animate loader off screen
-  $("#preloader").fadeOut("slow");
+    $("#preloader").fadeOut("slow");
 });
 
 
 $(window).resize(function() {
-
-
   $('.intro-inner').css( 'margin-top', $('#header').css('height'));
-
-
   $('.full-height').innerHeight($(window).height());
-
 }).resize();
-
 
 ///////////////////////
 // Bootstrap Menu/nav
 ///////////////////////
 
 $(function() {
-
   // Keeping dropdown submenu inside screen.
   // More info: http://stackoverflow.com/questions/17985334/jquery-solution-for-keeping-dropdown-submenu-inside-screen
   $('.dropdown-toggle').parent().hover(function() {
@@ -33,7 +25,6 @@ $(function() {
     }
   });
 
-
   // Close mobile menu when click menu link (use class ".mlc")
   $(document).ready(function () {
     $(".mlc").on('click',function(event) {
@@ -42,7 +33,6 @@ $(function() {
   });
 
 });
-
 
 ///////////////////////////////////////////////////////////
 // Bootstrap submenu
@@ -287,7 +277,7 @@ $(function() {
     } else {
        // Scroll Up
        if(st + $(window).height() < $(document).height()) {
-           $('.show-hide-on-scroll').removeClass('fly-up');
+          $('.show-hide-on-scroll').removeClass('fly-up');
        }
     }
 
