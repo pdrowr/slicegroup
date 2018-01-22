@@ -1,5 +1,5 @@
 #about
-	%section#section-7.testimonials-section.bg-dark.angle-right-top.angle-left-bottom.bg-image-parallax
+	%section.testimonials-section.bg-dark.angle-right-top.angle-left-bottom.bg-image-parallax
 		%span.cover.bg-transparent-9-5-dark
 		.container
 			.row
@@ -10,13 +10,15 @@
 						%hr.hr-width-3.hr-5x.border-main/
 		.container
 			.row.wow.fadeIn{"data-wow-delay" => "0.3s"}
-				.col-md-12
-					%p
+				.col-md-8
+					%p.font-size-20
 						Una agencia digital con el objetivo primario de llevar la tecnología a todos los niveles
 						corporativos para sus aprovechamiento económico y financiero.
-					%p
+					%p.font-size-20
 						Creamos historias de éxito a través de la correcta armonía entre estrategia de negocios y uso de las nuevas
 						tecnologías para llevarlos a otro nivel dentro y fuera de la internet.
 
-					%p
+					%p.font-size-20
 						No importa en que país te encuentres, nuestra frontera no está dibujada.
+				.col-md-4.wow.fadeInUpBig
+					= Haml::Engine.new(File.read("app/partials/_brand_about.haml")).render

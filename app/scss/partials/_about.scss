@@ -1,6 +1,29 @@
 #about {
+  .font-size-20 {
+    @include respond-to(xs) {
+      font-size: 16px;
+    };
+  }
+
   p {
     color: #fff;
     font-weight: 400;
+  }
+
+  #svgabout {
+    width: 1000px;
+    height: 1000px;
+    margin-top: -240px;
+
+    #letra-s, #letra-l, #letra-c, #letra-e, #group {
+      display: none;
+      width: 0 !important;
+    }
+  }
+
+  .heading {
+    @include respond-to(xs) {
+      margin-top: -35px;
+    };
   }
 }

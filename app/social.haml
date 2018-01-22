@@ -1,14 +1,205 @@
-= Haml::Engine.new(File.read("app/partials/_head.haml")).render
-%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-  = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-  = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+		= Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
-  #social
-    .container
-      %center
-        %img{src: "assets/img/slice.png", style: "width: 50%"}
-      .section-description.text-center
-        %strong Keppler
-        es una plataforma desarrollada por el equipo de
-        %strong Slice Group.
-        Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de forma que facilita el trabajo del webmaster o encargado de administrar un portal web.
+		#sliceSocial.angle-left-bottom
+			%header.angle-left-bottom
+				.container
+					%center
+						%img{src: "assets/img/slice.png", style: "width: 50%"}
+					.section-description.text-center
+						Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios
+						relacionados con el manejo de redes sociales, planes de marketing digital, campañas
+						publicitarias en redes sociales, asesoría estratégica para marketing digital y más.
+
+			%center
+				.btn.btn-primary.service-btn.social-btn.margin-left-5#next-social-1
+					COMENCEMOS
+					%i.fa.fa-chevron-right
+
+			#social-media.briefing-section
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover.margin-top-35
+								-# %span.heading-title-ghost ¿Posees Un Plan de Hosting?
+								%h2.heading-title Elige Tus Redes Sociales
+
+								%hr.hr-width-2.hr-5x
+						.col-md-12
+							.social-card{"data-color" => "red"}
+								%i.fa.fa-facebook
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-twitter
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-instagram
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-youtube
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-pinterest
+								%i.fa.fa-check-circle-o.toggle.pull-right.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-vimeo
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-github
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-google-plus
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+							.social-card
+								%i.fa.fa-facebook
+								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+								%i.fa.fa-circle-o.pull-right.toggle
+
+
+						.col-md-12.footer-section
+							.pull-right.btn.btn-primary.service-btn.social-btn.margin-left-5#next-social-2
+								%i.fa.fa-chevron-right
+							.pull-right.btn.btn-primary.service-btn.social-btn#back-social-1
+								%i.fa.fa-chevron-left
+			#plan-social.briefing-section
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover.margin-top-30
+								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h2.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+
+								%hr.hr-width-2.hr-5x
+
+						.col-md-12
+							#accordion{:role => "tablist"}
+								.card
+									%a{"aria-controls" => "collapseStarter", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStarter"}
+										#socialStarter.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Starter
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseStarter.collapse{"aria-labelledby" => "socialStarter", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Es nuestra opción para iniciar a tener presencia en redes sociales. Perfecto para iniciar Personal
+												Branding o para impulsar el marketing de pequeñas empresas. Con este plan iniciamos la creación de
+												la identidad y personalidad de la marca en medios digitales, definiremos objetivos claros para la
+												estrategia y en base a ello, ejecutaremos la gestión de los diversos canales digitales.
+
+											%p
+												Este plan cuenta con un límite de hasta 70 Publicaciones al mes en Redes Sociales. Mensualmente
+												se miden los resultados y se comunican a través de informe de gestión.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+								.card
+									%a.collapsed{"aria-controls" => "collapseEnterprise", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseEnterprise"}
+										#socialEnterprise.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Conversion
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseEnterprise.collapse{"aria-labelledby" => "socialEnterprise", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Con esta solución buscamos establecer una presencia digital más sólida para tu marca, este servicio
+												está enfocado adicionalmente en generar resultados (aumento de comunidad, generación de
+												potenciales clientes [leads], tráfico a tus contenidos o página web, suscripciones de correo
+												electrónico, etc). En este caso además de los beneficios del starter, haremos un análisis detallado de
+												tu competencia, como valor agregado para obtener mejores resultados.
+
+											%p
+												Este plan cuenta con hasta 120 Publicaciones al mes en Redes Sociales. Mensualmente se miden los
+												resultados y se comunican a través de informe de gestión.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+
+								.card
+									%a.collapsed{"aria-controls" => "collapseCorporative", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseCorporative"}
+										#socialCorporative.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Corporative
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseCorporative.collapse{"aria-labelledby" => "socialCorporative", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Una estrategia debe evolucionar, una empresa crece a medida que crece su inversión en marketing.
+												Este plan está diseñado para las empresas más ambiciosas, que buscan muchos más resultados,
+												apuntando a conversiones más precisas con miras a estrategias de publicidad directa en medios
+												digitales. En este paquete tendrás todos los beneficios de nuestro plan conversion, adicionalmente
+												ofrecemos la oportunidad de crear una campaña de publicidad en redes sociales*.
+
+											%p
+												Como foco principal en este plan ofertamos una gestión completa de una campaña de ads​* en
+												Facebook/Instagram, esto incluye la planificación, diseño, ejecución y seguimiento de la campaña, así
+												como el desarrollo de un Landing Page (sitio web dirigido a captar leads) con un objetivo específico
+												para la campaña.
+
+											%p
+												Este plan cuenta con hasta 180 publicaciones en Redes Sociales. Mensualmente se miden los
+												resultados y se comunican a través de informe de gestión.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+								.card
+									%a.collapsed{"aria-controls" => "collapseStore", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStore"}
+										#socialStore.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Social Store
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseStore.collapse{"aria-labelledby" => "socialStore", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Somos especialistas en llevar negocios a internet. Ofrecemos una suite web completamente
+												administrable donde podrás no solo publicar tus productos o servicios, podrás venderlos, cobrar a
+												través de una plataforma de pago, llevar control de pedidos.
+
+											%p
+												Social store ofrece una solución de comercio electrónico para vender directamente en internet, sin intermediarios,
+												con carrito de compra y pasarela de pago 100% confiable a través de certificados SSL de seguridad para garantizar la compra segura.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+		
+		= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

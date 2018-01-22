@@ -59,6 +59,8 @@
 				.logo.font-alter-1
 					%a{:href => "index.html"}
 						= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
+				.pull-right
+					%i.fa.fa-navicon#sidebar-trigger
 			%nav.navbar.pull-right
 				.navbar-header
 					-# %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#nav-main", "data-toggle" => "collapse", :type => "button"}
@@ -141,3 +143,43 @@
 							%span.nav-link-separator /
 						%li
 							%a.mlc.sm-scroll{:href => "#section-8"} Contact
+
+#sidebar
+	#close-sidebar
+		%i.fa.fa-angle-right
+
+	%ul
+		%li
+			%a.sm-scroll{href: "#intro"}
+				Inicio
+		%li
+			%a.sm-scroll{href: "#services"}
+				¿Que ofrecemos?
+		%li
+			%a.sm-scroll{href: "#how"}
+				¿Cómo lo hacemos?
+		%li
+			%a.sm-scroll{href: "#about"}
+				¿Quiénes Somos?
+		%li
+			%a.sm-scroll{href: "#"}
+				Casos de Éxito
+
+		%li
+			%a{href: "blog.html"}
+				Blog
+
+	.sidebar-footer
+		%center
+			.btn.btn-default-bordered
+				Contact
+			.social
+				%i.fa.fa-facebook
+				%i.fa.fa-twitter
+				%i.fa.fa-linkedin
+				%i.fa.fa-instagram
+				%i.fa.fa-github
+			%p.copyright
+				Copyright
+				%i.fa.fa-copyright
+				Slice Grop

@@ -1,36 +1,264 @@
-= Haml::Engine.new(File.read("app/partials/_head.haml")).render
-%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-	= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-	= Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+		= Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
-	#keppler
-		%header
-			.container
-				%center
-					%img.img-responsive{src: "assets/img/keppler-front.png", style: "width: 60%"}
-				.section-description.text-center
-					%strong Keppler
-					es una plataforma desarrollada por el equipo de
-					%strong Slice Group.
-					Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de forma que facilita el trabajo del webmaster o encargado de administrar un portal web.
-		#user-dates
-			.container
-				.row
-					.col-md-12.text-center
-						%h2.call-to-action-title.text-gray-5 ¡Comencemos!
-					.col-md-12.file-input
-						%input{type: "text", placeholder: "Nombre"}
-					.col-md-12.file-input
-						%input{type: "text", placeholder: "Email"}
-					.col-md-12.file-input
-						%input{type: "text", placeholder: "Teléfono"}
-					.col-md-12.file-input
-						%input{type: "text", placeholder: "Compañía/Empresa"}
-					.col-md-12.file-input
-						%center
-							.btn.btn-primary.service-btn.keppler-btn#next-1
-								SIGUIENTE
+		#keppler
+			%header.angle-left-bottom
+				.container
+					%center
+						%img.img-responsive{src: "assets/img/keppler-front.png", style: "width: 60%"}
+					.section-description.text-center
+						%strong.strong Keppler
+						es una plataforma desarrollada por el equipo de
+						%strong.strong Slice Group.
+						Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de tal forma, que facilita el trabajo del webmaster o encargado de administrar un portal web.
+
+			#description
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover
+								%h6.heading-title Algunos de los beneficios que ofrece:
+
+								%hr.hr-width-2.hr-5x
+
+						.col-md-12
+							%ul
+								%li
+									Aporta al desarrollo de estrategias tecnológicas para el crecimiento empresarial y social de su negocio.
+								%li
+									Asegura la presencia de su empresa u organizaciones en internet.
+								%li
+									Lleva su modelo de negocio físico a la nube.
+								%li
+									Mejora sus procesos con el uso de aplicaciones a la medida.
+								%li
+									Hace que su negocio esté presente en cualquier dispositivo móvil.
+								%li
+									Permite gerenciar su página web de manera sencilla al ofrecer una interfaz amigable e intuitiva.
+							%center
+								.btn.btn-primary.service-btn.keppler-btn#next-1
+									COMENCEMOS
+									%i.fa.fa-chevron-right
+
+			#user-dates.briefing-section
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover
+								%h6.heading-title Datos Personales
+
+								%hr.hr-width-2.hr-5x
+
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+						.col-md-12.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Nombre
+
+
+						.col-md-12.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Email
+
+						.col-md-12.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Teléfono
+
+						.col-md-12.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Compañía/Empresa
+
+						.col-md-12.footer-section
+							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-2
 								%i.fa.fa-chevron-right
+							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-1
+								%i.fa.fa-chevron-left
 
-		#domain
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			#domain.briefing-section
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover.margin-top-35
+								-# %span.heading-title-ghost ¿Posees Un Plan de Hosting?
+								%h2.heading-title ¿Posees Un Plan de Hosting?
+
+								%hr.hr-width-2.hr-5x
+
+						.col-md-12
+							.form-check
+								%label
+									%input#yes{:name => "check", :type => "checkbox"}/
+									%span.label-text.color-azul#text{style: "font-size: 16px !important"} Si
+
+							.form-check
+								%label
+									%input#no{:name => "check", :type => "checkbox"}/
+									%span.label-text.color-azul#text{style: "font-size: 16px !important"} No
+
+						.col-md-12#have-domain
+							.col-md-12.file-input
+								.md-input
+									%input.md-form-control{:required => "", :type => "text"}/
+									%span.highlight
+									%span.bar
+									%label Indicanos cuál es
+
+						.col-md-12#search-domain
+							%input{type: "text", placeholder: "Busca un dominio..."}
+								%i.fa.fa-search
+
+						.col-md-12.footer-section
+							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-3
+								%i.fa.fa-chevron-right
+							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-2
+								%i.fa.fa-chevron-left
+
+			#plan.briefing-section
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover.margin-top-30
+								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h2.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+
+								%hr.hr-width-2.hr-5x
+
+						.col-md-12
+							#accordion{:role => "tablist"}
+
+								.card
+									%a{"aria-controls" => "collapseStarter", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStarter"}
+										#kepplerStarter.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Keppler Starter
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseStarter.collapse{"aria-labelledby" => "kepplerStarter", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Es la versión más básica y simple además de ser la opción más económica para tener en su portal web.
+												Su principal objetivo es darle a las pequeñas empresas y emprendedores la oportunidad de
+												iniciar su presencia en Internet. Su funcionalidad más resaltante es la de tener un panel básico donde
+												encontrará las métricas básicas de google analytics y controlar la recepción de mensajes que llegan a través de la web.
+											%p
+												Puede tener hasta 3 secciones de información estática; esto quiere decir que esta información no
+												puede ser editada directamente por el cliente. También contiene un formulario de contactos básico y
+												hosting con 3 correos corporativos.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+
+								.card
+									%a.collapsed{"aria-controls" => "collapseEnterprise", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseEnterprise"}
+										#kepplerEnterprise.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Keppler Enterprise
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseEnterprise.collapse{"aria-labelledby" => "kepplerEnterprise", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Es una solución para las empresas que quieren pasar al siguiente nivel. Es más avanzada y es la
+												opción más versátil para las empresas que quieren crear una presencia sólida en la Internet. Un
+												keppler Enterprise además de tener las bondades de un starter, puede tener hasta un total de 6
+												secciones, de las cuales 3 son de información estática (que no puede administrarse directamente) y 3
+												secciones son administrables, es decir, el cliente podrá editar esta información de forma independiente.
+
+											%p
+												Estas secciones son elegibles entre el pool de opciones disponibles, por ejemplo: galerías de fotos,
+												portafolio de trabajo, catálogo de productos, banners promocionales, entre otros. Además incluye hosting con 5 correos corporativos
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+
+								.card
+									%a.collapsed{"aria-controls" => "collapseCorporative", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseCorporative"}
+										#kepplerCorporative.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Keppler Corporative
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseCorporative.collapse{"aria-labelledby" => "kepplerCorporative", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Para empresas que quieren llegar a lo más alto con nosotros y convertirse en una corporacion web.
+												Les presentamos nuestra oferta más completa solo para las empresas más exigentes, aquellas que
+												quieren lograr objetivos muy específicos y muy grandes.
+
+											%p
+												Tiene capacidad de hasta 9 Secciones: 3 secciones estáticas, 3 secciones administrables, 2
+												formularios especializados, por ejemplo: formularios de reserva, un briefing web, una encuesta de
+												satisfacción, y más, totalmente administrable), además podrás tener un blog corporativo donde podrá
+												compartir contenido de valor con sus usuarios donde el cliente tiene el control total del contenido.
+												Además incluye hosting con correos corporativos ilimitados.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+								.card
+									%a.collapsed{"aria-controls" => "collapseStore", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStore"}
+										#kepplerStore.card-header{:role => "tab"}
+											.pull-left
+												%h5.mb-0
+													Keppler Store
+											.pull-right
+												%i.fa.fa-chevron-down
+									#collapseStore.collapse{"aria-labelledby" => "kepplerStore", "data-parent" => "#accordion", :role => "tabpanel"}
+										.card-body
+											%p
+												Somos especialistas en llevar negocios a internet. Ofrecemos una suite web completamente
+												administrable donde podrás no solo publicar tus productos o servicios, podrás venderlos, cobrar a
+												través de una plataforma de pago, llevar control de pedidos.
+
+											%p
+												Keppler store ofrece una solución de comercio electrónico para vender directamente en internet, sin intermediarios,
+												con carrito de compra y pasarela de pago 100% confiable a través de certificados SSL de seguridad para garantizar la compra segura.
+
+											.margin-top-15
+												.form-check
+													%label
+														%input#no{:name => "check", :type => "checkbox"}/
+														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+															%strong Este plan es para mí
+
+						.col-md-12.footer-section
+							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-4
+								%i.fa.fa-chevron-right
+							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-3
+								%i.fa.fa-chevron-left
+
+	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

@@ -27,12 +27,15 @@
     "gulp-html-beautify": "^1.0.1",
     "gulp-imagemin": "^4.0.0",
     "gulp-ruby-haml": "0.0.9",
+    "gulp-rucksack": "^0.1.4",
     "gulp-sass": "^3.1.0",
     "jquery": "^3.2.1",
     "merge-stream": "^1.0.1",
+    "rucksack-css": "^1.0.2",
     "run-sequence": "^2.2.0"
   },
   "dependencies": {
-    "node-font-awesome": "^1.0.2"
+    "node-font-awesome": "^1.0.2",
+    "typed.js": "^2.0.6"
   }
 }

@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang="es">
 
 <head>
-  <meta charset='UTF-8'>
-  <title>Slice Group</title>
   <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <meta charset='utf-8'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
   <meta content='Slice Group' name='description'>
   <meta content='width=device-width, initial-scale=1' name='viewport'>
-  <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
-  <link href='favicon.ico' rel='icon' type='image/x-icon'>
+  <link href='assets/img/favicon.png' rel='shortcut icon' type='image/x-icon'>
+  <link href='assets/img/favicon.png' rel='icon' type='image/x-icon'>
   <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'>
   <link href='assets/css/main.css' rel='stylesheet'>
-</head>
 
-</html>
+</head>
 
 <body data-spy="scroll" data-target="#scrollspy">
   <div id='preloader'>
@@ -42,6 +39,7 @@
 </svg>
 
     </center>
+    <div class='pulsed'></div>
   </div>
 
   <div id='body-content'>
@@ -141,6 +139,9 @@
 </svg>
 
 </a>
+          </div>
+          <div class='pull-right'>
+            <i class='fa fa-navicon' id='sidebar-trigger'></i>
           </div>
         </div>
         <nav class='navbar pull-right'>
@@ -265,42 +266,108 @@ Submenu
       </div>
     </header>
   </div>
+  <div id='sidebar'>
+    <div id='close-sidebar'>
+      <i class='fa fa-angle-right'></i>
+    </div>
+    <ul>
+      <li>
+        <a class='sm-scroll' href='#intro'>
+Inicio
+</a>
+      </li>
+      <li>
+        <a class='sm-scroll' href='#services'>
+¿Que ofrecemos?
+</a>
+      </li>
+      <li>
+        <a class='sm-scroll' href='#how'>
+¿Cómo lo hacemos?
+</a>
+      </li>
+      <li>
+        <a class='sm-scroll' href='#about'>
+¿Quiénes Somos?
+</a>
+      </li>
+      <li>
+        <a class='sm-scroll' href='#'>
+Casos de Éxito
+</a>
+      </li>
+      <li>
+        <a href='blog.html'>
+Blog
+</a>
+      </li>
+    </ul>
+    <div class='sidebar-footer'>
+      <center>
+        <div class='btn btn-default-bordered'>
+          Contact
+        </div>
+        <div class='social'>
+          <i class='fa fa-facebook'></i>
+          <i class='fa fa-twitter'></i>
+          <i class='fa fa-linkedin'></i>
+          <i class='fa fa-instagram'></i>
+          <i class='fa fa-github'></i>
+        </div>
+        <p class='copyright'>
+          Copyright
+          <i class='fa fa-copyright'></i> Slice Grop
+        </p>
+      </center>
+    </div>
+  </div>
 
   <div id="keppler">
-    <header>
+    <header class="angle-left-bottom">
       <div class="container">
         <center>
           <img class="img-responsive" src="assets/img/keppler-front.png" style="width: 60%">
         </center>
         <div class="section-description text-center">
-          <strong>Keppler</strong> es una plataforma desarrollada por el equipo de
-          <strong>Slice Group.</strong> Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de forma que facilita el trabajo del webmaster o encargado
-          de administrar un portal web.
+          <strong class="strong">Keppler</strong> es una plataforma desarrollada por el equipo de
+          <strong class="strong">Slice Group.</strong> Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de tal forma, que facilita el trabajo
+          del webmaster o encargado de administrar un portal web.
         </div>
       </div>
     </header>
-    <div id="user-dates">
+    <div id="description">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="call-to-action-title text-gray-5">¡Comencemos!</h2>
+          <div class="col-md-12">
+            <div class="heading heading-sm heading-center heading-hover">
+              <h6 class="heading-title">Algunos de los beneficios que ofrece:</h6>
+              <hr class="hr-width-2 hr-5x">
+            </div>
           </div>
-          <div class="col-md-12 file-input">
-            <input placeholder="Nombre" type="text">
-          </div>
-          <div class="col-md-12 file-input">
-            <input placeholder="Email" type="text">
-          </div>
-          <div class="col-md-12 file-input">
-            <input placeholder="Teléfono" type="text">
-          </div>
-          <div class="col-md-12 file-input">
-            <input placeholder="Compañía/Empresa" type="text">
-          </div>
-          <div class="col-md-12 file-input">
+          <div class="col-md-12">
+            <ul>
+              <li>
+                Aporta al desarrollo de estrategias tecnológicas para el crecimiento empresarial y social de su negocio.
+              </li>
+              <li>
+                Asegura la presencia de su empresa u organizaciones en internet.
+              </li>
+              <li>
+                Lleva su modelo de negocio físico a la nube.
+              </li>
+              <li>
+                Mejora sus procesos con el uso de aplicaciones a la medida.
+              </li>
+              <li>
+                Hace que su negocio esté presente en cualquier dispositivo móvil.
+              </li>
+              <li>
+                Permite gerenciar su página web de manera sencilla al ofrecer una interfaz amigable e intuitiva.
+              </li>
+            </ul>
             <center>
               <div class="btn btn-primary service-btn keppler-btn" id="next-1">
-                SIGUIENTE
+                COMENCEMOS
                 <i class="fa fa-chevron-right"></i>
               </div>
             </center>
@@ -308,9 +375,289 @@ Submenu
         </div>
       </div>
     </div>
-    <div id="domain">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class="briefing-section" id="user-dates">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading heading-sm heading-center heading-hover">
+              <h6 class="heading-title">Datos Personales</h6>
+              <hr class="hr-width-2 hr-5x">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 file-input">
+            <div class="md-input">
+              <input class="md-form-control" required="" type="text">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Nombre</label>
+            </div>
+          </div>
+          <div class="col-md-12 file-input">
+            <div class="md-input">
+              <input class="md-form-control" required="" type="text">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+          </div>
+          <div class="col-md-12 file-input">
+            <div class="md-input">
+              <input class="md-form-control" required="" type="text">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Teléfono</label>
+            </div>
+          </div>
+          <div class="col-md-12 file-input">
+            <div class="md-input">
+              <input class="md-form-control" required="" type="text">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Compañía/Empresa</label>
+            </div>
+          </div>
+          <div class="col-md-12 footer-section">
+            <div class="pull-right btn btn-primary service-btn keppler-btn margin-left-5" id="next-2">
+              <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="pull-right btn btn-primary service-btn keppler-btn" id="back-1">
+              <i class="fa fa-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="briefing-section" id="domain">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading heading-sm heading-center heading-hover margin-top-35">
+              <h2 class="heading-title">¿Posees Un Plan de Hosting?</h2>
+              <hr class="hr-width-2 hr-5x">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-check">
+              <label>
+<input id="yes" name="check" type="checkbox">
+<span class="label-text color-azul" id="text" style="font-size: 16px !important">Si</span>
+</label>
+            </div>
+            <div class="form-check">
+              <label>
+<input id="no" name="check" type="checkbox">
+<span class="label-text color-azul" id="text" style="font-size: 16px !important">No</span>
+</label>
+            </div>
+          </div>
+          <div class="col-md-12" id="have-domain">
+            <div class="col-md-12 file-input">
+              <div class="md-input">
+                <input class="md-form-control" required="" type="text">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Indicanos cuál es</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12" id="search-domain">
+            <input placeholder="Busca un dominio..." type="text">
+            <i class="fa fa-search"></i>
+            </input>
+          </div>
+          <div class="col-md-12 footer-section">
+            <div class="pull-right btn btn-primary service-btn keppler-btn margin-left-5" id="next-3">
+              <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="pull-right btn btn-primary service-btn keppler-btn" id="back-2">
+              <i class="fa fa-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="briefing-section" id="plan">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading heading-sm heading-center heading-hover margin-top-30">
+              <h2 class="heading-title">Tenemos Planes Que se Adaptan a Tus Necesidades</h2>
+              <hr class="hr-width-2 hr-5x">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div id="accordion" role="tablist">
+              <div class="card">
+                <a aria-controls="collapseStarter" aria-expanded="false" data-toggle="collapse" href="#collapseStarter">
+                  <div class="card-header" id="kepplerStarter" role="tab">
+                    <div class="pull-left">
+                      <h5 class="mb-0">
+                        Keppler Starter
+                      </h5>
+                    </div>
+                    <div class="pull-right">
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </a>
+                <div aria-labelledby="kepplerStarter" class="collapse" data-parent="#accordion" id="collapseStarter" role="tabpanel">
+                  <div class="card-body">
+                    <p>
+                      Es la versión más básica y simple además de ser la opción más económica para tener en su portal web. Su principal objetivo es darle a las pequeñas empresas y emprendedores la oportunidad de iniciar su presencia en Internet. Su funcionalidad más resaltante
+                      es la de tener un panel básico donde encontrará las métricas básicas de google analytics y controlar la recepción de mensajes que llegan a través de la web.
+                    </p>
+                    <p>
+                      Puede tener hasta 3 secciones de información estática; esto quiere decir que esta información no puede ser editada directamente por el cliente. También contiene un formulario de contactos básico y hosting con 3 correos corporativos.
+                    </p>
+                    <div class="margin-top-15">
+                      <div class="form-check">
+                        <label>
+<input id="no" name="check" type="checkbox">
+<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<strong>Este plan es para mí</strong>
+</span>
+</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <a aria-controls="collapseEnterprise" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapseEnterprise">
+                  <div class="card-header" id="kepplerEnterprise" role="tab">
+                    <div class="pull-left">
+                      <h5 class="mb-0">
+                        Keppler Enterprise
+                      </h5>
+                    </div>
+                    <div class="pull-right">
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </a>
+                <div aria-labelledby="kepplerEnterprise" class="collapse" data-parent="#accordion" id="collapseEnterprise" role="tabpanel">
+                  <div class="card-body">
+                    <p>
+                      Es una solución para las empresas que quieren pasar al siguiente nivel. Es más avanzada y es la opción más versátil para las empresas que quieren crear una presencia sólida en la Internet. Un keppler Enterprise además de tener las bondades de un starter,
+                      puede tener hasta un total de 6 secciones, de las cuales 3 son de información estática (que no puede administrarse directamente) y 3 secciones son administrables, es decir, el cliente podrá editar esta información de forma independiente.
+                    </p>
+                    <p>
+                      Estas secciones son elegibles entre el pool de opciones disponibles, por ejemplo: galerías de fotos, portafolio de trabajo, catálogo de productos, banners promocionales, entre otros. Además incluye hosting con 5 correos corporativos
+                    </p>
+                    <div class="margin-top-15">
+                      <div class="form-check">
+                        <label>
+<input id="no" name="check" type="checkbox">
+<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<strong>Este plan es para mí</strong>
+</span>
+</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <a aria-controls="collapseCorporative" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapseCorporative">
+                  <div class="card-header" id="kepplerCorporative" role="tab">
+                    <div class="pull-left">
+                      <h5 class="mb-0">
+                        Keppler Corporative
+                      </h5>
+                    </div>
+                    <div class="pull-right">
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </a>
+                <div aria-labelledby="kepplerCorporative" class="collapse" data-parent="#accordion" id="collapseCorporative" role="tabpanel">
+                  <div class="card-body">
+                    <p>
+                      Para empresas que quieren llegar a lo más alto con nosotros y convertirse en una corporacion web. Les presentamos nuestra oferta más completa solo para las empresas más exigentes, aquellas que quieren lograr objetivos muy específicos y muy grandes.
+                    </p>
+                    <p>
+                      Tiene capacidad de hasta 9 Secciones: 3 secciones estáticas, 3 secciones administrables, 2 formularios especializados, por ejemplo: formularios de reserva, un briefing web, una encuesta de satisfacción, y más, totalmente administrable), además podrás
+                      tener un blog corporativo donde podrá compartir contenido de valor con sus usuarios donde el cliente tiene el control total del contenido. Además incluye hosting con correos corporativos ilimitados.
+                    </p>
+                    <div class="margin-top-15">
+                      <div class="form-check">
+                        <label>
+<input id="no" name="check" type="checkbox">
+<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<strong>Este plan es para mí</strong>
+</span>
+</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <a aria-controls="collapseStore" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapseStore">
+                  <div class="card-header" id="kepplerStore" role="tab">
+                    <div class="pull-left">
+                      <h5 class="mb-0">
+                        Keppler Store
+                      </h5>
+                    </div>
+                    <div class="pull-right">
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </a>
+                <div aria-labelledby="kepplerStore" class="collapse" data-parent="#accordion" id="collapseStore" role="tabpanel">
+                  <div class="card-body">
+                    <p>
+                      Somos especialistas en llevar negocios a internet. Ofrecemos una suite web completamente administrable donde podrás no solo publicar tus productos o servicios, podrás venderlos, cobrar a través de una plataforma de pago, llevar control de pedidos.
+                    </p>
+                    <p>
+                      Keppler store ofrece una solución de comercio electrónico para vender directamente en internet, sin intermediarios, con carrito de compra y pasarela de pago 100% confiable a través de certificados SSL de seguridad para garantizar la compra segura.
+                    </p>
+                    <div class="margin-top-15">
+                      <div class="form-check">
+                        <label>
+<input id="no" name="check" type="checkbox">
+<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<strong>Este plan es para mí</strong>
+</span>
+</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 footer-section">
+            <div class="pull-right btn btn-primary service-btn keppler-btn margin-left-5" id="next-4">
+              <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="pull-right btn btn-primary service-btn keppler-btn" id="back-3">
+              <i class="fa fa-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
+<script src='assets/js/jquery.min.js'></script>
+<script src='assets/js/bootstrap.js'></script>
+<script src='assets/js/main.js'></script>
+<script src='assets/js/theme.js'></script>
+<script src='assets/js/custom.js'></script>
+<script src='assets/js/wow.js'></script>
+<script src='assets/js/jquery.magnific-popup.min.js'></script>
+<script src='assets/js/jquery.mb.YTPlayer.js'></script>
+<script src='assets/js/owl.carousel.js'></script>
+<script src='assets/js/imagesloaded.pkgd.min.js'></script>
+<script src='assets/js/isotope.pkgd.min.js'></script>
+<script src='assets/js/jquery.easing.min.js'></script>
+<script src='assets/js/owl.carousel.min.js'></script>
+<script src='assets/js/jquery.magnific-popup.min.js'></script>
+<script src='https://use.fontawesome.com/4d625cd5fa.js'></script>
+
+</html>

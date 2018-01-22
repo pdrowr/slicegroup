@@ -1,0 +1,85 @@
+#sidebar {
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -25%;
+  z-index: 100000;
+  background: #1e2122;
+  transition: all ease .3s;
+  padding: 25px 0;
+
+
+  ul {
+    padding-right: 0;
+    margin: 0 !important;
+
+    li {
+      margin-bottom: 25px;
+      list-style-type: none;
+      transition: all ease .3s;
+
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+
+        &:hover {
+          color: $primary-color;
+          text-decoration: underline;
+          cursor: pointer;
+          transition: all ease .3s;
+        }
+      }
+    }
+
+
+  }
+
+  .fa-angle-right {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #fff;
+    font-size: 35px;
+    transition: all ease .5s;
+
+    &:hover {
+      right: 12px;
+      transition: all ease .3s;
+      cursor: pointer;
+      color: $primary-color;
+    }
+  }
+
+  .sidebar-footer {
+    position: relative;
+    bottom: 0;
+
+    .btn-default-bordered {
+      margin-top: 220px;
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .social {
+      margin-top: 10px;
+      i {
+        font-size: 20px;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .copyright {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+    right: -100%;
+  };
+}
