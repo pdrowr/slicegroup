@@ -4,3 +4,48 @@ html {
 body {
   font-size: responsive 1.3rem 1.6rem !important;
 }
+#svg1 {
+  width: 100px;
+  height: auto;
+  margin-top: 15px;
+  transition: all ease 1s;
+
+}
+
+#svg2 {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.keppler-btn {
+  border: $keppler-color !important;
+  background: $keppler-color !important;
+}
+
+.social-btn {
+  background: $social-color;
+  border: $social-color;
+}
+
+.other-btn {
+  background: $primary-color;
+  border: $primary-color;
+}
+.e-commerce-btn {
+  background: #3483cd;
+  border: #3483cd;
+}
+
+#preloader {
+  svg {
+    width: 250px;
+    margin-top: -70px;
+  }
+}
+
+
+.infinited {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}

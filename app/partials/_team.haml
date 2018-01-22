@@ -1,0 +1,76 @@
+%section#section-5.team-section.bg-dark.angle-left-top.angle-left-bottom.bg-pattern{style: "background-image: url(assets/img/pattern-transparent.png);"}
+	.container
+		.row.wow.fadeIn
+			.col-md-6
+
+				.heading.heading-lg.heading-hover.text-white
+					%span.heading-title-ghost El Equipo
+					%h2.heading-title El Equipo
+
+					%hr.hr-width-1.hr-5x.border-main/
+
+			.col-md-6
+				%p.lead.margin-top-20.text-white
+					Las caras detrás de las historias de éxito con más de 200 clientes en más de 5 paises.
+
+	.team.wow.fadeIn{"data-wow-delay" => "0.3s"}
+		.container
+
+			.owl-carousel.team-carousel.dots-outside{"data-items" => "4", "data-margin" => "20", "data-mobile-landscape" => "2", "data-mobile-portrait" => "1", "data-tablet-landscape" => "3", "data-tablet-portrait" => "2"}
+
+				.team-box.team-box-hover.team-box-rounded
+					.team-image
+						%img{:alt => "John Doe", :src => "assets/img/team/staff-1.jpg"}/
+					.team-info.text-center
+						%h4.team-info-title John Doe
+						%p.team-info-text General Manager
+
+						%ul.social-icons
+							%li
+								%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+									%i.fa.fa-linkedin
+
+				.team-box.team-box-hover.team-box-rounded
+					.team-image
+						%img{:alt => "Joseph Reeves", :src => "assets/img/team/staff-2.jpg"}/
+					.team-info.text-center
+						%h4.team-info-title Joseph Reeves
+						%p.team-info-text Developer
+
+						%ul.social-icons
+							%li
+								%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+									%i.fa.fa-linkedin
+
+				.team-box.team-box-hover.team-box-rounded
+					.team-image
+						%img{:alt => "Henry Harrison", :src => "assets/img/team/staff-3.jpg"}/
+					.team-info.text-center
+						%h4.team-info-title Miranda Harrison
+						%p.team-info-text Designer
+
+						%ul.social-icons
+							%li
+								%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+									%i.fa.fa-linkedin
+
+				.team-box.team-box-hover.team-box-rounded
+					.team-image
+						%img{:alt => "Henry Harrison", :src => "assets/img/team/staff-4.jpg"}/
+					.team-info.text-center
+						%h4.team-info-title Anna Daniel
+						%p.team-info-text Marketing
+
+						%ul.social-icons
+							%li
+								%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+									%i.fa.fa-linkedin
+
+				.team-box.team-box-hover.team-box-rounded
+					.team-image
+						%a{:href => "#", :target => "_blank"}
+							%img{:alt => "Henry Harrison", :src => "assets/img/team/staff-5.jpg"}/
+					.team-info.text-center
+						%h4.team-info-title Join Us
+						%p.team-info-text Designer Wanted
+						%a.btn.btn-primary.btn-rounded.btn-sm{:href => ""} Read More!
