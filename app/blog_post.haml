@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 !!!
 %html{lang: "es"}
   %head
@@ -6,12 +5,6 @@
   %body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
     //= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
     = Haml::Engine.new(File.read("app/partials/_header.haml")).render
-=======
-= Haml::Engine.new(File.read("app/partials/_head.haml")).render
-%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-  = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-  = Haml::Engine.new(File.read("app/partials/_header.haml")).render
->>>>>>> 337e927dd5125ac385bcaed753725f2d3020ccb8
 
     #post
       .container.margin-top-30

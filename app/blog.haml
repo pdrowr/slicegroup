@@ -1,10 +1,6 @@
 = Haml::Engine.new(File.read("app/partials/_head.haml")).render
 %body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-<<<<<<< HEAD
-  -#= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-=======
   = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
->>>>>>> 337e927dd5125ac385bcaed753725f2d3020ccb8
   = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
   #blog
@@ -98,7 +94,7 @@
           %p.read-more.text-right
             %a{href: "blog_post.html"}Leer más...
 
-      %center.margin-top-50
+      %center.margin-top-50.margin-bottom-15
         %button.btn.btn-link.read-more
           %i.fa.fa-refresh.fa-spin
           &nbsp;Cargar más artículos
