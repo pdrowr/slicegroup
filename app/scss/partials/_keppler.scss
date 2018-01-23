@@ -27,6 +27,7 @@
     @include respond-to(lg) {
       display: none;
     };
+
   }
 
   hr {
@@ -50,6 +51,7 @@
         width: 20% !important;
       };
     }
+
 
     .section-description {
       padding-top: 30px;
@@ -88,6 +90,23 @@
       background: #eee;
     };
 
+  }
+
+  input {
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+    li {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  #user-dates {
+    padding: 20px 0;
+    z-index: 1000;
+    background: #fff;
   }
 
   input {
@@ -160,6 +179,83 @@
     @include respond-to(xs) {
       display: none;
     };
+
+    a {
+      text-decoration: none;
+    }
+
+    .card-header {
+      height: 45px;
+      background: #fff;
+
+      h5 {
+        padding-top: 9px;
+        color: $keppler-color;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      i {
+
+        color: $keppler-color;
+        transition: all ease .3s;
+      }
+    }
+
+    .card-body {
+      padding: 10px;
+      color: #333;
+      font-size: 12px;
+    }
+  }
+  .angle-left-bottom:before {
+    background-color: $keppler-color;
+  }
+
+  #domain {
+    background: #fff;
+    z-index: 1001;
+
+    .heading-title-ghost {
+      @include respond-to(xs) {
+        font-size: 35px;
+      };
+    }
+
+    #have-domain, #search-domain {
+      display: none;
+    }
+    #search-domain {
+      width: 100%;
+      height: 30px;
+      border-radius: 20px;
+      padding-left: 15px;
+      border: none;
+      position: relative;
+      outline: none;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    //
+    .fa-search {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      height: 20px;
+      width: 20px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      outline: none !important;
+      cursor: pointer;
+    }
+  }
+
+  #plan {
+    background: #fafafa;
+    z-index: 1002;
+    overflow-y: auto;
+
 
     a {
       text-decoration: none;
