@@ -1,3 +1,19 @@
 #how {
+  .heading {
+    @include respond-to(xs) {
+      margin-top: -35px;
+    };
+  }
 
+  .heading-title {
+    @include respond-to(xs) {
+      font-size: 32px;
+    };
+  }
+  
+  .heading-title-ghost {
+    @include respond-to(xs) {
+      font-size: 35px;
+    };
+  }
 }

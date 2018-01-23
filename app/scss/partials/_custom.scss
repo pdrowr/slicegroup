@@ -1,51 +1,244 @@
 html {
-  font-size: 10px !important;
+	font-size: 10px !important;
 }
 body {
-  font-size: responsive 1.3rem 1.6rem !important;
+	font-size: responsive 1.3rem 1.6rem !important;
 }
-#svg1 {
-  width: 100px;
-  height: auto;
-  margin-top: 15px;
-  transition: all ease 1s;
 
+.btn {
+	cursor: pointer;
+}
+
+#svg1 {
+	width: 100px;
+	height: auto;
+	margin-top: 15px;
+	transition: all ease 1s;
+}
+
+#sidebar-trigger {
+	font-size: 35px;
+	color: #fff;
+	margin-top: 15px;
+	cursor: pointer;
+	margin-right: 20px;
 }
 
 #svg2 {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
 }
 
 .keppler-btn {
-  border: $keppler-color !important;
-  background: $keppler-color !important;
+	border: $keppler-color !important;
+	background: $keppler-color !important;
 }
 
 .social-btn {
-  background: $social-color;
-  border: $social-color;
+	background: $social-color;
+	border: $social-color;
 }
 
 .other-btn {
-  background: $primary-color;
-  border: $primary-color;
+	background: $primary-color;
+	border: $primary-color;
 }
 .e-commerce-btn {
-  background: #3483cd;
-  border: #3483cd;
+	background: #3483cd;
+	border: #3483cd;
 }
-
-#preloader {
-  svg {
-    width: 250px;
-    margin-top: -70px;
-  }
-}
-
 
 .infinited {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+// checkbox
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+	label{
+		position: relative;
+		cursor: pointer;
+		color: #666;
+		font-size: 30px;
+	}
+
+	input[type="checkbox"], input[type="radio"]{
+		position: absolute;
+		right: 9000px;
+	}
+
+	/*Check box*/
+	input[type="checkbox"] + .label-text:before{
+		content: "\f096";
+		font-family: "FontAwesome";
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing:antialiased;
+		width: 1em;
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	input[type="checkbox"]:checked + .label-text:before{
+		content: "\f14a";
+		color: $keppler-color;
+		animation: effect 250ms ease-in;
+	}
+
+	input[type="checkbox"]:disabled + .label-text{
+		color: #aaa;
+	}
+
+	input[type="checkbox"]:disabled + .label-text:before{
+		content: "\f0c8";
+		color: #ccc;
+	}
+
+	/*Radio box*/
+
+	input[type="radio"] + .label-text:before{
+		content: "\f10c";
+		font-family: "FontAwesome";
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing:antialiased;
+		width: 1em;
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	input[type="radio"]:checked + .label-text:before{
+		content: "\f192";
+		color: #8e44ad;
+		animation: effect 250ms ease-in;
+	}
+
+	input[type="radio"]:disabled + .label-text{
+		color: #aaa;
+	}
+
+	input[type="radio"]:disabled + .label-text:before{
+		content: "\f111";
+		color: #ccc;
+	}
+
+	/*Radio Toggle*/
+
+	.toggle input[type="radio"] + .label-text:before{
+		content: "\f204";
+		font-family: "FontAwesome";
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing:antialiased;
+		width: 1em;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.toggle input[type="radio"]:checked + .label-text:before{
+		content: "\f205";
+		color: #16a085;
+		animation: effect 250ms ease-in;
+	}
+
+	.toggle input[type="radio"]:disabled + .label-text{
+		color: #aaa;
+	}
+
+	.toggle input[type="radio"]:disabled + .label-text:before{
+		content: "\f204";
+		color: #ccc;
+	}
+
+
+	@keyframes effect{
+		0%{transform: scale(0);}
+		25%{transform: scale(1.3);}
+		75%{transform: scale(1.4);}
+		100%{transform: scale(1);}
+	}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+
+// material inputs
+.md-input {
+	position: relative;
+	margin-bottom: 30px;
+}
+.md-input .md-form-control {
+	font-size: 12px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #CACACA;
+	box-shadow: none;
+	width: 100%;
+}
+
+.md-input label {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+.md-input .bar:before {
+	left: 50%;
+}
+
+.md-input .bar:after {
+	right: 50%;
+}
+.md-input .highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.md-input .md-form-control:focus ~ label, .md-input .md-form-control:valid ~ label {
+	top: -15px;
+	font-size: 12px;
+	color: #183D5D;
+}
+.md-input .bar:before, .md-input .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 0px;
+	position: absolute;
+	background: $keppler-color;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+.md-input .md-form-control:focus ~ .bar:before, .md-input .md-form-control:focus ~ .bar:after {
+	width: 50%;
 }

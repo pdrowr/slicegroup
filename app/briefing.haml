@@ -1,109 +1,112 @@
-= Haml::Engine.new(File.read("app/partials/_head.haml")).render
-%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-  -# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-  -# = Haml::Engine.new(File.read("app/partials/_header.haml")).render
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+		= Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
-  #briefing
-    .hide-from-lg
-      .service-section.primary-section
-        .row
-          .col-lg-6
-            %center.service-image
-              %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 80%"}
-          .col-lg-6
-            .service-content.text-center.wow.fadeInRight
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              .pull-right
-                %a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-                  SIGUIENTE
-                  %i.fa.fa-chevron-right
+		#briefing
+			.hide-from-lg
+				.service-section.primary-section
+					.row
+						.col-lg-6
+							%center.service-image
+								%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 80%"}
+						.col-lg-6
+							.service-content.text-center.wow.fadeInRight
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								.pull-right
+									%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
+										SIGUIENTE
+										%i.fa.fa-chevron-right
 
-    .hide-to-lg
-      .service-section.primary-section
-        %center.service-image
-          %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
-          .service-content.text-center.wow.fadeInRight
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+			.hide-to-lg
+				.service-section.primary-section
+					%center.service-image
+						%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+						.service-content.text-center.wow.fadeInRight
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 
-          %a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-            SIGUIENTE
-            %i.fa.fa-chevron-right
-
-
-    .hide-from-lg
-      .service-section.secondary-section
-        .row
-          .col-lg-6
-            .service-content.text-center.wow.fadeInLeft
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              .pull-right
-                %a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-                  SIGUIENTE
-                  %i.fa.fa-chevron-right
-
-          .col-lg-6
-            %center.service-image
-              %img.wow.fadeInRight{src: "assets/img/keppler.png", style: "width: 80%"}
-
-    .hide-to-lg
-      %center.service-image
-        %img.img-responsive.wow.fadeInRight{src: "assets/img/slice.png", style: "width: 50%"}
-        .service-content.text-center.wow.fadeInLeft
-          Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios relacionados con el manejo de redes sociales, planes de marketing digital, campañas publicitarias en redes sociales,, asesoría estratégica para marketing digital y más.
-
-        %a.btn.btn-primary.service-btn.social-btn.wow.fadeInUp{href: "social.html"}
-          SIGUIENTE
-          %i.fa.fa-chevron-right
-
-    .hide-from-lg
-      .service-section.primary-section
-        .row
-          .col-lg-6
-            .service-content.text-center.wow.fadeInLeft
-              %center.service-image
-                %i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
-
-          .col-lg-6
-            .service-content.text-center.wow.fadeInRight
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    .hide-to-lg
-      .service-section.primary-section
-        %center.service-image
-          %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
-          .service-content.text-center.wow.fadeInRight
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-
-          %a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-            SIGUIENTE
-            %i.fa.fa-chevron-right
-
-    .hide-from-lg
-      .service-section.secondary-section
-        .row
-          .col-lg-6
-            .service-content.text-center.wow.fadeInLeft
-              ¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
-              .pull-right
-                .btn.btn-primary.service-btn.other-btn.wow.fadeInUp
-                  SIGUIENTE
-                  %i.fa.fa-chevron-right
-
-          .col-lg-6
-            .service-content.text-center.wow.fadeInLeft
-              %center.service-image
-                %i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
+						%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
+							SIGUIENTE
+							%i.fa.fa-chevron-right
 
 
-    .hide-to-lg
-      .service-section.secondary-section
-        %center.service-image
-          %img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+			.hide-from-lg
+				.service-section.secondary-section
+					.row
+						.col-lg-6
+							.service-content.text-center.wow.fadeInLeft
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								.pull-right
+									%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
+										SIGUIENTE
+										%i.fa.fa-chevron-right
 
-          .service-content.text-center.wow.fadeInRight
-            ¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
+						.col-lg-6
+							%center.service-image
+								%img.wow.fadeInRight{src: "assets/img/keppler.png", style: "width: 80%"}
 
-          .btn.btn-primary.service-btn.other-btn.wow.fadeInUp
-            SIGUIENTE
-            %i.fa.fa-chevron-right
+			.hide-to-lg
+				%center.service-image
+					%img.img-responsive.wow.fadeInRight{src: "assets/img/slice.png", style: "width: 50%"}
+					.service-content.text-center.wow.fadeInLeft
+						Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios relacionados con el manejo de redes sociales, planes de marketing digital, campañas publicitarias en redes sociales,, asesoría estratégica para marketing digital y más.
 
-= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
+					%a.btn.btn-primary.service-btn.social-btn.wow.fadeInUp{href: "social.html"}
+						SIGUIENTE
+						%i.fa.fa-chevron-right
+
+			.hide-from-lg
+				.service-section.primary-section
+					.row
+						.col-lg-6
+							.service-content.text-center.wow.fadeInLeft
+								%center.service-image
+									%i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
+
+						.col-lg-6
+							.service-content.text-center.wow.fadeInRight
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+			.hide-to-lg
+				.service-section.primary-section
+					%center.service-image
+						%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+						.service-content.text-center.wow.fadeInRight
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+
+						%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
+							SIGUIENTE
+							%i.fa.fa-chevron-right
+
+			.hide-from-lg
+				.service-section.secondary-section
+					.row
+						.col-lg-6
+							.service-content.text-center.wow.fadeInLeft
+								¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
+								.pull-right
+									.btn.btn-primary.service-btn.other-btn.wow.fadeInUp
+										SIGUIENTE
+										%i.fa.fa-chevron-right
+
+						.col-lg-6
+							.service-content.text-center.wow.fadeInLeft
+								%center.service-image
+									%i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
+
+
+			.hide-to-lg
+				.service-section.secondary-section
+					%center.service-image
+						%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
+
+						.service-content.text-center.wow.fadeInRight
+							¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
+
+						.btn.btn-primary.service-btn.other-btn.wow.fadeInUp
+							SIGUIENTE
+							%i.fa.fa-chevron-right
+
+	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

@@ -1,0 +1,19 @@
+#preloader {
+  svg {
+    width: 250px;
+    margin-top: -100px;
+
+    @include respond-to(xs) {
+      width: 150px;
+    };
+  }
+
+  .pulsed {
+    @include respond-to(xs) {
+      width: 100px;
+      height: 100px;
+      top: 44%;
+      left: 43%
+    };
+  }
+}

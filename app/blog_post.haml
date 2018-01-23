@@ -1,10 +1,10 @@
 !!!
 %html{lang: "es"}
-  %head    
+  %head
     = Haml::Engine.new(File.read("app/partials/_head.haml")).render
   %body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-    -# = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-    -# = Haml::Engine.new(File.read("app/partials/_header.haml")).render
+    //= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+    = Haml::Engine.new(File.read("app/partials/_header.haml")).render
 
     #post
       .container.margin-top-30
@@ -155,8 +155,8 @@
 
 
         %center.margin-top-50
-          %button.btn.btn-link.read-more
-            %i.fa.fa-refresh.fa-spin
-            &nbsp;Cargar más artículos
+          .container
+            .fb-comments{"data-href" => "https://www.facebook.com/VickysFlowerspuntofijo/", "data-width" => "100%", "data-numposts" => "5", "data-colorscheme" => "dark"}
 
-  = Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
+    = Haml::Engine.new(File.read("app/partials/_footer.haml")).render
+    = Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

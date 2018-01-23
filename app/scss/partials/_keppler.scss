@@ -1,45 +1,195 @@
 #keppler {
   background: #fff;
+
+  input {
+    outline: none;
+    border: none;
+    &:focus, &:active {
+      box-shadow: none !important;
+      outline: none;
+    }
+  }
+
+  .heading-title {
+    @include respond-to(xs) {
+      font-size: 18px;
+    };
+  }
+
+  .strong {
+    font-weight: bold;
+  }
+
+  .footer-section {
+    position: fixed;
+    bottom: 0;
+
+    @include respond-to(lg) {
+      display: none;
+    };
+  }
+
+  hr {
+    background: $keppler-color !important;
+  }
+
+  .heading {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   header {
     background: $keppler-color;
     height: auto;
-    padding: 40px 5px;
+    padding: 40px 5px 120px 5px;
     color: #fff;
+    font-size: 16px;
+
+    img {
+      @include respond-to(lg) {
+        width: 20% !important;
+      };
+    }
 
     .section-description {
       padding-top: 30px;
+
+      @include respond-to(lg) {
+        font-size: 20px;
+      };
+    }
+  }
+
+  #description {
+    padding-bottom: 20px;
+
+    li {
+      font-size: 14px;
+      margin-bottom: 10px;
+
+      @include respond-to(lg) {
+        font-size: 18px;
+      };
+    }
+
+    #next-1 {
+      @include respond-to(lg) {
+        display: none;
+      };
     }
   }
 
   #user-dates {
     padding: 20px 0;
+    z-index: 1000;
+    background: #fff;
 
-    .file-input {
-      padding: 5px 10px;
-    }
+    @include respond-to(lg) {
+      background: #eee;
+    };
 
-    input {
-      width: 100%;
-      height: 40px;
-      padding-left: 10px;
-      border: 1px solid $keppler-color;
-      border-radius: 2px;
-
-      &:focus, &:active {
-        box-shadow: none !important;
-        outline: none;
-      }
-    }
   }
 
-  #domain {
+  input {
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .briefing-section {
     top: 0;
     left: -100%;
     position: fixed;
-    background: blue;
     width: 100%;
     height: 100vh;
-    z-index: 100;
     transition: all ease .3s;
+
+    @include respond-to(lg) {
+      left: 0;
+      position: relative;
+    };
+  }
+
+  #domain {
+    background: #fff;
+    z-index: 1001;
+
+    @include respond-to(xs) {
+      display: none;
+    };
+
+    .heading-title-ghost {
+      @include respond-to(xs) {
+        font-size: 35px;
+      };
+    }
+
+    #have-domain, #search-domain {
+      display: none;
+    }
+
+    #search-domain {
+      width: 100%;
+      height: 30px;
+      border-radius: 20px;
+      padding-left: 15px;
+      border: none;
+      position: relative;
+      outline: none;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    //
+    .fa-search {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      height: 20px;
+      width: 20px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      outline: none !important;
+      cursor: pointer;
+    }
+  }
+
+  #plan {
+    background: #fff;
+    z-index: 1002;
+    overflow-y: auto;
+
+    @include respond-to(xs) {
+      display: none;
+    };
+
+    a {
+      text-decoration: none;
+    }
+
+    .card-header {
+      height: 45px;
+      background: #fff;
+
+      h5 {
+        padding-top: 9px;
+        color: $keppler-color;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      i {
+
+        color: $keppler-color;
+        transition: all ease .3s;
+      }
+    }
+
+    .card-body {
+      padding: 10px;
+      color: #333;
+      font-size: 12px;
+    }
+  }
+  .angle-left-bottom:before {
+    background-color: $keppler-color;
   }
 }

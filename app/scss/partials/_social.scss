@@ -1,10 +1,105 @@
-#social {
-  background: $social-color;
+#sliceSocial {
+  background: #fff;
   height: auto;
-  padding: 40px 5px;
-  color: #fff;
 
-  .section-description {
-    padding-top: 30px;
+  .item-hidden {
+    display: none;
+  }
+
+  header {
+    background: $social-color;
+    height: auto;
+    padding: 40px 5px 100px 5px;
+    color: #fff;
+    font-size: 16px;
+
+    .section-description {
+      padding-top: 30px;
+    }
+  }
+
+  .social-btn {
+    background: $social-color;
+
+    @include respond-to(xs) {
+      font-size: 16px;
+      padding: 8px 25px;
+    };
+  }
+
+  .briefing-section {
+    top: 0;
+    left: -100%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    transition: all ease .3s;
+  }
+
+  .footer-section {
+    position: fixed;
+    bottom: 0;
+  }
+
+  #social-media {
+    background: #fff;
+    z-index: 10000;
+    // color: #eee !important;
+
+    .heading-title {
+      font-size: 18px;
+    }
+
+    .social-card {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eee;
+      margin-bottom: 5px;
+      color: #d2d2d2;
+      padding-left: 10px;
+
+      i {
+        padding-top: 12px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  #plan-social {
+    background: #fff;
+    z-index: 10001;
+    overflow-y: auto;
+    
+    .heading-title {
+      @include respond-to(xs) {
+        font-size: 16px;
+      };
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .card-header {
+      height: 45px;
+      background: #fff;
+
+      h5 {
+        padding-top: 9px;
+        color: $social-color;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      i {
+        color: $social-color;
+        transition: all ease .3s;
+      }
+    }
+
+    .card-body {
+      padding: 10px;
+      color: #333;
+      font-size: 12px;
+    }
   }
 }

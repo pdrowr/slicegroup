@@ -128,18 +128,18 @@ img {
 #preloader .pulsed {
 	position: absolute;
 	display: inline-block;
-	top: 50%;
-	left: 50%;
-	width: 80px;
-	height: 80px;
+	top: 39%;
+	left: 47%;
+	width: 120px;
+	height: 120px;
 	margin-top: -40px;
 	margin-left: -40px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	background-color: $primary-color;
-	-webkit-animation: scaleout 1.0s infinite ease;
-	animation: scaleout 1.0s infinite ease;
+	-webkit-animation: scaleout 1s infinite;
+	animation: scaleout 1s infinite;
 }
 @-webkit-keyframes scaleout {
 	0% { -webkit-transform: scale(0.0) }

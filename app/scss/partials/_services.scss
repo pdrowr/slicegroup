@@ -1,5 +1,11 @@
 #services {
 
+  .heading {
+    @include respond-to(xs) {
+      margin-top: -30px;
+      z-index: 1000;
+    }
+  }
   .angle-right-top:before {
     background-color: rgba(0, 7, 10, 0.95) !important;
   }
