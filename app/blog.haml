@@ -94,9 +94,10 @@
           %p.read-more.text-right
             %a{href: "blog_post.html"}Leer más...
 
-      %center.margin-top-50
+      %center.margin-top-50.margin-bottom-15
         %button.btn.btn-link.read-more
           %i.fa.fa-refresh.fa-spin
           &nbsp;Cargar más artículos
 
+= Haml::Engine.new(File.read("app/partials/_footer.haml")).render
 = Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

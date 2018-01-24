@@ -1,0 +1,32 @@
+#footer {
+  background: $gray-semi-dark;
+  color: white;
+  padding: 2rem 0 0 0 !important;
+
+  a{
+    color: white;
+    transition: 0.35s all ease;
+  }
+  .whatsapp{
+    a:hover{
+      color: $whatsapp-color;
+      transition: 0.35s all ease;
+    }
+  }
+  a:hover{
+    color:$primary-color;
+    transition: 0.35s all ease;
+    text-decoration: none; 
+  }
+  .fa-whatsapp{
+    margin: 1rem 0 1rem 0;
+
+  }
+  
+  .footer-dark {
+    background: $gray-dark;
+    padding: 1rem;
+  }
+
+
+}
