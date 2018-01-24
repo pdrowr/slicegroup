@@ -4,25 +4,30 @@
 			.container
 				.row
 					.col.col-md-4
-						%h4.top-slidingbar-heading.text-gray-2 Information
-						%hr.hr-width-1.hr-double.margin-top-15/
+						%h4.top-slidingbar-heading.text-gray-2 ¿Qué es Slice Group?
+						%hr.hr-width-2.hr-double.margin-top-15/
 						%p.small
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt uteralis labore et dolore magna aliqua. Ut enim ad minim veniam.
+							Somos una agencia especializada en productos digitales, creemos en el poder de la tecnología
+							para transformar los negocios, desde estrategias de marketing, páginas web y soluciones a medida.
 
 					.col.col-md-4
-						%h4.top-slidingbar-heading.text-gray-2 Contact
+						%h4.top-slidingbar-heading.text-gray-2 Contactos
 						%hr.hr-width-1.hr-double.margin-top-15/
 						%ul.list-unstyled.small
 							%li
-								%i.fa.fa-home
-								121 King Street, Melbourne, Australia
-							%li
 								%i.fa.fa-phone
-								(+548) 12-345-6789
+								+58 416-6481
+							%li
+								%i.fa.fa-whatsapp
+								+58 424-6298536
 							%li
 								%i.fa.fa-envelope-o
-								%a{:href => "mailto:support@mail.com"} info@slicegroup.xyz
+								-# Correo principal:
+								%a{:href => "mailto:support@mail.com"} negocios@slicegroup.xyz
+							%li
+								%i.fa.fa-envelope-o
+								-# Soporte:
+								%a{:href => "mailto:support@mail.com"} soporte@slicegroupl.xyz
 
 					.col.col-md-4
 						%h4.top-slidingbar-heading.text-gray-2 Our Instagram
@@ -59,8 +64,7 @@
 				.logo.font-alter-1
 					%a{:href => "index.html"}
 						= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
-				.pull-right
-					%i.fa.fa-navicon#sidebar-trigger
+				= Haml::Engine.new(File.read("app/partials/_navbar.haml")).render
 			%nav.navbar.pull-right
 				.navbar-header
 					-# %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#nav-main", "data-toggle" => "collapse", :type => "button"}
@@ -143,43 +147,3 @@
 							%span.nav-link-separator /
 						%li
 							%a.mlc.sm-scroll{:href => "#section-8"} Contact
-
-#sidebar
-	#close-sidebar
-		%i.fa.fa-angle-right
-
-	%ul
-		%li
-			%a.sm-scroll{href: "#intro"}
-				Inicio
-		%li
-			%a.sm-scroll{href: "#services"}
-				¿Que ofrecemos?
-		%li
-			%a.sm-scroll{href: "#how"}
-				¿Cómo lo hacemos?
-		%li
-			%a.sm-scroll{href: "#about"}
-				¿Quiénes Somos?
-		%li
-			%a.sm-scroll{href: "#"}
-				Casos de Éxito
-
-		%li
-			%a{href: "blog.html"}
-				Blog
-
-	.sidebar-footer
-		%center
-			.btn.btn-default-bordered
-				Contact
-			.social
-				%i.fa.fa-facebook
-				%i.fa.fa-twitter
-				%i.fa.fa-linkedin
-				%i.fa.fa-instagram
-				%i.fa.fa-github
-			%p.copyright
-				Copyright
-				%i.fa.fa-copyright
-				Slice Grop

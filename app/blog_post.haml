@@ -1,159 +1,162 @@
-= Haml::Engine.new(File.read("app/partials/_head.haml")).render
-%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-  = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-  = Haml::Engine.new(File.read("app/partials/_header.haml")).render
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+		= Haml::Engine.new(File.read("app/partials/_header.haml")).render
 
-  #post
-    .container.margin-top-30
-      .row
-        .col-xs-12.col-sm-7.col-md-9
-          %h2 Marvel predice el futuro de Venezuela
-          %p.lead
-            Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y
-            han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables
-          .meta-line
-            %span.post-author
-              %i.fa.fa-user
-              %a{href: "javascript:void(0);"} Andrés Torres
-            %span.post-date
-              %i.fa.fa-calendar
-              12 de Enero de 2018
-            %span.post-comment
-              %i.fa.fa-comments
-              %a{href: "javascript:void(0);"} 4 Comments
-          %img.img-responsive.margin-top-10{src: "assets/img/blog/blog-4.jpg"}
-          %p
-            Según un comic publicado en el año
-            %strong 1962
-            Santiago Chavez Rivera fue un dictador militar que tomó el control de la nación sudamericana de San Diablo
-            mediante un golpe militar. Debido a la lucha, hubo una escasez de asistencia médica en San Diablo,
-            y varios doctores estadounidenses, incluido el Dr. Donald Blake (con su fiel ayudante, la enfermera Jane Foster)
-            acordaron ir allí para ayudar.
-          %p
-            Sin embargo, el Ejecutor, líder de la facción comunista, no quería que los
-            campesinos fueran tratados. Quería que permanecieran enfermos, para que fueran demasiado débiles para oponerse a
-            los comunistas. Así envió cinco aviones de combate para volar el barco que transportaba a los médicos y suministros
-            médicos de USA. Blake se convirtió en Thor y destruyó los aviones, lo que llevó al Ejecutor a enviar al
-            comandante de los pilotos al pelotón de fusilamiento.
-          %p
-            %img{src: "assets/img/blog/blog-post-1.jpg", align: "right"}
-            El Ejecutor luego envió a sus fuerzas armadas, a cazar y matar a los doctores. Thor luchó contra todos los
-            atacantes, pero luego los soldados capturaron a Jane Foster, lo que obligó a Thor a retroceder.
-            Los comunistas adularon a Jane, hasta que Blake llegó reclamando su liberación.
-            Enfurecido por las órdenes de Blake, el Ejecutor robó su martillo y ordenó a Blake frente al pelotón de
-            fusilamiento. Por eso, Blake incitó al Ejecutor a luchar contra él hombre a hombre, arrebató su martillo y
-            se transformó en Thor. Mientras Thor luchaba contra los comunistas atacantes, llegó el ejército de la
-            Facción Democrática, lo que provocó que los comunistas huyeran. Al darse cuenta de que su derrota era inminente,
-            el Ejecutor robó el oro del tesoro e intentó huir.
-          %p
-            Los otros comunistas lo reconocieron como un traidor y lo colocaron frente a su propio pelotón de fusilamiento.
-            Luego se dieron cuenta de que los estadounidenses eran sus amigos desde el principio y que todos estaban felices.
-            Blake luego trató y curó a todos los campesinos enfermos, y por supuesto, nadie sospechaba ninguna conexión entre
-            él y Thor (aunque Jane deseaba que Donald pudiera ser más valiente y aventurero como Thor).
-          %br
-          %blockquote
-            %center
-              %img{src: "assets/img/blog/blog-post-2.jpg"}
-            Al leer esta información, el actual Presidente de Venezuela y líder de la Rebolución Chavista, visiblemente
-            consternado, declaró persona no grata y prohibió la entrada a Venezuela al actor estadounidenses
-            %strong Chris Hemsworth,
-            por considerar que, una eventual presencia del mencionado en el País, podría provocar disturbios e incluso
-            "envalentonar" a los líderes opositores y llevarlos a cometer otra intentona para derrocar su gobierno de
-            forma violenta.
-        .col-sm-5.col-md-3#recommended
-          .widget
-            %h4.widget-title RECOMENDADOS
-            %ul.list-unstyled.recommended-posts
-              %li
-                .post-entry-sidebar.clearfix
-                  %a.left{:href => "javascript:void(0);"}
-                    %img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar1.png"}/
-                  .right
-                    %h4.media-heading.post-title
-                      %a{:href => "javascript:void(0);"}
-                        La innovación ética antes de la información basada en el cliente
-                    %span.timestamp Hace 1h
-              %li
-                .post-entry-sidebar.clearfix
-                  %a.left{:href => "javascript:void(0);"}
-                    %img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar2.png"}/
-                  .right
-                    %h4.media-heading.post-title
-                      %a{:href => "javascript:void(0);"}
-                        Sinergice las métricas de vanguardia después de procesos de calidad
-                    %span.timestamp Hace 2h
-              %li
-                .post-entry-sidebar.clearfix
-                  %a.left{:href => "javascript:void(0);"}
-                    %img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar3.png"}/
-                  .right
-                    %h4.media-heading.post-title
-                      %a{:href => "javascript:void(0);"}
-                        Redefinir completamente productos manufacturados
-                    %span.timestamp Hace 5h
-              %li
-                .post-entry-sidebar.clearfix
-                  %a.left{:href => "javascript:void(0);"}
-                    %img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar4.png"}/
-                  .right
-                    %h4.media-heading.post-title
-                      %a{:href => "javascript:void(0);"}
-                        Mercados emergentes de transición única
-                    %span.timestamp Hace 1d
-              %li
-                .post-entry-sidebar.clearfix
-                  %a.left{:href => "javascript:void(0);"}
-                    %img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar5.png"}/
-                  .right
-                    %h4.media-heading.post-title
-                      %a{:href => "javascript:void(0);"}
-                        Iterar vectores de calidad de próxima generación
-                    %span.timestamp Hace 8d
-          .widget
-            %h4.widget-title CATEGORIAS
-            %ul.list-unstyled.category-list
-              %li
-                %a{:href => "javascript:void(0);"} Negocios (23)
-              %li
-                %a{:href => "javascript:void(0);"} Creatividad (14)
-                %ul.list-unstyled.sub-category-list
-                  %li
-                    %a{:href => "javascript:void(0);"} Imagen Digital (8)
-                  %li
-                    %a{:href => "javascript:void(0);"} Web-Design (6)
-              %li
-                %a{:href => "javascript:void(0);"} Social-Media (65)
-              %li
-                %a{:href => "javascript:void(0);"} Fotografía (17)
-              %li
-                %a{:href => "javascript:void(0);"} Corporativos (9)
+		#post
+			.container.margin-top-30
+				.row
+					.col-xs-12.col-sm-7.col-md-9
+						%h2 Marvel predice el futuro de Venezuela
+						%p.lead
+							Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y
+							han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables
+						.meta-line
+							%span.post-author
+								%i.fa.fa-user
+								%a{href: "javascript:void(0);"} Andrés Torres
+							%span.post-date
+								%i.fa.fa-calendar
+								12 de Enero de 2018
+							%span.post-comment
+								%i.fa.fa-comments
+								%a{href: "javascript:void(0);"} 4 Comments
+						%img.img-responsive.margin-top-10{src: "assets/img/blog/blog-4.jpg"}
+						%p
+							Según un comic publicado en el año
+							%strong 1962
+							Santiago Chavez Rivera fue un dictador militar que tomó el control de la nación sudamericana de San Diablo
+							mediante un golpe militar. Debido a la lucha, hubo una escasez de asistencia médica en San Diablo,
+							y varios doctores estadounidenses, incluido el Dr. Donald Blake (con su fiel ayudante, la enfermera Jane Foster)
+							acordaron ir allí para ayudar.
+						%p
+							Sin embargo, el Ejecutor, líder de la facción comunista, no quería que los
+							campesinos fueran tratados. Quería que permanecieran enfermos, para que fueran demasiado débiles para oponerse a
+							los comunistas. Así envió cinco aviones de combate para volar el barco que transportaba a los médicos y suministros
+							médicos de USA. Blake se convirtió en Thor y destruyó los aviones, lo que llevó al Ejecutor a enviar al
+							comandante de los pilotos al pelotón de fusilamiento.
+						%p
+							%img{src: "assets/img/blog/blog-post-1.jpg", align: "right"}
+							El Ejecutor luego envió a sus fuerzas armadas, a cazar y matar a los doctores. Thor luchó contra todos los
+							atacantes, pero luego los soldados capturaron a Jane Foster, lo que obligó a Thor a retroceder.
+							Los comunistas adularon a Jane, hasta que Blake llegó reclamando su liberación.
+							Enfurecido por las órdenes de Blake, el Ejecutor robó su martillo y ordenó a Blake frente al pelotón de
+							fusilamiento. Por eso, Blake incitó al Ejecutor a luchar contra él hombre a hombre, arrebató su martillo y
+							se transformó en Thor. Mientras Thor luchaba contra los comunistas atacantes, llegó el ejército de la
+							Facción Democrática, lo que provocó que los comunistas huyeran. Al darse cuenta de que su derrota era inminente,
+							el Ejecutor robó el oro del tesoro e intentó huir.
+						%p
+							Los otros comunistas lo reconocieron como un traidor y lo colocaron frente a su propio pelotón de fusilamiento.
+							Luego se dieron cuenta de que los estadounidenses eran sus amigos desde el principio y que todos estaban felices.
+							Blake luego trató y curó a todos los campesinos enfermos, y por supuesto, nadie sospechaba ninguna conexión entre
+							él y Thor (aunque Jane deseaba que Donald pudiera ser más valiente y aventurero como Thor).
+						%br
+						%blockquote
+							%center
+								%img{src: "assets/img/blog/blog-post-2.jpg"}
+							Al leer esta información, el actual Presidente de Venezuela y líder de la Rebolución Chavista, visiblemente
+							consternado, declaró persona no grata y prohibió la entrada a Venezuela al actor estadounidenses
+							%strong Chris Hemsworth,
+							por considerar que, una eventual presencia del mencionado en el País, podría provocar disturbios e incluso
+							"envalentonar" a los líderes opositores y llevarlos a cometer otra intentona para derrocar su gobierno de
+							forma violenta.
+					.col-sm-5.col-md-3#recommended
+						.widget
+							%h4.widget-title RECOMENDADOS
+							%ul.list-unstyled.recommended-posts
+								%li
+									.post-entry-sidebar.clearfix
+										%a.left{:href => "javascript:void(0);"}
+											%img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar1.png"}/
+										.right
+											%h4.media-heading.post-title
+												%a{:href => "javascript:void(0);"}
+													La innovación ética antes de la información basada en el cliente
+											%span.timestamp Hace 1h
+								%li
+									.post-entry-sidebar.clearfix
+										%a.left{:href => "javascript:void(0);"}
+											%img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar2.png"}/
+										.right
+											%h4.media-heading.post-title
+												%a{:href => "javascript:void(0);"}
+													Sinergice las métricas de vanguardia después de procesos de calidad
+											%span.timestamp Hace 2h
+								%li
+									.post-entry-sidebar.clearfix
+										%a.left{:href => "javascript:void(0);"}
+											%img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar3.png"}/
+										.right
+											%h4.media-heading.post-title
+												%a{:href => "javascript:void(0);"}
+													Redefinir completamente productos manufacturados
+											%span.timestamp Hace 5h
+								%li
+									.post-entry-sidebar.clearfix
+										%a.left{:href => "javascript:void(0);"}
+											%img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar4.png"}/
+										.right
+											%h4.media-heading.post-title
+												%a{:href => "javascript:void(0);"}
+													Mercados emergentes de transición única
+											%span.timestamp Hace 1d
+								%li
+									.post-entry-sidebar.clearfix
+										%a.left{:href => "javascript:void(0);"}
+											%img{:alt => "Post Thumbnail", :src => "assets/img/blog/blog-home-img-sidebar5.png"}/
+										.right
+											%h4.media-heading.post-title
+												%a{:href => "javascript:void(0);"}
+													Iterar vectores de calidad de próxima generación
+											%span.timestamp Hace 8d
+						.widget
+							%h4.widget-title CATEGORIAS
+							%ul.list-unstyled.category-list
+								%li
+									%a{:href => "javascript:void(0);"} Negocios (23)
+								%li
+									%a{:href => "javascript:void(0);"} Creatividad (14)
+									%ul.list-unstyled.sub-category-list
+										%li
+											%a{:href => "javascript:void(0);"} Imagen Digital (8)
+										%li
+											%a{:href => "javascript:void(0);"} Web-Design (6)
+								%li
+									%a{:href => "javascript:void(0);"} Social-Media (65)
+								%li
+									%a{:href => "javascript:void(0);"} Fotografía (17)
+								%li
+									%a{:href => "javascript:void(0);"} Corporativos (9)
 
-          .widget
-            %h3.widget-title TAGS
-            %ul.list-inline.tag-list
-              %li
-                %a{:href => "javascript:void(0);"} historias
-              %li
-                %a{:href => "javascript:void(0);"} inspiración
-              %li
-                %a{:href => "javascript:void(0);"} creatividad
-              %li
-                %a{:href => "javascript:void(0);"} e-commerce
-              %li
-                %a{:href => "javascript:void(0);"} estadísticas
-              %li
-                %a{:href => "javascript:void(0);"} negocios
-              %li
-                %a{:href => "javascript:void(0);"} desarrollo
-              %li
-                %a{:href => "javascript:void(0);"} emprendimientos
-              %li
-                %a{:href => "javascript:void(0);"} empresas
+						.widget
+							%h3.widget-title TAGS
+							%ul.list-inline.tag-list
+								%li
+									%a{:href => "javascript:void(0);"} historias
+								%li
+									%a{:href => "javascript:void(0);"} inspiración
+								%li
+									%a{:href => "javascript:void(0);"} creatividad
+								%li
+									%a{:href => "javascript:void(0);"} e-commerce
+								%li
+									%a{:href => "javascript:void(0);"} estadísticas
+								%li
+									%a{:href => "javascript:void(0);"} negocios
+								%li
+									%a{:href => "javascript:void(0);"} desarrollo
+								%li
+									%a{:href => "javascript:void(0);"} emprendimientos
+								%li
+									%a{:href => "javascript:void(0);"} empresas
 
 
-      %center.margin-top-50
-        %button.btn.btn-link.read-more
-          %i.fa.fa-refresh.fa-spin
-          &nbsp;Cargar más artículos
+				%center.margin-top-50
+					%button.btn.btn-link.read-more
+						%i.fa.fa-refresh.fa-spin
+						&nbsp;Cargar más artículos
 
-= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
+	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
