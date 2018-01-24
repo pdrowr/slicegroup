@@ -20,11 +20,11 @@
 			#description
 				.container.angle-right-bottom
 					.row
-						.col-md-12
+						.col-md-12.margin-top-35
 							.heading.heading-sm.heading-center.heading-hover
 								%h6.heading-title Algunos de los beneficios que ofrece:
-
-								%hr.hr-width-2.hr-5x
+								%h6.heading-title-ghost Algunos de los beneficios que ofrece:
+								%hr.hr-width-4.hr-5x
 
 						.col-md-12
 							%ul
@@ -45,104 +45,93 @@
 									COMENCEMOS
 									%i.fa.fa-chevron-right
 
-			#user-dates.briefing-section
+			#user-dates.briefing-section.angle-left-bottom.angle-left-top
 				.container
 					.row
-						.col-md-12
+						.col-md-12.margin-top-35
 							.heading.heading-sm.heading-center.heading-hover
 								%h6.heading-title Datos Personales
-
+								%h6.heading-title-ghost Datos Personales
 								%hr.hr-width-2.hr-5x
 
 								%p
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-						.col-md-12.file-input
+									adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+
+						.col-md-6.file-input
 							.md-input
 								%input.md-form-control{:required => "", :type => "text"}/
 								%span.highlight
 								%span.bar
 								%label Nombre
 
-
-						.col-md-12.file-input
+						.col-md-6.file-input
 							.md-input
 								%input.md-form-control{:required => "", :type => "text"}/
 								%span.highlight
 								%span.bar
 								%label Email
 
-						.col-md-12.file-input
+						.col-md-6.file-input
 							.md-input
 								%input.md-form-control{:required => "", :type => "text"}/
 								%span.highlight
 								%span.bar
 								%label Teléfono
 
-						.col-md-12.file-input
+						.col-md-6.file-input
 							.md-input
 								%input.md-form-control{:required => "", :type => "text"}/
 								%span.highlight
 								%span.bar
 								%label Compañía/Empresa
 
-						.col-md-12.footer-section
-							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-2
-								%i.fa.fa-chevron-right
-							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-1
-								%i.fa.fa-chevron-left
+							%center
+								.btn.btn-primary.service-btn.keppler-btn#next-2
+									CONTINUAR
+									%i.fa.fa-chevron-right
 
 			#domain.briefing-section
 				.container
 					.row
-						.col-md-12
-							.heading.heading-sm.heading-center.heading-hover.margin-top-35
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
 								-# %span.heading-title-ghost ¿Posees Un Plan de Hosting?
-								%h2.heading-title ¿Posees Un Dominio?
+
+								%h6.heading-title Busca un Dominio
+								%h6.heading-title-ghost Busca un Dominio
 
 								%hr.hr-width-2.hr-5x
-
-						.col-md-12
-							.form-check
-								%label
-									%input#yes{:name => "check", :type => "checkbox"}/
-									%span.label-text.color-azul#text{style: "font-size: 16px !important"} Si
-
-							.form-check
-								%label
-									%input#no{:name => "check", :type => "checkbox"}/
-									%span.label-text.color-azul#text{style: "font-size: 16px !important"} No
-
-						.col-md-12#have-domain
-							.col-md-12.file-input
-								.md-input
-									%input.md-form-control{:required => "", :type => "text"}/
-									%span.highlight
-									%span.bar
-									%label Indicanos cuál es
 
 						.col-md-12#search-domain
 							%input{type: "text", placeholder: "Busca un dominio..."}
 								%i.fa.fa-search
+						.col-md-12.text-center.margin-top-5
+							.btn.btn-bordered Ya tengo un dominio
 
 						.col-md-12.footer-section
-							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-3
-								%i.fa.fa-chevron-right
-							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-2
-								%i.fa.fa-chevron-left
+							%center
+								.btn.btn-primary.service-btn.keppler-btn#next-3
+									CONTINUAR
+									%i.fa.fa-chevron-right
+
+
+
 
 			#plan.briefing-section
 				.container
 					.row
-						.col-md-12
-							.heading.heading-sm.heading-center.heading-hover.margin-top-30
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
 								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
-								%h2.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
 
-								%hr.hr-width-2.hr-5x
-
+								%hr.hr-width-4.hr-5x
+						-# .col-md-12#pricing-tables
+						-# 	= Haml::Engine.new(File.read("app/partials/_price.haml")).render
 						.col-md-12
 							#accordion{:role => "tablist"}
-
 								.card
 									%a{"aria-controls" => "collapseStarter", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStarter"}
 										#kepplerStarter.card-header{:role => "tab"}
@@ -260,5 +249,22 @@
 								%i.fa.fa-chevron-right
 							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-3
 								%i.fa.fa-chevron-left
+
+				#more.briefing-section
+					.container
+						.row
+							.col-md-12.margin-top-35
+								.heading.heading-sm.heading-center.heading-hover
+									-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+									%h6.heading-title ¿Algo más que quieras contarnos?
+									%h6.heading-title-ghost ¿Algo más que quieras contarnos?
+									%hr.hr-width-3.hr-5x
+
+							.col-md-12
+								.md-input.margin-top-5
+									%textarea.md-form-control{:required => "", :type => "text"}
+									%span.highlight
+									%span.bar
+									%label Cuéntanos más sobre tu negocio/empresa
 
 	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

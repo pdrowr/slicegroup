@@ -1,0 +1,36 @@
+#navbar {
+  margin-top: 20px;
+  margin-right: -40px;
+
+  @include respond-to(xs) {
+    display: none;
+  };
+  
+  ul {
+    li {
+      margin-bottom: 25px;
+      list-style-type: none;
+      transition: all ease .3s;
+      display: inline-block;
+      padding: 5px;
+      border-bottom: 2px solid transparent;
+
+
+      a {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      &:hover {
+        // background: $primary-color;
+        color: #fff;
+        cursor: pointer;
+        border-bottom: 2px solid $primary-color;
+        transition: all ease .3s;
+      }
+    }
+  }
+}

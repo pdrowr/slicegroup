@@ -4,7 +4,7 @@
 		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
 	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
 		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-		= Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
+		-# = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
 		#sliceSocial.angle-left-bottom
 			%header.angle-left-bottom
@@ -21,7 +21,77 @@
 					COMENCEMOS
 					%i.fa.fa-chevron-right
 
-			#social-media.briefing-section
+			#description
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover
+								%h6.heading-title Algunos de los beneficios que ofrece:
+
+								%hr.hr-width-2.hr-5x
+
+						.col-md-12
+							%ul
+								%li
+									Aporta al desarrollo de estrategias tecnológicas para el crecimiento empresarial y social de su negocio.
+								%li
+									Asegura la presencia de su empresa u organizaciones en internet.
+								%li
+									Lleva su modelo de negocio físico a la nube.
+								%li
+									Mejora sus procesos con el uso de aplicaciones a la medida.
+								%li
+									Hace que su negocio esté presente en cualquier dispositivo móvil.
+								%li
+									Permite gerenciar su página web de manera sencilla al ofrecer una interfaz amigable e intuitiva.
+
+			#user-dates
+				.container
+					.row
+						.col-md-12
+							.heading.heading-sm.heading-center.heading-hover
+								%h6.heading-title Datos Personales
+
+								%hr.hr-width-2.hr-5x
+
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+						.col-md-6.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Nombre
+
+
+						.col-md-6.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Email
+
+						.col-md-6.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Teléfono
+
+						.col-md-6.file-input
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Compañía/Empresa
+
+						.col-md-12.footer-section
+							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-2
+								%i.fa.fa-chevron-right
+							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-1
+								%i.fa.fa-chevron-left
+
+			#social-media
 				.container
 					.row
 						.col-md-12
@@ -31,42 +101,37 @@
 
 								%hr.hr-width-2.hr-5x
 						.col-md-12
-							.social-card{"data-color" => "red"}
-								%i.fa.fa-facebook
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-twitter
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-instagram
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-youtube
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-pinterest
-								%i.fa.fa-check-circle-o.toggle.pull-right.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-vimeo
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-github
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-google-plus
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
-							.social-card
-								%i.fa.fa-facebook
-								%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
-								%i.fa.fa-circle-o.pull-right.toggle
+							.row
+								.col-lg-6
+									.social-card{"data-color" => "red"}
+										%i.fa.fa-facebook
+										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+										%i.fa.fa-circle-o.pull-right.toggle
+								.col-lg-6
+									.social-card
+										%i.fa.fa-twitter
+										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+										%i.fa.fa-circle-o.pull-right.toggle
+								.col-lg-6
+									.social-card
+										%i.fa.fa-instagram
+										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+										%i.fa.fa-circle-o.pull-right.toggle
+								.col-lg-6
+									.social-card
+										%i.fa.fa-pinterest
+										%i.fa.fa-check-circle-o.toggle.pull-right.item-hidden
+										%i.fa.fa-circle-o.pull-right.toggle
+								.col-lg-6
+									.social-card
+										%i.fa.fa-google-plus
+										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+										%i.fa.fa-circle-o.pull-right.toggle
+								.col-lg-6
+									.social-card
+										%i.fa.fa-linkedin
+										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
+										%i.fa.fa-circle-o.pull-right.toggle
 
 
 						.col-md-12.footer-section
@@ -201,5 +266,5 @@
 														%input#no{:name => "check", :type => "checkbox"}/
 														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
 															%strong Este plan es para mí
-		
+
 		= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

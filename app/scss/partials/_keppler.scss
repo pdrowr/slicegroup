@@ -1,6 +1,15 @@
 #keppler {
   background: #fff;
 
+  .heading-title-ghost {
+    @include respond-to(xs) {
+      display: none;
+    };
+  }
+
+  hr {
+    background: $keppler-color !important;
+  }
   input {
     outline: none;
     border: none;
@@ -27,11 +36,6 @@
     @include respond-to(lg) {
       display: none;
     };
-
-  }
-
-  hr {
-    background: $keppler-color !important;
   }
 
   .heading {
@@ -42,7 +46,7 @@
   header {
     background: $keppler-color;
     height: auto;
-    padding: 40px 5px 120px 5px;
+    padding: 60px 5px 150px 5px;
     color: #fff;
     font-size: 16px;
 
@@ -52,18 +56,18 @@
       };
     }
 
-
     .section-description {
       padding-top: 30px;
 
       @include respond-to(lg) {
         font-size: 20px;
-      };
+        };
     }
   }
 
   #description {
     padding-bottom: 20px;
+
 
     li {
       font-size: 14px;
@@ -86,27 +90,27 @@
     z-index: 1000;
     background: #fff;
 
-    @include respond-to(lg) {
-      background: #eee;
-    };
-
-  }
-
-  input {
-    border-bottom: 1px solid #d2d2d2;
-  }
-
-    li {
-      font-size: 14px;
-      margin-bottom: 10px;
+    #next-2 {
+      @include respond-to(lg) {
+        display: none;
+      };
     }
 
-  }
+    .md-form-control {
+      background: transparent;
+      border-bottom: 1px solid #888;
+    }
 
-  #user-dates {
-    padding: 20px 0;
-    z-index: 1000;
-    background: #fff;
+    .angle-left-bottom:before {
+      background: rgba(236, 234, 234, 0.29);
+    }
+
+    @include respond-to(lg) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background: rgba(236, 234, 234, 0.29);
+      font-size: 20px;
+    };
   }
 
   input {
@@ -118,47 +122,51 @@
     left: -100%;
     position: fixed;
     width: 100%;
-    height: 100vh;
     transition: all ease .3s;
 
     @include respond-to(lg) {
       left: 0;
       position: relative;
     };
+
+    @include respond-to(xs) {
+      height: 100vh;
+    };
   }
 
   #domain {
     background: #fff;
     z-index: 1001;
 
-    @include respond-to(xs) {
-      display: none;
-    };
-
-    .heading-title-ghost {
-      @include respond-to(xs) {
-        font-size: 35px;
-      };
-    }
-
-    #have-domain, #search-domain {
+    #have-domain {
       display: none;
     }
 
     #search-domain {
+      background: #eee;
       width: 100%;
-      height: 30px;
-      border-radius: 20px;
-      padding-left: 15px;
+      height: 50px;
+      border-radius: 25px;
+      padding: 10px 35px;
       border: none;
       position: relative;
       outline: none;
-      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+
+      @include respond-to(xs) {
+        width: 90%;
+        left: 5%;
+      };
+
+      input {
+        width: 100%;
+        border: none;
+        background: #eee;
+      }
     }
-    //
+
     .fa-search {
       position: absolute;
-      top: 10px;
+      top: 13px;
       right: 25px;
       height: 20px;
       width: 20px;
@@ -168,6 +176,10 @@
       background: none;
       outline: none !important;
       cursor: pointer;
+
+      @include respond-to(xs) {
+        font-size: 18px;
+      };
     }
   }
 
@@ -176,9 +188,23 @@
     z-index: 1002;
     overflow-y: auto;
 
-    @include respond-to(xs) {
-      display: none;
-    };
+    #pricing-tables {
+      @include respond-to(xs) {
+        display: none;
+      };
+    }
+
+    #accordion {
+      @include respond-to(lg) {
+        display: none;
+      };
+    }
+    .heading-title-ghost {
+      @include respond-to(lg) {
+        font-size: 32px;
+      };
+
+    }
 
     a {
       text-decoration: none;
@@ -208,85 +234,10 @@
       font-size: 12px;
     }
   }
-  .angle-left-bottom:before {
-    background-color: $keppler-color;
-  }
 
-  #domain {
-    background: #fff;
-    z-index: 1001;
-
-    .heading-title-ghost {
-      @include respond-to(xs) {
-        font-size: 35px;
-      };
-    }
-
-    #have-domain, #search-domain {
-      display: none;
-    }
-    #search-domain {
-      width: 100%;
-      height: 30px;
-      border-radius: 20px;
-      padding-left: 15px;
-      border: none;
-      position: relative;
+  #more {
+    textarea {
       outline: none;
-      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     }
-    //
-    .fa-search {
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      height: 20px;
-      width: 20px;
-      padding: 0;
-      margin: 0;
-      border: none;
-      background: none;
-      outline: none !important;
-      cursor: pointer;
-    }
-  }
-
-  #plan {
-    background: #fafafa;
-    z-index: 1002;
-    overflow-y: auto;
-
-
-    a {
-      text-decoration: none;
-    }
-
-    .card-header {
-      height: 45px;
-      background: #fff;
-
-      h5 {
-        padding-top: 9px;
-        color: $keppler-color;
-        font-weight: bold;
-        font-size: 14px;
-      }
-
-      i {
-
-        color: $keppler-color;
-        transition: all ease .3s;
-      }
-    }
-
-    .card-body {
-      padding: 10px;
-      color: #333;
-      font-size: 12px;
-    }
-
-    .angle-left-bottom:before {
-    background-color: $keppler-color;
   }
 }
-  
