@@ -1,6 +1,7 @@
 html {
 	font-size: 10px !important;
 }
+
 body {
 	font-size: responsive 1.3rem 1.6rem !important;
 }
@@ -241,4 +242,20 @@ body {
 
 .md-input .md-form-control:focus ~ .bar:before, .md-input .md-form-control:focus ~ .bar:after {
 	width: 50%;
+}
+
+.back {
+	font-size: 35px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	transition: all ease .3s;
+
+	&:hover {
+		left: 10px;
+		color: #fff;
+		transition: all ease .3s;
+	}
 }

@@ -4,109 +4,69 @@
 		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
 	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
 		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
-		= Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
+		-# = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
 		#briefing
-			.hide-from-lg
-				.service-section.primary-section
+			#keppler-section.angle-left-bottom
+				.container
+					.row
+						.col-md-12.text-center.padding-top-20
+							.heading.heading-sm.heading-hover.heading-center
+								%span.heading-title-ghost ¿Qué tipo de servicio estás buscando?
+								%h6.heading-title ¿Qué tipo de servicio estás buscando?
+
+								%hr.hr-width-3.hr-5x.border-main
+
+								%p.heading-tescription.lead
+
+						.col-lg-6
+							%img.laptop{src: "assets/img/macbook.png"}
+							.keppler-bg
+						.col-lg-6.padding-top-100
+							.text-left
+								%img{src: "assets/img/keppler.png", style: "width: 20%"}
+							.padding-top-20
+								%strong.strong Keppler
+								es una plataforma desarrollada por el equipo de
+								%strong.strong Slice Group.
+								Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de tal forma, que facilita el trabajo del webmaster o encargado de administrar un portal web.
+							.pull-right
+								%a.btn.btn-primary.service-btn.keppler-btn.margin-top-25{href: "keppler.html"}
+									SIGUIENTE
+									%i.fa.fa-chevron-right
+			#social-section
+				.container
 					.row
 						.col-lg-6
-							%center.service-image
-								%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 80%"}
+							.text-left
+								%img{src: "assets/img/logo-social-green.svg", style: "height: 40px"}
+
+							%p.padding-top-20
+								Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios
+								relacionados con el manejo de redes sociales, planes de marketing digital, campañas
+								publicitarias en redes sociales (facebook & instagram Ads), asesoría estratégica para marketing digital y más.
+							.pull-left
+								%a.btn.btn-primary.service-btn.social-btn.margin-top-25{href: "social.html"}
+									SIGUIENTE
+									%i.fa.fa-chevron-right
 						.col-lg-6
-							.service-content.text-center.wow.fadeInRight
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								.pull-right
-									%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-										SIGUIENTE
-										%i.fa.fa-chevron-right
-
-			.hide-to-lg
-				.service-section.primary-section
-					%center.service-image
-						%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
-						.service-content.text-center.wow.fadeInRight
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-
-						%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-							SIGUIENTE
-							%i.fa.fa-chevron-right
-
-
-			.hide-from-lg
-				.service-section.secondary-section
+							%img.laptop{src: "assets/img/iphone-2.png"}
+			#e-commerce-section.angle-left-top
+				.container
 					.row
 						.col-lg-6
-							.service-content.text-center.wow.fadeInLeft
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								.pull-right
-									%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-										SIGUIENTE
-										%i.fa.fa-chevron-right
-
-						.col-lg-6
-							%center.service-image
-								%img.wow.fadeInRight{src: "assets/img/keppler.png", style: "width: 80%"}
-
-			.hide-to-lg
-				%center.service-image
-					%img.img-responsive.wow.fadeInRight{src: "assets/img/slice.png", style: "width: 50%"}
-					.service-content.text-center.wow.fadeInLeft
-						Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios relacionados con el manejo de redes sociales, planes de marketing digital, campañas publicitarias en redes sociales,, asesoría estratégica para marketing digital y más.
-
-					%a.btn.btn-primary.service-btn.social-btn.wow.fadeInUp{href: "social.html"}
-						SIGUIENTE
-						%i.fa.fa-chevron-right
-
-			.hide-from-lg
-				.service-section.primary-section
-					.row
-						.col-lg-6
-							.service-content.text-center.wow.fadeInLeft
-								%center.service-image
-									%i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
-
-						.col-lg-6
-							.service-content.text-center.wow.fadeInRight
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			.hide-to-lg
-				.service-section.primary-section
-					%center.service-image
-						%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
-						.service-content.text-center.wow.fadeInRight
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-
-						%a.btn.btn-primary.service-btn.keppler-btn.wow.fadeInUp{href: "keppler.html"}
-							SIGUIENTE
-							%i.fa.fa-chevron-right
-
-			.hide-from-lg
-				.service-section.secondary-section
-					.row
-						.col-lg-6
-							.service-content.text-center.wow.fadeInLeft
-								¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
-								.pull-right
-									.btn.btn-primary.service-btn.other-btn.wow.fadeInUp
-										SIGUIENTE
-										%i.fa.fa-chevron-right
-
-						.col-lg-6
-							.service-content.text-center.wow.fadeInLeft
-								%center.service-image
-									%i.fa.fa-shopping-cart{style: "font-size: 75px; color: #3483cd"}
-
-
-			.hide-to-lg
-				.service-section.secondary-section
-					%center.service-image
-						%img.wow.fadeInLeft{src: "assets/img/keppler.png", style: "width: 60%"}
-
-						.service-content.text-center.wow.fadeInRight
-							¿Tus requerimientos no se adaptan a alguna de estas opciones? Cúentanos qué necesitas.
-
-						.btn.btn-primary.service-btn.other-btn.wow.fadeInUp
-							SIGUIENTE
-							%i.fa.fa-chevron-right
+							%img.laptop{src: "assets/img/macbook.png"}
+						.col-lg-6.padding-top-10
+							%img.laptop{src: "assets/img/keppler.png", style: "width: 20%"}
+							%span STORE
+							.padding-top-20
+								Keppler store ofrece una solución de comercio electrónico para vender directamente en internet, sin
+								intermediarios, con carrito de compra y pasarela de pago 100% confiable a través de certificados SSL
+								de seguridad para garantizar la compra segura.
+							.pull-right
+								%a.btn.btn-primary.service-btn.e-commerce-btn.margin-top-85{href: "store.html"}
+									SIGUIENTE
+									%i.fa.fa-chevron-right
+			#other-section
 
 	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

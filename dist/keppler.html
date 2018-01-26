@@ -11,6 +11,7 @@
   <link href='assets/img/favicon.png' rel='icon' type='image/x-icon'>
   <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
   <link href='assets/css/main.css' rel='stylesheet'>
 
 </head>
@@ -44,6 +45,9 @@
 
   <div id="keppler">
     <header class="angle-left-bottom">
+      <a class="back" href="briefing.html">
+<i class="fa fa-angle-left"></i>
+</a>
       <div class="container">
         <center>
           <img class="img-responsive" src="assets/img/keppler-front.png" style="width: 60%">
@@ -86,70 +90,59 @@
                 Permite gerenciar su página web de manera sencilla al ofrecer una interfaz amigable e intuitiva.
               </li>
             </ul>
-            <center>
-              <div class="btn btn-primary service-btn keppler-btn" id="next-1">
-                COMENCEMOS
-                <i class="fa fa-chevron-right"></i>
-              </div>
-            </center>
           </div>
         </div>
       </div>
     </div>
-    <div class="briefing-section angle-left-bottom angle-left-top" id="user-dates">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 margin-top-35">
-            <div class="heading heading-sm heading-center heading-hover">
-              <h6 class="heading-title">Datos Personales</h6>
-              <h6 class="heading-title-ghost">Datos Personales</h6>
-              <hr class="hr-width-2 hr-5x">
+    <div class='briefing-section angle-left-bottom angle-left-top' id='user-dates'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12 margin-top-35'>
+            <div class='heading heading-sm heading-center heading-hover'>
+              <h6 class='heading-title'>Datos Personales</h6>
+              <h6 class='heading-title-ghost'>Datos Personales</h6>
+              <hr class='hr-width-2 hr-5x'>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. adipisicing elit, sed do eiusmod tempor incididunt ut labore.
               </p>
             </div>
           </div>
-          <div class="col-md-6 file-input">
-            <div class="md-input">
-              <input class="md-form-control" required="" type="text">
-              <span class="highlight"></span>
-              <span class="bar"></span>
+          <div class='col-md-6 file-input'>
+            <div class='md-input'>
+              <input class='md-form-control' required='' type='text'>
+              <span class='highlight'></span>
+              <span class='bar'></span>
               <label>Nombre</label>
             </div>
           </div>
-          <div class="col-md-6 file-input">
-            <div class="md-input">
-              <input class="md-form-control" required="" type="text">
-              <span class="highlight"></span>
-              <span class="bar"></span>
+          <div class='col-md-6 file-input'>
+            <div class='md-input'>
+              <input class='md-form-control' required='' type='text'>
+              <span class='highlight'></span>
+              <span class='bar'></span>
               <label>Email</label>
             </div>
           </div>
-          <div class="col-md-6 file-input">
-            <div class="md-input">
-              <input class="md-form-control" required="" type="text">
-              <span class="highlight"></span>
-              <span class="bar"></span>
+          <div class='col-md-6 file-input'>
+            <div class='md-input'>
+              <input class='md-form-control' required='' type='text'>
+              <span class='highlight'></span>
+              <span class='bar'></span>
               <label>Teléfono</label>
             </div>
           </div>
-          <div class="col-md-6 file-input">
-            <div class="md-input">
-              <input class="md-form-control" required="" type="text">
-              <span class="highlight"></span>
-              <span class="bar"></span>
+          <div class='col-md-6 file-input'>
+            <div class='md-input'>
+              <input class='md-form-control' required='' type='text'>
+              <span class='highlight'></span>
+              <span class='bar'></span>
               <label>Compañía/Empresa</label>
             </div>
-            <center>
-              <div class="btn btn-primary service-btn keppler-btn" id="next-2">
-                CONTINUAR
-                <i class="fa fa-chevron-right"></i>
-              </div>
-            </center>
           </div>
         </div>
       </div>
     </div>
+
     <div class="briefing-section" id="domain">
       <div class="container">
         <div class="row">
@@ -165,28 +158,197 @@
             <i class="fa fa-search"></i>
             </input>
           </div>
-          <div class="col-md-12 text-center margin-top-5">
-            <div class="btn btn-bordered">Ya tengo un dominio</div>
-          </div>
-          <div class="col-md-12 footer-section">
-            <center>
-              <div class="btn btn-primary service-btn keppler-btn" id="next-3">
-                CONTINUAR
-                <i class="fa fa-chevron-right"></i>
-              </div>
-            </center>
+          <div class="col-md-12 text-center margin-top-15">
+            <div class="btn btn btn-default-bordered">Ya tengo un dominio</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="briefing-section" id="plan">
+    <div class="briefing-section bg-dark angle-left-top angle-left-bottom" id="plan">
       <div class="container">
         <div class="row">
           <div class="col-md-12 margin-top-35">
             <div class="heading heading-sm heading-center heading-hover">
+              <span class="heading-title-ghost">Tenemos Planes Que se Adaptan a Tus Necesidades</span>
               <h6 class="heading-title">Tenemos Planes Que se Adaptan a Tus Necesidades</h6>
               <h6 class="heading-title-ghost">Tenemos Planes Que se Adaptan a Tus Necesidades</h6>
               <hr class="hr-width-4 hr-5x">
+            </div>
+          </div>
+          <div class="col-md-12" id="pricing-tables">
+            <div class="price-card">
+              <div class="bordered bordered-starter hidden"></div>
+              <div class="bordered bordered-enterprise hidden"></div>
+              <div class="bordered bordered-corporative hidden"></div>
+              <table style="width:100%">
+                <tr>
+                  <th colspan="2">
+                    Elige tu plan
+                  </th>
+                  <th>
+                    <div class="form-check">
+                      <label>
+<input id="starter" name="check" type="checkbox">
+<span class="label-text" style="font-size: 16px !important">
+Starter
+</span>
+</label>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="form-check">
+                      <label>
+<input id="enterprise" name="check" type="checkbox">
+<span class="label-text" style="font-size: 16px !important">
+Enterprise
+</span>
+</label>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="form-check">
+                      <label>
+<input id="corporative" name="check" type="checkbox">
+<span class="label-text" style="font-size: 16px !important">
+Corporative
+</span>
+</label>
+                    </div>
+                  </th>
+                </tr>
+                <tr class="tr-image tr-bg-1">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k01.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Hasta 3 secciones</span>
+                    <br> estáticas
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                </tr>
+                <tr class="tr-image tr-bg-2">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k02.svg">
+                    <td class="td-text">
+                      <span>Diseño responsive</span>
+                      <br> 3 en 1
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check"></i>
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check"></i>
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check"></i>
+                    </td>
+                  </td>
+                </tr>
+                <tr class="tr-image tr-bg-1">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k03.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Formulario de Contacto</span>
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                </tr>
+                <tr class="tr-image tr-bg-2">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k04.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Hasta 3 secciones</span>
+                    <br> administrables
+                  </td>
+                  <td></td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                </tr>
+                <tr class="tr-image tr-bg-1">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k01.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Hasta 2 formularios</span>
+                    <br> especializados
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                </tr>
+                <tr class="tr-image tr-bg-2">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k05.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Blog Corporativo</span>
+                    <br> (Opcional)
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-center">
+                    <i class="fa fa-check"></i>
+                  </td>
+                </tr>
+                <tr class="tr-image tr-bg-1">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k06.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Carrito de Compras</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="tr-image tr-bg-2">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k07.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Plataforma de Pagos</span>
+                    <br> (Opcional)
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="tr-image tr-bg-1">
+                  <td class="td-image">
+                    <img src="assets/img/keppler_services/icono-k08.svg">
+                  </td>
+                  <td class="td-text">
+                    <span>Certificado SSL</span>
+                    <br> (Compra segura)
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
             </div>
           </div>
           <div class="col-md-12">
@@ -217,7 +379,7 @@
                       <div class="form-check">
                         <label>
 <input id="no" name="check" type="checkbox">
-<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<span class="label-text" style="font-size: 16px !important">
 <strong>Este plan es para mí</strong>
 </span>
 </label>
@@ -252,7 +414,7 @@
                       <div class="form-check">
                         <label>
 <input id="no" name="check" type="checkbox">
-<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<span class="label-text" style="font-size: 16px !important">
 <strong>Este plan es para mí</strong>
 </span>
 </label>
@@ -287,7 +449,7 @@
                       <div class="form-check">
                         <label>
 <input id="no" name="check" type="checkbox">
-<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<span class="label-text" style="font-size: 16px !important">
 <strong>Este plan es para mí</strong>
 </span>
 </label>
@@ -321,7 +483,7 @@
                       <div class="form-check">
                         <label>
 <input id="no" name="check" type="checkbox">
-<span class="label-text color-azul" id="text" style="font-size: 16px !important">
+<span class="label-text" style="font-size: 16px !important">
 <strong>Este plan es para mí</strong>
 </span>
 </label>
@@ -332,33 +494,28 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 footer-section">
-            <div class="pull-right btn btn-primary service-btn keppler-btn margin-left-5" id="next-4">
-              <i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="pull-right btn btn-primary service-btn keppler-btn" id="back-3">
-              <i class="fa fa-chevron-left"></i>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="briefing-section" id="more">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 margin-top-35">
-              <div class="heading heading-sm heading-center heading-hover">
-                <h6 class="heading-title">¿Algo más que quieras contarnos?</h6>
-                <h6 class="heading-title-ghost">¿Algo más que quieras contarnos?</h6>
-                <hr class="hr-width-3 hr-5x">
-              </div>
+    </div>
+    <div class="briefing-section" id="more">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 margin-top-35">
+            <div class="heading heading-sm heading-center heading-hover">
+              <h6 class="heading-title">¿Algo más que quieras contarnos?</h6>
+              <h6 class="heading-title-ghost">¿Algo más que quieras contarnos?</h6>
+              <hr class="hr-width-3 hr-5x">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              </p>
             </div>
-            <div class="col-md-12">
-              <div class="md-input margin-top-5">
-                <textarea class="md-form-control" required="" type="text"></textarea>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Cuéntanos más sobre tu negocio/empresa</label>
-              </div>
+          </div>
+          <div class="col-md-12">
+            <div class="md-input margin-top-35">
+              <textarea class="md-form-control" required="" type="text"></textarea>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Cuéntanos más sobre tu negocio/empresa</label>
             </div>
           </div>
         </div>

@@ -6,20 +6,17 @@
 		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
 		-# = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
-		#sliceSocial.angle-left-bottom
+		#sliceSocial
 			%header.angle-left-bottom
+				%a.back{href: "briefing.html"}
+					%i.fa.fa-angle-left
 				.container
 					%center
-						%img{src: "assets/img/slice.png", style: "width: 50%"}
+						%img{src: "assets/img/logo-social-white.svg", style: "width: 10%"}
 					.section-description.text-center
 						Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios
 						relacionados con el manejo de redes sociales, planes de marketing digital, campañas
-						publicitarias en redes sociales, asesoría estratégica para marketing digital y más.
-
-			%center
-				.btn.btn-primary.service-btn.social-btn.margin-left-5#next-social-1
-					COMENCEMOS
-					%i.fa.fa-chevron-right
+						publicitarias en redes sociales (facebook & instagram Ads), asesoría estratégica para marketing digital y más.
 
 			#description
 				.container
@@ -33,63 +30,17 @@
 						.col-md-12
 							%ul
 								%li
-									Aporta al desarrollo de estrategias tecnológicas para el crecimiento empresarial y social de su negocio.
+									Amplificamos el mensaje de tu marca
 								%li
-									Asegura la presencia de su empresa u organizaciones en internet.
+									Crear y fidelizar tu comunidad de seguidores o fans
 								%li
-									Lleva su modelo de negocio físico a la nube.
+									Generación de oportunidades de ventas
 								%li
-									Mejora sus procesos con el uso de aplicaciones a la medida.
+									Medición del crecimiento de seguidores, fans o interacciones
 								%li
-									Hace que su negocio esté presente en cualquier dispositivo móvil.
-								%li
-									Permite gerenciar su página web de manera sencilla al ofrecer una interfaz amigable e intuitiva.
+									Mejorar la reputación online de tu marca o empresa
 
-			#user-dates
-				.container
-					.row
-						.col-md-12
-							.heading.heading-sm.heading-center.heading-hover
-								%h6.heading-title Datos Personales
-
-								%hr.hr-width-2.hr-5x
-
-								%p
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Nombre
-
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Email
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Teléfono
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Compañía/Empresa
-
-						.col-md-12.footer-section
-							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-2
-								%i.fa.fa-chevron-right
-							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-1
-								%i.fa.fa-chevron-left
+			= Haml::Engine.new(File.read("app/partials/briefing_partials/_dates.haml")).render
 
 			#social-media
 				.container
@@ -100,171 +51,356 @@
 								%h2.heading-title Elige Tus Redes Sociales
 
 								%hr.hr-width-2.hr-5x
+
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 						.col-md-12
 							.row
-								.col-lg-6
-									.social-card{"data-color" => "red"}
+								.col-lg-2
+									.social-card.facebook
 										%i.fa.fa-facebook
 										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
 										%i.fa.fa-circle-o.pull-right.toggle
-								.col-lg-6
-									.social-card
+								.col-lg-2
+									.social-card.twitter
 										%i.fa.fa-twitter
 										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
 										%i.fa.fa-circle-o.pull-right.toggle
-								.col-lg-6
-									.social-card
+								.col-lg-2
+									.social-card.instagram
 										%i.fa.fa-instagram
 										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
 										%i.fa.fa-circle-o.pull-right.toggle
-								.col-lg-6
-									.social-card
+								.col-lg-2
+									.social-card.pinterest
 										%i.fa.fa-pinterest
 										%i.fa.fa-check-circle-o.toggle.pull-right.item-hidden
 										%i.fa.fa-circle-o.pull-right.toggle
-								.col-lg-6
-									.social-card
+								.col-lg-2
+									.social-card.google-plus
 										%i.fa.fa-google-plus
 										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
 										%i.fa.fa-circle-o.pull-right.toggle
-								.col-lg-6
-									.social-card
+								.col-lg-2
+									.social-card.linkedin
 										%i.fa.fa-linkedin
 										%i.fa.fa-check-circle-o.pull-right.toggle.item-hidden
 										%i.fa.fa-circle-o.pull-right.toggle
 
-
-						.col-md-12.footer-section
-							.pull-right.btn.btn-primary.service-btn.social-btn.margin-left-5#next-social-2
-								%i.fa.fa-chevron-right
-							.pull-right.btn.btn-primary.service-btn.social-btn#back-social-1
-								%i.fa.fa-chevron-left
-			#plan-social.briefing-section
+			#plan-social.briefing-section.bg-dark.angle-left-top.angle-left-bottom
 				.container
 					.row
-						.col-md-12
-							.heading.heading-sm.heading-center.heading-hover.margin-top-30
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
 								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
-								%h2.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
 
-								%hr.hr-width-2.hr-5x
+								%hr.hr-width-4.hr-5x
+
+						.col-md-12#pricing-tables
+							.price-card.margin-top-15
+								%table{:style => "width:100%"}
+									%tr
+										%th{colspan: "2"}
+											Elige tu plan
+										%th
+											.form-check
+												%label
+													%input#no{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Starter
+										%th
+											.form-check
+												%label
+													%input#no{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Conversion
+										%th
+											.form-check
+												%label
+													%input#no{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Corporative
+										%th
+											.form-check
+												%label
+													%input#no{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Platinum
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s01.svg"}
+										%td.td-text
+											%span	Publicaciones
+											%br
+											Mensuales
+										%td.text-center
+											70
+										%td.text-center
+											120
+										%td.text-center
+											180
+										%td.text-center
+											300
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s02.svg"}
+											%td.td-text
+												%span Definición de
+												%br
+												Objetivos
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s03.svg"}
+										%td.td-text
+											%span Personalidad de la marca
+											%br
+											e identidad gráfica
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s04.svg"}
+										%td.td-text
+											%span	Gestión de
+											%br
+											comunidad digital
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s01.svg"}
+										%td.td-text
+											%span	Análisis de
+											%br
+											competencia
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s05.svg"}
+										%td.td-text
+											%span	Blog Corporativo
+											%br
+											(Opcional)
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s06.svg"}
+										%td.td-text
+											%span Estdio de
+											%br
+											Mercado
+										%td.text-center
+										%td.text-center
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s07.svg"}
+										%td.td-text
+											%span	Campaña de
+											%br
+											ADS
+										%td
+										%td
+										%td.text-center
+											1
+										%td.text-center
+											2
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s08.svg"}
+										%td.td-text
+											%span Landing page
+										%td.text-center
+
+										%td
+										%td.text-center
+											1
+										%td.text-center
+											2
+									%tr
+									%tr
+									%tr
+									%tr
+
+				-# .container
+				-# 	.row
+				-# 		.col-md-12
+				-# 			.heading.heading-sm.heading-center.heading-hover.margin-top-30
+				-# 				-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+				-# 				%h2.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+				-#
+				-# 				%hr.hr-width-2.hr-5x
+				-#
+				-# 		.col-md-12
+				-# 			#accordion{:role => "tablist"}
+				-# 				.card
+				-# 					%a{"aria-controls" => "collapseStarter", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStarter"}
+				-# 						#socialStarter.card-header{:role => "tab"}
+				-# 							.pull-left
+				-# 								%h5.mb-0
+				-# 									Starter
+				-# 							.pull-right
+				-# 								%i.fa.fa-chevron-down
+				-# 					#collapseStarter.collapse{"aria-labelledby" => "socialStarter", "data-parent" => "#accordion", :role => "tabpanel"}
+				-# 						.card-body
+				-# 							%p
+				-# 								Es nuestra opción para iniciar a tener presencia en redes sociales. Perfecto para iniciar Personal
+				-# 								Branding o para impulsar el marketing de pequeñas empresas. Con este plan iniciamos la creación de
+				-# 								la identidad y personalidad de la marca en medios digitales, definiremos objetivos claros para la
+				-# 								estrategia y en base a ello, ejecutaremos la gestión de los diversos canales digitales.
+				-#
+				-# 							%p
+				-# 								Este plan cuenta con un límite de hasta 70 Publicaciones al mes en Redes Sociales. Mensualmente
+				-# 								se miden los resultados y se comunican a través de informe de gestión.
+				-#
+				-# 							.margin-top-15
+				-# 								.form-check
+				-# 									%label
+				-# 										%input#no{:name => "check", :type => "checkbox"}/
+				-# 										%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+				-# 											%strong Este plan es para mí
+				-#
+				-# 				.card
+				-# 					%a.collapsed{"aria-controls" => "collapseEnterprise", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseEnterprise"}
+				-# 						#socialEnterprise.card-header{:role => "tab"}
+				-# 							.pull-left
+				-# 								%h5.mb-0
+				-# 									Conversion
+				-# 							.pull-right
+				-# 								%i.fa.fa-chevron-down
+				-# 					#collapseEnterprise.collapse{"aria-labelledby" => "socialEnterprise", "data-parent" => "#accordion", :role => "tabpanel"}
+				-# 						.card-body
+				-# 							%p
+				-# 								Con esta solución buscamos establecer una presencia digital más sólida para tu marca, este servicio
+				-# 								está enfocado adicionalmente en generar resultados (aumento de comunidad, generación de
+				-# 								potenciales clientes [leads], tráfico a tus contenidos o página web, suscripciones de correo
+				-# 								electrónico, etc). En este caso además de los beneficios del starter, haremos un análisis detallado de
+				-# 								tu competencia, como valor agregado para obtener mejores resultados.
+				-#
+				-# 							%p
+				-# 								Este plan cuenta con hasta 120 Publicaciones al mes en Redes Sociales. Mensualmente se miden los
+				-# 								resultados y se comunican a través de informe de gestión.
+				-#
+				-# 							.margin-top-15
+				-# 								.form-check
+				-# 									%label
+				-# 										%input#no{:name => "check", :type => "checkbox"}/
+				-# 										%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+				-# 											%strong Este plan es para mí
+				-#
+				-#
+				-# 				.card
+				-# 					%a.collapsed{"aria-controls" => "collapseCorporative", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseCorporative"}
+				-# 						#socialCorporative.card-header{:role => "tab"}
+				-# 							.pull-left
+				-# 								%h5.mb-0
+				-# 									Corporative
+				-# 							.pull-right
+				-# 								%i.fa.fa-chevron-down
+				-# 					#collapseCorporative.collapse{"aria-labelledby" => "socialCorporative", "data-parent" => "#accordion", :role => "tabpanel"}
+				-# 						.card-body
+				-# 							%p
+				-# 								Una estrategia debe evolucionar, una empresa crece a medida que crece su inversión en marketing.
+				-# 								Este plan está diseñado para las empresas más ambiciosas, que buscan muchos más resultados,
+				-# 								apuntando a conversiones más precisas con miras a estrategias de publicidad directa en medios
+				-# 								digitales. En este paquete tendrás todos los beneficios de nuestro plan conversion, adicionalmente
+				-# 								ofrecemos la oportunidad de crear una campaña de publicidad en redes sociales*.
+				-#
+				-# 							%p
+				-# 								Como foco principal en este plan ofertamos una gestión completa de una campaña de ads​* en
+				-# 								Facebook/Instagram, esto incluye la planificación, diseño, ejecución y seguimiento de la campaña, así
+				-# 								como el desarrollo de un Landing Page (sitio web dirigido a captar leads) con un objetivo específico
+				-# 								para la campaña.
+				-#
+				-# 							%p
+				-# 								Este plan cuenta con hasta 180 publicaciones en Redes Sociales. Mensualmente se miden los
+				-# 								resultados y se comunican a través de informe de gestión.
+				-#
+				-# 							.margin-top-15
+				-# 								.form-check
+				-# 									%label
+				-# 										%input#no{:name => "check", :type => "checkbox"}/
+				-# 										%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+				-# 											%strong Este plan es para mí
+				-#
+				-# 				.card
+				-# 					%a.collapsed{"aria-controls" => "collapseStore", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStore"}
+				-# 						#socialStore.card-header{:role => "tab"}
+				-# 							.pull-left
+				-# 								%h5.mb-0
+				-# 									Social Store
+				-# 							.pull-right
+				-# 								%i.fa.fa-chevron-down
+				-# 					#collapseStore.collapse{"aria-labelledby" => "socialStore", "data-parent" => "#accordion", :role => "tabpanel"}
+				-# 						.card-body
+				-# 							%p
+				-# 								Somos especialistas en llevar negocios a internet. Ofrecemos una suite web completamente
+				-# 								administrable donde podrás no solo publicar tus productos o servicios, podrás venderlos, cobrar a
+				-# 								través de una plataforma de pago, llevar control de pedidos.
+				-#
+				-# 							%p
+				-# 								Social store ofrece una solución de comercio electrónico para vender directamente en internet, sin intermediarios,
+				-# 								con carrito de compra y pasarela de pago 100% confiable a través de certificados SSL de seguridad para garantizar la compra segura.
+				-#
+				-# 							.margin-top-15
+				-# 								.form-check
+				-# 									%label
+				-# 										%input#no{:name => "check", :type => "checkbox"}/
+				-# 										%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+				-# 											%strong Este plan es para mí
+			#more.briefing-section
+				.container
+					.row
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
+								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title ¿Algo más que quieras contarnos?
+								%h6.heading-title-ghost ¿Algo más que quieras contarnos?
+								%hr.hr-width-3.hr-5x
+
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+									adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 
 						.col-md-12
-							#accordion{:role => "tablist"}
-								.card
-									%a{"aria-controls" => "collapseStarter", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStarter"}
-										#socialStarter.card-header{:role => "tab"}
-											.pull-left
-												%h5.mb-0
-													Starter
-											.pull-right
-												%i.fa.fa-chevron-down
-									#collapseStarter.collapse{"aria-labelledby" => "socialStarter", "data-parent" => "#accordion", :role => "tabpanel"}
-										.card-body
-											%p
-												Es nuestra opción para iniciar a tener presencia en redes sociales. Perfecto para iniciar Personal
-												Branding o para impulsar el marketing de pequeñas empresas. Con este plan iniciamos la creación de
-												la identidad y personalidad de la marca en medios digitales, definiremos objetivos claros para la
-												estrategia y en base a ello, ejecutaremos la gestión de los diversos canales digitales.
-
-											%p
-												Este plan cuenta con un límite de hasta 70 Publicaciones al mes en Redes Sociales. Mensualmente
-												se miden los resultados y se comunican a través de informe de gestión.
-
-											.margin-top-15
-												.form-check
-													%label
-														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
-															%strong Este plan es para mí
-
-								.card
-									%a.collapsed{"aria-controls" => "collapseEnterprise", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseEnterprise"}
-										#socialEnterprise.card-header{:role => "tab"}
-											.pull-left
-												%h5.mb-0
-													Conversion
-											.pull-right
-												%i.fa.fa-chevron-down
-									#collapseEnterprise.collapse{"aria-labelledby" => "socialEnterprise", "data-parent" => "#accordion", :role => "tabpanel"}
-										.card-body
-											%p
-												Con esta solución buscamos establecer una presencia digital más sólida para tu marca, este servicio
-												está enfocado adicionalmente en generar resultados (aumento de comunidad, generación de
-												potenciales clientes [leads], tráfico a tus contenidos o página web, suscripciones de correo
-												electrónico, etc). En este caso además de los beneficios del starter, haremos un análisis detallado de
-												tu competencia, como valor agregado para obtener mejores resultados.
-
-											%p
-												Este plan cuenta con hasta 120 Publicaciones al mes en Redes Sociales. Mensualmente se miden los
-												resultados y se comunican a través de informe de gestión.
-
-											.margin-top-15
-												.form-check
-													%label
-														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
-															%strong Este plan es para mí
-
-
-								.card
-									%a.collapsed{"aria-controls" => "collapseCorporative", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseCorporative"}
-										#socialCorporative.card-header{:role => "tab"}
-											.pull-left
-												%h5.mb-0
-													Corporative
-											.pull-right
-												%i.fa.fa-chevron-down
-									#collapseCorporative.collapse{"aria-labelledby" => "socialCorporative", "data-parent" => "#accordion", :role => "tabpanel"}
-										.card-body
-											%p
-												Una estrategia debe evolucionar, una empresa crece a medida que crece su inversión en marketing.
-												Este plan está diseñado para las empresas más ambiciosas, que buscan muchos más resultados,
-												apuntando a conversiones más precisas con miras a estrategias de publicidad directa en medios
-												digitales. En este paquete tendrás todos los beneficios de nuestro plan conversion, adicionalmente
-												ofrecemos la oportunidad de crear una campaña de publicidad en redes sociales*.
-
-											%p
-												Como foco principal en este plan ofertamos una gestión completa de una campaña de ads​* en
-												Facebook/Instagram, esto incluye la planificación, diseño, ejecución y seguimiento de la campaña, así
-												como el desarrollo de un Landing Page (sitio web dirigido a captar leads) con un objetivo específico
-												para la campaña.
-
-											%p
-												Este plan cuenta con hasta 180 publicaciones en Redes Sociales. Mensualmente se miden los
-												resultados y se comunican a través de informe de gestión.
-
-											.margin-top-15
-												.form-check
-													%label
-														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
-															%strong Este plan es para mí
-
-								.card
-									%a.collapsed{"aria-controls" => "collapseStore", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseStore"}
-										#socialStore.card-header{:role => "tab"}
-											.pull-left
-												%h5.mb-0
-													Social Store
-											.pull-right
-												%i.fa.fa-chevron-down
-									#collapseStore.collapse{"aria-labelledby" => "socialStore", "data-parent" => "#accordion", :role => "tabpanel"}
-										.card-body
-											%p
-												Somos especialistas en llevar negocios a internet. Ofrecemos una suite web completamente
-												administrable donde podrás no solo publicar tus productos o servicios, podrás venderlos, cobrar a
-												través de una plataforma de pago, llevar control de pedidos.
-
-											%p
-												Social store ofrece una solución de comercio electrónico para vender directamente en internet, sin intermediarios,
-												con carrito de compra y pasarela de pago 100% confiable a través de certificados SSL de seguridad para garantizar la compra segura.
-
-											.margin-top-15
-												.form-check
-													%label
-														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
-															%strong Este plan es para mí
-
+							.md-input.margin-top-35
+								%textarea.md-form-control{:required => "", :type => "text"}
+								%span.highlight
+								%span.bar
+								%label Cuéntanos más sobre tu negocio/empresa
 		= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

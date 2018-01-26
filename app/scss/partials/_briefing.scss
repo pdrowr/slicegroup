@@ -1,15 +1,19 @@
 #briefing {
-  // margin-top: 80px;
 
-  .service-section {
-    width: 100%;
-    height: auto;
-    padding: 40px 15px;
+
+  .btn {
+    z-index: 1000;
   }
 
-  .service-content {
-    padding: 20px 0;
-  }
+  // .service-section {
+  //   width: 100%;
+  //   height: auto;
+  //   padding: 40px 15px;
+  // }
+  //
+  // .service-content {
+  //   padding: 20px 0;
+  // }
 
   .service-btn {
     cursor: pointer;
@@ -41,4 +45,74 @@
     background: rgba(232, 228, 228, 0.3);
   }
 
+  .laptop {
+    top: 100px;
+    position: relative;
+    z-index: 10000;
+  }
+
+  #keppler-section {
+    height: 560px;
+    background: rgba(234, 226, 226, 0.48);
+    position: relative;
+    padding-top: 0px;
+
+    .heading {
+      margin-bottom: 0;
+    }
+    .keppler-bg {
+      position: absolute;
+      width: 420px;
+      height: 300px;
+      background: $keppler-color;
+      left: 70px;
+      margin-top: -210px;
+      z-index: 1000;
+    }
+  }
+
+  #social-section {
+    height: 350px;
+    background: #fff;
+    padding-top: 50px;
+
+    .laptop {
+      width: 45%;
+      top: -80px;
+      left: 25%;
+    }
+
+    .logo {
+      height: 50px;
+    }
+    
+    .social-btn {
+      background: $social-color !important;
+    }
+  }
+
+  #e-commerce-section {
+    height: auto;
+    padding-bottom: 50px;
+    background: rgba(234, 226, 226, 0.48);
+
+    span {
+      color: $e-commerce-color !important;
+      // font-weight: bold;
+      font-size: 18px;
+      font-family: 'Patua one';
+      letter-spacing: 2px;
+    }
+    .e-commerce-btn {
+      background: $e-commerce-color !important;
+    }
+
+    .laptop {
+      top: 0px;
+    }
+  }
+
+  #title {
+    background: #fff;
+  }
 }

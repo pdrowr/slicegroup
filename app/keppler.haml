@@ -8,6 +8,8 @@
 
 		#keppler
 			%header.angle-left-bottom
+				%a.back{href: "briefing.html"}
+					%i.fa.fa-angle-left
 				.container
 					%center
 						%img.img-responsive{src: "assets/img/keppler-front.png", style: "width: 60%"}
@@ -40,63 +42,14 @@
 									Hace que su negocio esté presente en cualquier dispositivo móvil.
 								%li
 									Permite gerenciar su página web de manera sencilla al ofrecer una interfaz amigable e intuitiva.
-							%center
-								.btn.btn-primary.service-btn.keppler-btn#next-1
-									COMENCEMOS
-									%i.fa.fa-chevron-right
 
-			#user-dates.briefing-section.angle-left-bottom.angle-left-top
-				.container
-					.row
-						.col-md-12.margin-top-35
-							.heading.heading-sm.heading-center.heading-hover
-								%h6.heading-title Datos Personales
-								%h6.heading-title-ghost Datos Personales
-								%hr.hr-width-2.hr-5x
-
-								%p
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-									adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Nombre
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Email
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Teléfono
-
-						.col-md-6.file-input
-							.md-input
-								%input.md-form-control{:required => "", :type => "text"}/
-								%span.highlight
-								%span.bar
-								%label Compañía/Empresa
-
-							%center
-								.btn.btn-primary.service-btn.keppler-btn#next-2
-									CONTINUAR
-									%i.fa.fa-chevron-right
+			= Haml::Engine.new(File.read("app/partials/briefing_partials/_dates.haml")).render
 
 			#domain.briefing-section
 				.container
 					.row
 						.col-md-12.margin-top-35
 							.heading.heading-sm.heading-center.heading-hover
-								-# %span.heading-title-ghost ¿Posees Un Plan de Hosting?
 								%h6.heading-title Busca un Dominio
 								%h6.heading-title-ghost Busca un Dominio
 								%hr.hr-width-2.hr-5x
@@ -104,30 +57,188 @@
 						.col-md-12#search-domain
 							%input{type: "text", placeholder: "Busca un dominio..."}
 								%i.fa.fa-search
-						.col-md-12.text-center.margin-top-5
-							.btn.btn-bordered Ya tengo un dominio
+						.col-md-12.text-center.margin-top-15
+							.btn.btn.btn-default-bordered Ya tengo un dominio
 
-						.col-md-12.footer-section
-							%center
-								.btn.btn-primary.service-btn.keppler-btn#next-3
-									CONTINUAR
-									%i.fa.fa-chevron-right
-
-
-
-
-			#plan.briefing-section
+			#plan.briefing-section.bg-dark.angle-left-top.angle-left-bottom
 				.container
 					.row
 						.col-md-12.margin-top-35
 							.heading.heading-sm.heading-center.heading-hover
-								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
 								%h6.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
 								%h6.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
 
 								%hr.hr-width-4.hr-5x
-						-# .col-md-12#pricing-tables
-						-# 	= Haml::Engine.new(File.read("app/partials/_price.haml")).render
+
+						.col-md-12#pricing-tables
+							.price-card
+								.bordered.bordered-starter.hidden
+								.bordered.bordered-enterprise.hidden
+								.bordered.bordered-corporative.hidden
+								%table{:style => "width:100%"}
+									%tr
+										%th{colspan: "2"}
+											Elige tu plan
+										%th
+											.form-check
+												%label
+													%input#starter{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Starter
+										%th
+											.form-check
+												%label
+													%input#enterprise{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Enterprise
+										%th
+											.form-check
+												%label
+													%input#corporative{:name => "check", :type => "checkbox"}/
+													%span.label-text{style: "font-size: 16px !important"}
+														Corporative
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k01.svg"}
+										%td.td-text
+											%span	Hasta 3 secciones
+											%br
+											estáticas
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k02.svg"}
+											%td.td-text
+												%span Diseño responsive
+												%br
+												3 en 1
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k03.svg"}
+										%td.td-text
+											%span Formulario de Contacto
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k04.svg"}
+										%td.td-text
+											%span	Hasta 3 secciones
+											%br
+											administrables
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k01.svg"}
+										%td.td-text
+											%span	Hasta 2 formularios
+											%br
+											especializados
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k05.svg"}
+										%td.td-text
+											%span	Blog Corporativo
+											%br
+											(Opcional)
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k06.svg"}
+										%td.td-text
+											%span	Carrito de Compras
+										%td
+										%td
+										%td
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k07.svg"}
+										%td.td-text
+											%span	Plataforma de Pagos
+											%br
+											(Opcional)
+										%td
+										%td
+										%td
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k08.svg"}
+										%td.td-text
+											%span	Certificado SSL
+											%br
+											(Compra segura)
+										%td
+										%td
+										%td
+
+								-# .col-md-3#services
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k01.svg"}
+								-# 	-# 	%span	Hasta 3 secciones estáticas
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k02.svg"}
+								-# 	-# 	%span	Diseño responsive 3 en 1
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k03.svg"}
+								-# 	-# 	%span	Formulario de Contacto
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k04.svg"}
+								-# 	-# 	%span	Hasta 3 secciones administrables
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k05.svg"}
+								-# 	-# 	%span	Hasta 2 formularios especializados
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k06.svg"}
+								-# 	-# 	%span	Blog Corporativo (Opcional)
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k07.svg"}
+								-# 	-# 	%span	Carrito de compras
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k08.svg"}
+								-# 	-# 	%span	Plataforma de pago (Opcional)
+								-# 	-# .service
+								-# 	-# 	%img{src: "assets/img/keppler_services/icono-k08.svg"}
+								-# 	-# 	%span	Certificado SSL (compra segura)
+								-# .col-md-3
+								-# .col-md-3
+								-# .col-md-3
+
 						.col-md-12
 							#accordion{:role => "tablist"}
 								.card
@@ -154,7 +265,7 @@
 												.form-check
 													%label
 														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+														%span.label-text{style: "font-size: 16px !important"}
 															%strong Este plan es para mí
 
 
@@ -183,7 +294,7 @@
 												.form-check
 													%label
 														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+														%span.label-text{style: "font-size: 16px !important"}
 															%strong Este plan es para mí
 
 
@@ -213,7 +324,7 @@
 												.form-check
 													%label
 														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+														%span.label-text{style: "font-size: 16px !important"}
 															%strong Este plan es para mí
 
 								.card
@@ -239,30 +350,27 @@
 												.form-check
 													%label
 														%input#no{:name => "check", :type => "checkbox"}/
-														%span.label-text.color-azul#text{style: "font-size: 16px !important"}
+														%span.label-text{style: "font-size: 16px !important"}
 															%strong Este plan es para mí
 
-						.col-md-12.footer-section
-							.pull-right.btn.btn-primary.service-btn.keppler-btn.margin-left-5#next-4
-								%i.fa.fa-chevron-right
-							.pull-right.btn.btn-primary.service-btn.keppler-btn#back-3
-								%i.fa.fa-chevron-left
+			#more.briefing-section
+				.container
+					.row
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
+								%h6.heading-title ¿Algo más que quieras contarnos?
+								%h6.heading-title-ghost ¿Algo más que quieras contarnos?
+								%hr.hr-width-3.hr-5x
 
-				#more.briefing-section
-					.container
-						.row
-							.col-md-12.margin-top-35
-								.heading.heading-sm.heading-center.heading-hover
-									-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
-									%h6.heading-title ¿Algo más que quieras contarnos?
-									%h6.heading-title-ghost ¿Algo más que quieras contarnos?
-									%hr.hr-width-3.hr-5x
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+									adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 
-							.col-md-12
-								.md-input.margin-top-5
-									%textarea.md-form-control{:required => "", :type => "text"}
-									%span.highlight
-									%span.bar
-									%label Cuéntanos más sobre tu negocio/empresa
+						.col-md-12
+							.md-input.margin-top-35
+								%textarea.md-form-control{:required => "", :type => "text"}
+								%span.highlight
+								%span.bar
+								%label Cuéntanos más sobre tu negocio/empresa
 
 	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

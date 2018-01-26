@@ -1,0 +1,289 @@
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+
+		#web
+			%header.angle-left-bottom{style: "background-image: url(assets/img/banner-web-desing.jpg);"}
+				.intro-inner
+					.intro-caption.vertical-align-center.horisontal-align-center.text-center.text-white
+						%a.btn.btn-white-bordered.btn-rounded.sm-scroll{"data-wow-delay" => "0.8s", href: "#"} DEMO
+						%a.btn.btn-primary.btn-rounded.sm-scroll.margin-top-10{"data-wow-delay" => "1s", href: "keppler.html"} Quiero una web
+
+					%a.scroll-down-arrow.sm-scroll.text-center.text-white{href: "#section-1"}
+						%span
+							%i.fa.fa-chevron-down
+
+			.container
+				.section-description.text-center
+					%strong.strong Keppler
+					es una plataforma desarrollada por el equipo de
+					%strong.strong Slice Group.
+					Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de tal forma, que facilita el trabajo del webmaster o encargado de administrar un portal web.
+
+					%p.padding-top-20
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			#plan.briefing-section.bg-dark.angle-left-top.angle-left-bottom
+				.container
+					.row
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
+								%span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+
+								%hr.hr-width-4.hr-5x
+
+						.col-md-12#pricing-tables
+							.price-card
+								.bordered.bordered-starter.hidden
+								.bordered.bordered-enterprise.hidden
+								.bordered.bordered-corporative.hidden
+								%table{:style => "width:100%"}
+									%tr
+										%th{colspan: "2"}
+											Elige tu plan
+										%th Starter
+										%th Enterprise
+										%th Corporative
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k01.svg"}
+										%td.td-text
+											%span	Hasta 3 secciones
+											%br
+											estáticas
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k02.svg"}
+											%td.td-text
+												%span Diseño responsive
+												%br
+												3 en 1
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k03.svg"}
+										%td.td-text
+											%span Formulario de Contacto
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k04.svg"}
+										%td.td-text
+											%span	Hasta 3 secciones
+											%br
+											administrables
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k01.svg"}
+										%td.td-text
+											%span	Hasta 2 formularios
+											%br
+											especializados
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k05.svg"}
+										%td.td-text
+											%span	Blog Corporativo
+											%br
+											(Opcional)
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k06.svg"}
+										%td.td-text
+											%span	Carrito de Compras
+										%td
+										%td
+										%td
+
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k07.svg"}
+										%td.td-text
+											%span	Plataforma de Pagos
+											%br
+											(Opcional)
+										%td
+										%td
+										%td
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k08.svg"}
+										%td.td-text
+											%span	Certificado SSL
+											%br
+											(Compra segura)
+										%td
+										%td
+										%td
+			#hosting
+				.container
+					.section-description.text-center
+						%strong.strong Keppler
+						es una plataforma desarrollada por el equipo de
+						%strong.strong Slice Group.
+						Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de tal forma, que facilita el trabajo del webmaster o encargado de administrar un portal web.
+
+						%p.padding-top-20
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			#domain-plan.bg-dark.angle-left-top.angle-left-bottom
+				.container
+					.row
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
+								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title Plan
+								%h6.heading-title-ghost Plan
+
+								%hr.hr-width-1.hr-5x
+
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+									adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+						.col-md-12#pricing-tables
+							.price-card.margin-top-15
+								%table{:style => "width:100%"}
+									%tr
+										%th{colspan: "2"}
+											Plan
+										%th Starter
+										%th Enterprise
+										%th Corporative
+										%th E-Commerce
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k01.svg"}
+										%td.td-text
+											%span	Almacenamiento
+										%td.text-center
+											5 GB
+										%td.text-center
+											10 GB
+										%td.text-center
+										%td.text-center
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k02.svg"}
+											%td.td-text
+												%span Transferencia
+												%br
+												(Mensual)
+											%td.text-center
+												50 GB
+											%td.text-center
+												100 GB
+											%td.text-center
+											%td.text-center
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k03.svg"}
+										%td.td-text
+											%span Correos
+										%td.text-center
+											3
+										%td.text-center
+											5
+										%td.text-center
+										%td.text-center
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k04.svg"}
+										%td.td-text
+											%span	Subdominios
+										%td.text-center
+											1
+										%td.text-center
+											1
+										%td.text-center
+										%td.text-center
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k01.svg"}
+										%td.td-text
+											%span	FTP
+										%td.text-center
+											1
+										%td.text-center
+											1
+										%td.text-center
+										%td
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k05.svg"}
+										%td.td-text
+											%span	Certificado SSL
+											%br
+											(Básico)
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k06.svg"}
+										%td.td-text
+											%span	Ilimitado
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/keppler_services/icono-k07.svg"}
+										%td.td-text
+											%span	Certificado SSL
+											%br
+											para compras online
+										%td
+										%td
+										%td.text-center
+										%td.text-center
+											%i.fa.fa-check
+
+		= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

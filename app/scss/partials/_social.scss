@@ -1,52 +1,41 @@
 #sliceSocial {
   background: #fff;
-  height: auto;
 
   .item-hidden {
     display: none;
   }
 
-  #next-social-1 {
-    @include respond-to(lg) {
+  .heading-title-ghost {
+    @include respond-to(xs) {
       display: none;
     };
   }
 
-  header {
+  .md-input .bar:before, .md-input .bar:after {
     background: $social-color;
-    height: auto;
-    padding: 20px 5px 0px 5px;
-    color: #fff;
-    font-size: 16px;
+  }
 
-    .section-description {
-      padding-top: 30px;
-      padding-bottom: 120px;
-    }
+  hr {
+    background: $social-color !important;
+  }
 
-    img {
-      @include respond-to(lg) {
-        width: 15% !important;
-      };
+  input {
+    outline: none;
+    border: none;
+    &:focus, &:active {
+      box-shadow: none !important;
+      outline: none;
     }
   }
 
-  .social-btn {
-    background: $social-color;
-
+  .heading-title {
     @include respond-to(xs) {
-      font-size: 16px;
-      padding: 8px 25px;
+      font-size: 18px;
     };
   }
 
-  .briefing-section {
-    top: 0;
-    left: -100%;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    transition: all ease .3s;
+  .strong {
+    font-weight: bold;
   }
 
   .footer-section {
@@ -58,77 +47,38 @@
     };
   }
 
-  #user-dates {
-    input {
-      outline: none;
-    }
-
-    .md-input .bar:before, .md-input .bar:after {
-      background: $social-color;
-    }
-  }
-  #social-media {
-    background: #fff;
-    z-index: 10000;
-
-    @include respond-to(lg) {
-      font-size: 20px;
-    };
-
-    .social-card {
-      width: 100%;
-      height: 45px;
-      border: 1px solid #eee;
-      margin-bottom: 10px;
-      color: #d2d2d2;
-      padding-left: 10px;
-      cursor: pointer;
-      transition: all ease .3s;
-      i {
-        padding-top: 12px;
-        padding-right: 10px;
-        transition: all ease .3s;
-
-      }
-    }
+  .heading {
+    padding-top: 0;
+    margin-top: 0;
   }
 
-  #plan-social {
-    background: #fff;
-    z-index: 10001;
-    overflow-y: auto;
+  header {
+    background: $social-color;
+    height: auto;
+    padding: 60px 5px 0px 5px;
+    color: #fff;
+    font-size: 16px;
 
-    .heading-title {
-      @include respond-to(xs) {
-        font-size: 16px;
+    .section-description {
+      padding-top: 30px;
+      padding-bottom: 150px;
+
+      @include respond-to(lg) {
+        font-size: 20px;
       };
     }
-    a {
-      text-decoration: none;
+
+    img {
+      @include respond-to(xs) {
+        width: 30% !important;
+      };
     }
+  }
 
-    .card-header {
-      height: 45px;
-      background: #fff;
-
-      h5 {
-        padding-top: 9px;
-        color: $social-color;
-        font-weight: bold;
-        font-size: 14px;
-      }
-
-      i {
-        color: $social-color;
-        transition: all ease .3s;
-      }
-    }
-
-    .card-body {
-      padding: 10px;
-      color: #333;
-      font-size: 12px;
-    }
+  #next-social-1 {
+    @include respond-to(lg) {
+      display: none;
+    };
   }
 
   #description {
@@ -140,9 +90,274 @@
 
       @include respond-to(lg) {
         font-size: 18px;
+      };
+    }
 
+    #next-1 {
+      @include respond-to(lg) {
+        display: none;
       };
     }
   }
 
+  #user-dates {
+    padding: 20px 0;
+    z-index: 1000;
+    background: #fff;
+
+    #next-2 {
+      @include respond-to(lg) {
+        display: none;
+      };
+    }
+
+    .md-form-control {
+      background: transparent;
+      border-bottom: 1px solid #888;
+    }
+
+    .angle-left-bottom:before {
+      background: rgba(236, 234, 234, 0.29);
+    }
+
+    @include respond-to(xs) {
+      padding-bottom: 35px;
+      padding-top: 35px;
+    };
+
+    @include respond-to(sm) {
+      padding-bottom: 45px;
+    };
+
+    @include respond-to(md) {
+      padding-top: 40px;
+      padding-bottom: 55px;
+    };
+
+    @include respond-to(lg) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background: rgba(236, 234, 234, 0.29);
+      font-size: 20px;
+    };
+  }
+
+  input {
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  // .briefing-section {
+  //   top: 0;
+  //   left: -100%;
+  //   position: fixed;
+  //   width: 100%;
+  //   transition: all ease .3s;
+  //
+  //   @include respond-to(lg) {
+  //     left: 0;
+  //     position: relative;
+  //   };
+  //
+  //   @include respond-to(xs) {
+  //     height: 100vh;
+  //   };
+  // }
+
+  #social-media {
+    background: #fff;
+    z-index: 10000;
+    padding: 30px 0 50px 0;
+
+    @include respond-to(xs) {
+      padding-top: 0;
+    };
+
+    @include respond-to(sm) {
+      padding-top: 0;
+    };
+
+    @include respond-to(md) {
+      padding-top: 0;
+    };
+
+    @include respond-to(lg) {
+      font-size: 20px;
+    };
+
+    .fa-facebook {
+      color: #3B5998;
+      font-size: 25px;
+    }
+
+    .fa-twitter {
+      color: #55acee;
+      font-size: 25px;
+    }
+
+    .fa-instagram {
+      color: #fb3958;
+      font-size: 25px;
+    }
+
+    .fa-pinterest {
+      color: #cb2027;
+      font-size: 25px;
+    }
+
+    .fa-linkedin {
+      color: #007bb5;
+      font-size: 25px;
+    }
+
+    .fa-google-plus {
+      color: #dd4b39;
+      font-size: 25px;
+    }
+
+    .fa-check-circle-o {
+      color: $social-color;
+
+      @include respond-to(xs) {
+        padding-top: 12px;
+        font-size: 20px;
+      };
+    }
+
+    .social-card {
+      width: 100%;
+      height: 150px;
+      border: 2px solid #d2d2d2;
+      margin-bottom: 10px;
+      color: #d2d2d2;
+      padding-left: 10px;
+      cursor: pointer;
+      transition: all ease .3s;
+
+      i {
+        padding-top: 10px;
+        padding-right: 10px;
+        transition: all ease .3s;
+      }
+
+      .fa-circle-o {
+        @include respond-to(xs) {
+          padding-top: 12px;
+          font-size: 20px;
+        };
+      }
+
+      @include respond-to(xs) {
+        height: 50px;
+      };
+    }
+  }
+
+  #plan-social {
+    background: #fff;
+    z-index: 1002;
+
+    #pricing-tables {
+
+      th, td {
+        padding: 5px 0;
+      }
+
+      th {
+        text-align: center;
+      }
+
+
+      .td-image {
+        width: 70px;
+      }
+
+      .tr-bg-1 {
+        background: rgba(0, 0, 0, 0.52);
+      }
+
+      .tr-bg-2 {
+        background: #070F13 !important;
+      }
+
+      .td-text {
+        width: 300px;
+      }
+
+      img {
+        padding-left: 10px;
+      }
+      // @include respond-to(xs) {
+      //   display: none;
+      // };
+    }
+
+    .heading-title {
+      color: #fff;
+    }
+    .price-card {
+      width: 100%;
+      height: 500px;
+
+      #services {
+        .service {
+          margin-bottom: 10px;
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    #accordion {
+      @include respond-to(lg) {
+        display: none;
+      };
+    }
+
+    .heading-title-ghost {
+      @include respond-to(lg) {
+        font-size: 32px;
+      };
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .card-header {
+      height: 45px;
+      background: #fff;
+
+      h5 {
+        padding-top: 9px;
+        color: $keppler-color;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      i {
+        color: $keppler-color;
+        transition: all ease .3s;
+      }
+    }
+
+    .card-body {
+      padding: 10px;
+      color: #333;
+      font-size: 12px;
+    }
+  }
+
+  #more {
+
+    textarea {
+      outline: none;
+    }
+  }
+
+  input[type="checkbox"]:checked + .label-text:before {
+    color: $social-color;
+  }
 }
