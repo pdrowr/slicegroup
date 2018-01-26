@@ -68,6 +68,7 @@
       left: 70px;
       margin-top: -210px;
       z-index: 1000;
+      background-size: cover;
     }
   }
 
@@ -85,7 +86,7 @@
     .logo {
       height: 50px;
     }
-    
+
     .social-btn {
       background: $social-color !important;
     }

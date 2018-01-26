@@ -10350,7 +10350,8 @@ ul.social-icons > li + li {
     background: #f50e1e;
     left: 70px;
     margin-top: -210px;
-    z-index: 1000; }
+    z-index: 1000;
+    background-size: cover; }
 
 #briefing #social-section {
   height: 350px;
