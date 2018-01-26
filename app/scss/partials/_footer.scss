@@ -56,7 +56,7 @@
     svg{
       height: auto;
       margin-bottom: 2rem;
-      width: 19rem;
+      width: 17rem;
     }
 
     @include respond-to(xs) {
@@ -69,6 +69,7 @@
   #list-footer {
     font-size: 1.4rem;
     list-style-type: none;
+    margin-left: -35px;
   }
 
 }

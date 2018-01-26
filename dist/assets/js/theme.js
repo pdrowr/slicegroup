@@ -313,11 +313,9 @@ $(function() {
   	var sy = scrollY();
   	if ($(this).scrollTop() > 150){
   		$('#header.fixed-top, #header.show-hide-on-scroll').addClass("header-filled");
-      $('#isotipo').css('fill', '#fff');
   	}
   	else{
   		$('#header.fixed-top, #header.show-hide-on-scroll').removeClass("header-filled");
-      $('#isotipo').css('fill', '#c15010');
   	}
   		didScroll = false;
   	}
