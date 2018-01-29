@@ -1,0 +1,867 @@
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		#portfolio
+			.container
+				.row
+					.col-md-6
+						.heading.heading-lg.heading-hover
+							%span.heading-title-ghost Portfolio
+							%h2.heading-title Portfolio
+							%hr.hr-width-1.hr-5x.border-main/
+					.col-md-6
+						%p.lead
+							%strong Lorem ipsum dolor
+							sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+							%a{:href => "#"} Read More..
+
+			#masonry-layer
+				.isotope-item.photography.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-1"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-1.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Hardcover Book
+									%p.item-info-text Photography
+
+						#portfolio-1.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-1.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 1
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 01 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Photography
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.branding.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-2"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-2.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Identity MockUp Vol.1
+									%p.item-info-text Branding
+
+						#portfolio-2.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-2.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 2
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 03 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Photography
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.web-design.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-3"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-3.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Brown Paper Bag
+									%p.item-info-text Web Design
+
+						#portfolio-3.inline-popup.mfp-hide
+							.inline-popup-inner
+								.owl-carousel.portfolio-single-carousel.dots-outside{"data-items" => "1", "data-nav" => "true"}
+									.cc-item
+										.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-3.jpg); background-position: 50% 50%;"}
+									.cc-item
+										.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"}
+									.cc-item
+										.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-5.jpg); background-position: 50% 50%;"}
+
+								.row.margin-top-80
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 3
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 04 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Photography
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.graphics.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-4"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-4.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Canvas Tote Bag
+									%p.item-info-text Graphics
+
+						#portfolio-4.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 4
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 05 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Graphics
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.photography.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-5"}
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-5.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Rubber Stamp
+									%p.item-info-text Photography
+
+						#portfolio-5.inline-popup.mfp-hide
+							.inline-popup-inner
+
+								.embed-responsive.embed-responsive-16by9
+									%iframe{"data-src" => "https://www.youtube.com/embed/9UWo5RdXc1o", :src => "https://player.vimeo.com/video/60616160?"}
+
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 5
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 07 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Photography
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.branding.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-6"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-6.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Vintage Logo MockUp
+									%p.item-info-text Branding
+
+						#portfolio-6.inline-popup.mfp-hide
+							.inline-popup-inner
+
+								.embed-responsive.embed-responsive-16by9
+									%iframe{"data-src" => "https://player.vimeo.com/video/79298633?", :src => "https://player.vimeo.com/video/60616160?"}
+
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 6
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 08 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Branding
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.web-design.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-7"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-7.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Identity MockUp vol.2
+									%p.item-info-text Web Design
+
+						#portfolio-7.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-7.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 7
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 11 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Web Design
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.graphics.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-8"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-8.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Identity MockUp vol.3
+									%p.item-info-text Graphics
+
+						#portfolio-8.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-8.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 8
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 16 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Graphics
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.branding.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-9"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-9.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Vinyl Record
+									%p.item-info-text Branding
+
+						#portfolio-9.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-9.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 9
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 18 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Branding
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+
+				.isotope-item.web-design.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+
+					.portfolio-item-wrap
+						.portfolio-item
+							%a.item-link.inline-popup-trigger{:href => "#portfolio-10"}
+
+								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-10.jpg"}/
+								-# .item-info.text-white
+									%h3.item-info-title Shopping Bag
+									%p.item-info-text Web Design
+
+						#portfolio-10.inline-popup.mfp-hide
+							.inline-popup-inner
+								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-10.jpg); background-position: 50% 50%;"}
+								.row.margin-top-40
+									.col-md-8.margin-bottom-20
+										%h2.no-margin-top Portfolio Single Item 10
+										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+									.col-md-4.margin-bottom-20.padding-left-40
+										%ul.list-unstyled
+											%li
+												Client:
+												%strong
+													%a{:href => "#", :target => "_blank"} MockCo INC
+											%li
+												Date:
+												%strong
+													%a{:href => "#", :target => "_blank"} 29 jan, 2016
+											%li
+												Category
+												%strong
+													%a{:href => "#", :target => "_blank"} Web Design
+											%li Copyright ©2016, All Rights Reserved
+										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+
+							%a.inline-popup-close{:href => "#"}
+								%i.fa.fa-times
+		.text-center.wow.fadeIn{"data-wow-delay" => "0.4s"}
+			%a.btn.btn-default.btn-xlg.btn-block.margin-top-40{:href => "#", :target => "_blank"} View All Portfolio
+			-# %section#section-3.portfolio-section
+			-# 	.container
+			-# 		.row
+			-# 			.col-md-6
+			-# 				.heading.heading-lg.heading-hover
+			-# 					%span.heading-title-ghost Portfolio
+			-# 					%h2.heading-title Portfolio
+			-# 					%hr.hr-width-1.hr-5x.border-main/
+			-# 			.col-md-6
+			-# 				%p.lead
+			-# 					%strong Lorem ipsum dolor
+			-# 					sit amet, consectetur adipisicing elit, sed do eiusmod
+			-# 					tempor incididunt ut labore et dolore magna aliqua.
+			-# 					%a{:href => "#"} Read More..
+			-# 	.container
+			-# 		.isotope.popup-gallery.gutter-2.col-3
+			-# 			.isotope-filter
+			-#
+			-# 				.navbar-header
+			-# 					%button.navbar-toggle.collapsed.filter-toggle-btn{"data-target" => "#isotope-filter-collapse", "data-toggle" => "collapse", :type => "button"}
+			-# 						%span.text-center
+			-# 							Filter
+			-# 							%i.fa.fa-chevron-down
+			-#
+			-# 				#isotope-filter-collapse.isotope-filter-links.collapse.navbar-collapse.no-padding.wow.fadeIn
+			-# 					%a.active{"data-filter" => "*", :href => "#"} All
+			-# 					%a{"data-filter" => ".photography", :href => "#"} Photography
+			-# 					%a{"data-filter" => ".web-design", :href => "#"} Web Design
+			-# 					%a{"data-filter" => ".graphics", :href => "#"} Graphics
+			-# 					%a{"data-filter" => ".branding, .web-design", :href => "#"} Mockups
+			-#
+			-# 			.isotope-items-wrap#masonry-layer
+			-# 				.grid-sizer
+			-#
+			-# 				.isotope-item.photography.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-1"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-1.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Hardcover Book
+			-# 									%p.item-info-text Photography
+			-#
+			-# 						#portfolio-1.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-1.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 1
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 01 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Photography
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.branding.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-2"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-2.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Identity MockUp Vol.1
+			-# 									%p.item-info-text Branding
+			-#
+			-# 						#portfolio-2.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-2.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 2
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 03 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Photography
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.web-design.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-3"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-3.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Brown Paper Bag
+			-# 									%p.item-info-text Web Design
+			-#
+			-# 						#portfolio-3.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-#
+			-# 								.owl-carousel.portfolio-single-carousel.dots-outside{"data-items" => "1", "data-nav" => "true"}
+			-# 									.cc-item
+			-# 										.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-3.jpg); background-position: 50% 50%;"}
+			-#
+			-# 									.cc-item
+			-# 										.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"}
+			-#
+			-# 									.cc-item
+			-# 										.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-5.jpg); background-position: 50% 50%;"}
+			-#
+			-# 								.row.margin-top-80
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 3
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 04 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Photography
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.graphics.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-4"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-4.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Canvas Tote Bag
+			-# 									%p.item-info-text Graphics
+			-#
+			-# 						#portfolio-4.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 4
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 05 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Graphics
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.photography.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-5"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-5.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Rubber Stamp
+			-# 									%p.item-info-text Photography
+			-#
+			-# 						#portfolio-5.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-#
+			-# 								.embed-responsive.embed-responsive-16by9
+			-# 									%iframe{"data-src" => "https://www.youtube.com/embed/9UWo5RdXc1o", :src => "https://player.vimeo.com/video/60616160?"}
+			-#
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 5
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 07 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Photography
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.branding.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-6"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-6.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Vintage Logo MockUp
+			-# 									%p.item-info-text Branding
+			-#
+			-# 						#portfolio-6.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-#
+			-# 								.embed-responsive.embed-responsive-16by9
+			-# 									%iframe{"data-src" => "https://player.vimeo.com/video/79298633?", :src => "https://player.vimeo.com/video/60616160?"}
+			-#
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 6
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 08 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Branding
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.web-design.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-7"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-7.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Identity MockUp vol.2
+			-# 									%p.item-info-text Web Design
+			-#
+			-# 						#portfolio-7.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-7.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 7
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 11 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Web Design
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.graphics.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-8"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-8.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Identity MockUp vol.3
+			-# 									%p.item-info-text Graphics
+			-#
+			-# 						#portfolio-8.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-8.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 8
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 16 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Graphics
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.branding.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-9"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-9.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Vinyl Record
+			-# 									%p.item-info-text Branding
+			-#
+			-# 						#portfolio-9.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-9.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 9
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 18 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Branding
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-#
+			-# 				.isotope-item.web-design.wow.fadeInUp{style: "height: auto !important; width: auto !important"}
+			-#
+			-# 					.portfolio-item-wrap
+			-# 						.portfolio-item
+			-# 							%a.item-link.inline-popup-trigger{:href => "#portfolio-10"}
+			-#
+			-# 								%img.item-img{:alt => "image", :src => "assets/img/portfolio/masonry/portfolio-img-10.jpg"}/
+											.item-info.text-white
+			-# 									%h3.item-info-title Shopping Bag
+			-# 									%p.item-info-text Web Design
+			-#
+			-# 						#portfolio-10.inline-popup.mfp-hide
+			-# 							.inline-popup-inner
+			-# 								.inline-popup-image.bg-image{:style => "background-image: url(assets/img/portfolio/big/portfolio-img-10.jpg); background-position: 50% 50%;"}
+			-# 								.row.margin-top-40
+			-# 									.col-md-8.margin-bottom-20
+			-# 										%h2.no-margin-top Portfolio Single Item 10
+			-# 										%p This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.
+			-# 										%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.
+			-# 									.col-md-4.margin-bottom-20.padding-left-40
+			-# 										%ul.list-unstyled
+			-# 											%li
+			-# 												Client:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} MockCo INC
+			-# 											%li
+			-# 												Date:
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} 29 jan, 2016
+			-# 											%li
+			-# 												Category
+			-# 												%strong
+			-# 													%a{:href => "#", :target => "_blank"} Web Design
+			-# 											%li Copyright ©2016, All Rights Reserved
+			-# 										%a.btn.btn-primary.btn-rounded.btn-lg.margin-top-20{:href => "#", :target => "_blank"} Launch Project
+			-#
+			-# 							%a.inline-popup-close{:href => "#"}
+			-# 								%i.fa.fa-times
+			-# 		.text-center.wow.fadeIn{"data-wow-delay" => "0.4s"}
+			-# 			%a.btn.btn-default.btn-xlg.btn-block.margin-top-40{:href => "#", :target => "_blank"} View All Portfolio
+			-# -#
+
+	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

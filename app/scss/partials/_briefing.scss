@@ -5,16 +5,6 @@
     z-index: 1000;
   }
 
-  // .service-section {
-  //   width: 100%;
-  //   height: auto;
-  //   padding: 40px 15px;
-  // }
-  //
-  // .service-content {
-  //   padding: 20px 0;
-  // }
-
   .service-btn {
     cursor: pointer;
     overflow: hidden;
@@ -51,15 +41,28 @@
     z-index: 10000;
   }
 
+  .image{
+    @include respond-to(xs) {
+      display: none;
+    };
+
+    @include respond-to(sm) {
+      display: none;
+    };
+  }
+
+  .heading-title-ghost {
+    @include respond-to(xs) {
+      display: none;
+    };
+  }
+
   #keppler-section {
     height: 560px;
     background: rgba(234, 226, 226, 0.48);
     position: relative;
     padding-top: 0px;
 
-    .heading {
-      margin-bottom: 0;
-    }
     .keppler-bg {
       position: absolute;
       width: 420px;
@@ -68,6 +71,20 @@
       left: 70px;
       margin-top: -210px;
       z-index: 1000;
+      background-size: cover;
+    }
+
+    @include respond-to(xs) {
+      height: auto;
+      img {
+        width: 50% !important;
+      }
+    };
+
+    .padding-top-100 {
+      @include respond-to(xs) {
+        padding-top: 20px !important;
+      };
     }
   }
 
@@ -76,16 +93,20 @@
     background: #fff;
     padding-top: 50px;
 
+    @include respond-to(xs) {
+      height: auto;
+
+      img {
+        height: 60px !important;
+      }
+    };
+
     .laptop {
       width: 45%;
       top: -80px;
       left: 25%;
     }
 
-    .logo {
-      height: 50px;
-    }
-    
     .social-btn {
       background: $social-color !important;
     }
@@ -96,9 +117,16 @@
     padding-bottom: 50px;
     background: rgba(234, 226, 226, 0.48);
 
+    @include respond-to(xs) {
+      height: auto;
+
+      img {
+        width: 40% !important;
+      }
+    };
+
     span {
       color: $e-commerce-color !important;
-      // font-weight: bold;
       font-size: 18px;
       font-family: 'Patua one';
       letter-spacing: 2px;

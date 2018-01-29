@@ -2,7 +2,6 @@ $(window).on('load',function() {
   $("#preloader").fadeOut("slow");
 });
 
-
 $(window).resize(function() {
   $('.intro-inner').css( 'margin-top', $('#header').css('height'));
   $('.full-height').innerHeight($(window).height());
@@ -12,200 +11,200 @@ $(window).resize(function() {
 // Bootstrap Menu/nav
 ///////////////////////
 
-$(function() {
-  // Keeping dropdown submenu inside screen.
-  // More info: http://stackoverflow.com/questions/17985334/jquery-solution-for-keeping-dropdown-submenu-inside-screen
-  $('.dropdown-toggle').parent().hover(function() {
-    var menu = $('> .dropdown-menu',this);
-    var menupos = $(menu).offset();
-
-    if (menupos.left + menu.width() > $(window).width()) {
-      var newpos = -$(menu).width();
-      menu.css({ left: newpos });
-    }
-  });
-
-  // Close mobile menu when click menu link (use class ".mlc")
-  $(document).ready(function () {
-    $(".mlc").on('click',function(event) {
-      $(".navbar-collapse").collapse('hide');
-    });
-  });
-
-});
+// $(function() {
+//   // Keeping dropdown submenu inside screen.
+//   // More info: http://stackoverflow.com/questions/17985334/jquery-solution-for-keeping-dropdown-submenu-inside-screen
+//   $('.dropdown-toggle').parent().hover(function() {
+//     var menu = $('> .dropdown-menu',this);
+//     var menupos = $(menu).offset();
+//
+//     if (menupos.left + menu.width() > $(window).width()) {
+//       var newpos = -$(menu).width();
+//       menu.css({ left: newpos });
+//     }
+//   });
+//
+//   // Close mobile menu when click menu link (use class ".mlc")
+//   $(document).ready(function () {
+//     $(".mlc").on('click',function(event) {
+//       $(".navbar-collapse").collapse('hide');
+//     });
+//   });
+//
+// });
 
 ///////////////////////////////////////////////////////////
 // Bootstrap submenu
 // More info: (http://vsn4ik.github.io/bootstrap-submenu)
 ///////////////////////////////////////////////////////////
-
-'use strict';
-
-(function(factory) {
-  if (typeof define == 'function' && define.amd) {
-    // AMD. Register as an anonymous module
-    define(['jquery'], factory);
-  }
-  else if (typeof exports == 'object') {
-    // Node/CommonJS
-    module.exports = factory(require('jquery'));
-  }
-  else {
-    // Browser globals
-    factory(jQuery);
-  }
-})(function($) {
-  // Or ':not(.disabled):has(a)' or ':not(.disabled):parent';
-  var desc = ':not(.disabled, .divider, .dropdown-header)';
-
-  function Submenupicker(element) {
-    this.$element = $(element);
-    this.$main = this.$element.closest('.dropdown, .dropup, .btn-group');
-    this.$menu = this.$element.parent();
-    this.$drop = this.$menu.parent().parent();
-    this.$menus = this.$menu.siblings('.dropdown-submenu');
-
-    var $children = this.$menu.find('> .dropdown-menu > ' + desc);
-
-    this.$submenus = $children.filter('.dropdown-submenu');
-    this.$items = $children.not('.dropdown-submenu');
-
-    this.init();
-  }
-
-  Submenupicker.prototype = {
-    init: function() {
-      this.$element.on({
-        'click.bs.dropdown': $.proxy(this.click, this),
-        keydown: $.proxy(this.keydown, this)
-      });
-
-      this.$menu.on('hide.bs.submenu', $.proxy(this.hide, this));
-      this.$items.on('keydown', $.proxy(this.item_keydown, this));
-
-      // Bootstrap fix
-      this.$menu.nextAll(desc + ':first:not(.dropdown-submenu)').children('a').on('keydown', $.proxy(this.next_keydown, this));
-    },
-    click: function(event) {
-      event.stopPropagation();
-
-      this.toggle();
-    },
-    toggle: function() {
-      if (this.$menu.hasClass('open')) {
-        this.close();
-      }
-      else {
-        this.$menu.addClass('open');
-        this.$menus.trigger('hide.bs.submenu');
-      }
-    },
-    hide: function(event) {
-      // Stop event bubbling
-      event.stopPropagation();
-
-      this.close();
-    },
-    close: function() {
-      this.$menu.removeClass('open');
-      this.$submenus.trigger('hide.bs.submenu');
-    },
-    keydown: function(event) {
-      // 13: Return, 27: Esc, 32: Spacebar
-      // 38: Arrow up, 40: Arrow down
-
-      // Off vertical scrolling
-      if ($.inArray(event.keyCode, [32, 38, 40]) != -1) {
-        event.preventDefault();
-      }
-
-      if ($.inArray(event.keyCode, [13, 32]) != -1) {
-        this.toggle();
-      }
-      else if ($.inArray(event.keyCode, [27, 38, 40]) != -1) {
-        event.stopPropagation();
-
-        if (event.keyCode == 27) {
-          if (this.$menu.hasClass('open')) {
-            this.close();
-          }
-          else {
-            this.$menus.trigger('hide.bs.submenu');
-            this.$drop.removeClass('open').children('a').trigger('focus');
-          }
-        }
-        else {
-          var $items = this.$main.find('li:not(.disabled):visible > a');
-
-          var index = $items.index(event.target);
-
-          if (event.keyCode == 38 && index !== 0) {
-            index--;
-          }
-          else if (event.keyCode == 40 && index !== $items.length - 1) {
-            index++;
-          }
-          else {
-            return;
-          }
-
-          $items.eq(index).trigger('focus');
-        }
-      }
-    },
-    item_keydown: function(event) {
-      // 27: Esc
-
-      if (event.keyCode != 27) {
-        return;
-      }
-
-      event.stopPropagation();
-
-      this.close();
-      this.$element.trigger('focus');
-    },
-    next_keydown: function(event) {
-      // 38: Arrow up
-
-      if (event.keyCode != 38) {
-        return;
-      }
-
-      // Off vertical scrolling
-      event.preventDefault();
-
-      event.stopPropagation();
-
-      // Use this.$drop instead this.$main (optimally)
-      var $items = this.$drop.find('li:not(.disabled):visible > a');
-
-      var index = $items.index(event.target);
-
-      $items.eq(index - 1).trigger('focus');
-    }
-  };
-
-  // For AMD/Node/CommonJS used elements (optional)
-  // http://learn.jquery.com/jquery-ui/environments/amd/
-  return $.fn.submenupicker = function(elements) {
-    var $elements = this instanceof $ ? this : $(elements);
-
-    return $elements.each(function() {
-      var data = $.data(this, 'bs.submenu');
-
-      if (!data) {
-        data = new Submenupicker(this);
-
-        $.data(this, 'bs.submenu', data);
-      }
-    });
-  };
-
-});
-
-// Bootstrap Sub-Menus trigger
-$('.dropdown-submenu > a').submenupicker();
+//
+// 'use strict';
+//
+// (function(factory) {
+//   if (typeof define == 'function' && define.amd) {
+//     // AMD. Register as an anonymous module
+//     define(['jquery'], factory);
+//   }
+//   else if (typeof exports == 'object') {
+//     // Node/CommonJS
+//     module.exports = factory(require('jquery'));
+//   }
+//   else {
+//     // Browser globals
+//     factory(jQuery);
+//   }
+// })(function($) {
+//   // Or ':not(.disabled):has(a)' or ':not(.disabled):parent';
+//   var desc = ':not(.disabled, .divider, .dropdown-header)';
+//
+//   function Submenupicker(element) {
+//     this.$element = $(element);
+//     this.$main = this.$element.closest('.dropdown, .dropup, .btn-group');
+//     this.$menu = this.$element.parent();
+//     this.$drop = this.$menu.parent().parent();
+//     this.$menus = this.$menu.siblings('.dropdown-submenu');
+//
+//     var $children = this.$menu.find('> .dropdown-menu > ' + desc);
+//
+//     this.$submenus = $children.filter('.dropdown-submenu');
+//     this.$items = $children.not('.dropdown-submenu');
+//
+//     this.init();
+//   }
+//
+//   Submenupicker.prototype = {
+//     init: function() {
+//       this.$element.on({
+//         'click.bs.dropdown': $.proxy(this.click, this),
+//         keydown: $.proxy(this.keydown, this)
+//       });
+//
+//       this.$menu.on('hide.bs.submenu', $.proxy(this.hide, this));
+//       this.$items.on('keydown', $.proxy(this.item_keydown, this));
+//
+//       // Bootstrap fix
+//       this.$menu.nextAll(desc + ':first:not(.dropdown-submenu)').children('a').on('keydown', $.proxy(this.next_keydown, this));
+//     },
+//     click: function(event) {
+//       event.stopPropagation();
+//
+//       this.toggle();
+//     },
+//     toggle: function() {
+//       if (this.$menu.hasClass('open')) {
+//         this.close();
+//       }
+//       else {
+//         this.$menu.addClass('open');
+//         this.$menus.trigger('hide.bs.submenu');
+//       }
+//     },
+//     hide: function(event) {
+//       // Stop event bubbling
+//       event.stopPropagation();
+//
+//       this.close();
+//     },
+//     close: function() {
+//       this.$menu.removeClass('open');
+//       this.$submenus.trigger('hide.bs.submenu');
+//     },
+//     keydown: function(event) {
+//       // 13: Return, 27: Esc, 32: Spacebar
+//       // 38: Arrow up, 40: Arrow down
+//
+//       // Off vertical scrolling
+//       if ($.inArray(event.keyCode, [32, 38, 40]) != -1) {
+//         event.preventDefault();
+//       }
+//
+//       if ($.inArray(event.keyCode, [13, 32]) != -1) {
+//         this.toggle();
+//       }
+//       else if ($.inArray(event.keyCode, [27, 38, 40]) != -1) {
+//         event.stopPropagation();
+//
+//         if (event.keyCode == 27) {
+//           if (this.$menu.hasClass('open')) {
+//             this.close();
+//           }
+//           else {
+//             this.$menus.trigger('hide.bs.submenu');
+//             this.$drop.removeClass('open').children('a').trigger('focus');
+//           }
+//         }
+//         else {
+//           var $items = this.$main.find('li:not(.disabled):visible > a');
+//
+//           var index = $items.index(event.target);
+//
+//           if (event.keyCode == 38 && index !== 0) {
+//             index--;
+//           }
+//           else if (event.keyCode == 40 && index !== $items.length - 1) {
+//             index++;
+//           }
+//           else {
+//             return;
+//           }
+//
+//           $items.eq(index).trigger('focus');
+//         }
+//       }
+//     },
+//     item_keydown: function(event) {
+//       // 27: Esc
+//
+//       if (event.keyCode != 27) {
+//         return;
+//       }
+//
+//       event.stopPropagation();
+//
+//       this.close();
+//       this.$element.trigger('focus');
+//     },
+//     next_keydown: function(event) {
+//       // 38: Arrow up
+//
+//       if (event.keyCode != 38) {
+//         return;
+//       }
+//
+//       // Off vertical scrolling
+//       event.preventDefault();
+//
+//       event.stopPropagation();
+//
+//       // Use this.$drop instead this.$main (optimally)
+//       var $items = this.$drop.find('li:not(.disabled):visible > a');
+//
+//       var index = $items.index(event.target);
+//
+//       $items.eq(index - 1).trigger('focus');
+//     }
+//   };
+//
+//   // For AMD/Node/CommonJS used elements (optional)
+//   // http://learn.jquery.com/jquery-ui/environments/amd/
+//   return $.fn.submenupicker = function(elements) {
+//     var $elements = this instanceof $ ? this : $(elements);
+//
+//     return $elements.each(function() {
+//       var data = $.data(this, 'bs.submenu');
+//
+//       if (!data) {
+//         data = new Submenupicker(this);
+//
+//         $.data(this, 'bs.submenu', data);
+//       }
+//     });
+//   };
+//
+// });
+//
+// // Bootstrap Sub-Menus trigger
+// $('.dropdown-submenu > a').submenupicker();
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -213,31 +212,31 @@ $('.dropdown-submenu > a').submenupicker();
 // More info: (http://www.jqueryscript.net/menu/Responsive-Fullscreen-Navigation-Menu-with-jQuery-CSS3.html)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$(function() {
-
-  // menu button
-  $(".fullscreen-menu .menu-button").on('click',function () {
-    // menu open fade effect
-    $(".fullscreen-menu .menu-nav").fadeToggle(400);
-
-    // button animate
-    $(".hamburger .top-menu").toggleClass("top-animate");
-    $(".hamburger .mid-menu").toggleClass("mid-animate");
-    $(".hamburger .bottom-menu").toggleClass("bottom-animate");
-
-    // Header no move if menu is open (if class "show-hide-on-scroll" is enabled)
-    $(".show-hide-on-scroll").toggleClass("no-move");
-
-    // no page scroll if menu is open
-    $("body").toggleClass("no-scroll");
-  });
-
-  // remove menu link on click
-  $(".menu-nav li a").on('click',function () {
-    $(".menu-button").click();
-  });
-
-});
+// $(function() {
+//
+//   // menu button
+//   $(".fullscreen-menu .menu-button").on('click',function () {
+//     // menu open fade effect
+//     $(".fullscreen-menu .menu-nav").fadeToggle(400);
+//
+//     // button animate
+//     $(".hamburger .top-menu").toggleClass("top-animate");
+//     $(".hamburger .mid-menu").toggleClass("mid-animate");
+//     $(".hamburger .bottom-menu").toggleClass("bottom-animate");
+//
+//     // Header no move if menu is open (if class "show-hide-on-scroll" is enabled)
+//     $(".show-hide-on-scroll").toggleClass("no-move");
+//
+//     // no page scroll if menu is open
+//     $("body").toggleClass("no-scroll");
+//   });
+//
+//   // remove menu link on click
+//   $(".menu-nav li a").on('click',function () {
+//     $(".menu-button").click();
+//   });
+//
+// });
 
 
 //////////////////////////////////////////////////////
@@ -390,51 +389,51 @@ $(function() {
 // Note-2: "lazysizes" blugin is recommended: https://github.com/aFarkas/lazysizes
 //////////////////////////////////////////////////////////////////////////////////////////
 
-$(function() {
-
-  // init Isotope
-  var $container = $('.isotope-items-wrap');
-  $container.imagesLoaded(function() {
-    $container.isotope({
-      itemSelector: '.isotope-item',
-      transitionDuration: '0.5s',
-      masonry: {
-        columnWidth: '.grid-sizer',
-        horizontalOrder: false
-      }
-    });
-  });
-
-  // Filter
-  $('.isotope-filter-links a').on('click',function(){
-    var selector = $(this).attr('data-filter');
-    $container.isotope({
-       filter: selector
-    });
-    return false;
-  });
-
-  // Filter item active
-  var filterItemActive = $('.isotope-filter-links a');
-  filterItemActive.on('click', function(){
-    var $this = $(this);
-    if ( !$this.hasClass('active')) {
-       filterItemActive.removeClass('active');
-       $this.addClass('active');
-    }
-  });
-
-});
+// $(function() {
+//
+//   // init Isotope
+//   var $container = $('.isotope-items-wrap');
+//   $container.imagesLoaded(function() {
+//     $container.isotope({
+//       itemSelector: '.isotope-item',
+//       transitionDuration: '0.5s',
+//       masonry: {
+//         columnWidth: '.grid-sizer',
+//         horizontalOrder: false
+//       }
+//     });
+//   });
+//
+//   // Filter
+//   $('.isotope-filter-links a').on('click',function(){
+//     var selector = $(this).attr('data-filter');
+//     $container.isotope({
+//        filter: selector
+//     });
+//     return false;
+//   });
+//
+//   // Filter item active
+//   var filterItemActive = $('.isotope-filter-links a');
+//   filterItemActive.on('click', function(){
+//     var $this = $(this);
+//     if ( !$this.hasClass('active')) {
+//        filterItemActive.removeClass('active');
+//        $this.addClass('active');
+//     }
+//   });
+//
+// });
 
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // YTPlayer (Background Youtube video): https://github.com/pupunzi/jquery.mb.YTPlayer
 ///////////////////////////////////////////////////////////////////////////////////////
 
-$(function(){
-  if (!jQuery.browser.mobile)
-    $(".youtube-bg").mb_YTPlayer();
-});
+// $(function(){
+//   if (!jQuery.browser.mobile)
+//     $(".youtube-bg").mb_YTPlayer();
+// });
 
 
 ////////////////////////////////////////////////////////////////////
@@ -665,26 +664,26 @@ $(document).ready(function() {
 // More info: https://github.com/agragregra/uniMail
 /////////////////////////////////////////////////////
 
-$(function() {
-
-  //E-mail Ajax Send
-  $("#contact-form").submit(function() { //Change (your contact form ID)
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change (mail.php path)
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you. Your message has been sent!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-
-});
+// $(function() {
+//
+//   //E-mail Ajax Send
+//   $("#contact-form").submit(function() { //Change (your contact form ID)
+//     var th = $(this);
+//     $.ajax({
+//       type: "POST",
+//       url: "mail.php", //Change (mail.php path)
+//       data: th.serialize()
+//     }).done(function() {
+//       alert("Thank you. Your message has been sent!");
+//       setTimeout(function() {
+//         // Done Functions
+//         th.trigger("reset");
+//       }, 1000);
+//     });
+//     return false;
+//   });
+//
+// });
 
 
 /////////////////////////
