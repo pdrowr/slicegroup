@@ -100,6 +100,10 @@
 
 						.col-md-12#pricing-tables
 							.price-card.margin-top-15
+								.bordered.bordered-social-starter.animated.fadeIn.hidden
+								.bordered.bordered-conversion.animated.fadeIn.hidden
+								.bordered.bordered-social-corporative.animated.fadeIn.hidden
+								.bordered.bordered-platinum.animated.fadeIn.hidden
 								%table{:style => "width:100%"}
 									%tr
 										%th{colspan: "2"}
@@ -107,25 +111,25 @@
 										%th
 											.form-check
 												%label
-													%input#no{:name => "check", :type => "checkbox"}/
+													%input#social-starter{:name => "check", :type => "checkbox"}/
 													%span.label-text{style: "font-size: 16px !important"}
 														Starter
 										%th
 											.form-check
 												%label
-													%input#no{:name => "check", :type => "checkbox"}/
+													%input#conversion{:name => "check", :type => "checkbox"}/
 													%span.label-text{style: "font-size: 16px !important"}
 														Conversion
 										%th
 											.form-check
 												%label
-													%input#no{:name => "check", :type => "checkbox"}/
+													%input#corporative-social{:name => "check", :type => "checkbox"}/
 													%span.label-text{style: "font-size: 16px !important"}
 														Corporative
 										%th
 											.form-check
 												%label
-													%input#no{:name => "check", :type => "checkbox"}/
+													%input#platinum{:name => "check", :type => "checkbox"}/
 													%span.label-text{style: "font-size: 16px !important"}
 														Platinum
 

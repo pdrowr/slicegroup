@@ -17,10 +17,16 @@ body {
 	transition: all ease 1s;
 }
 
+#hamburguer {
+	display: none;
+	@include respond-to(xs) {
+		display: block;
+	};
+}
 #sidebar-trigger {
-	font-size: 35px;
+	font-size: 30px;
 	color: #fff;
-	margin-top: 15px;
+	margin-top: 20px;
 	cursor: pointer;
 	margin-right: 20px;
 }

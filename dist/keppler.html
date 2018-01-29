@@ -2,16 +2,15 @@
 <html lang="es">
 
 <head>
-  <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <meta charset='utf-8'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
   <meta content='Slice Group' name='description'>
   <meta content='width=device-width, initial-scale=1' name='viewport'>
   <link href='assets/img/favicon.png' rel='shortcut icon' type='image/x-icon'>
   <link href='assets/img/favicon.png' rel='icon' type='image/x-icon'>
-  <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+  <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='assets/css/main.css' rel='stylesheet'>
 
 </head>
@@ -153,13 +152,21 @@
               <hr class="hr-width-2 hr-5x">
             </div>
           </div>
+          <div class="col-md-12 file-input" id="have-domain">
+            <div class="md-input">
+              <input class="md-form-control" required="" type="text">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Indicanos cuál es</label>
+            </div>
+          </div>
           <div class="col-md-12" id="search-domain">
             <input placeholder="Busca un dominio..." type="text">
             <i class="fa fa-search"></i>
             </input>
           </div>
           <div class="col-md-12 text-center margin-top-15">
-            <div class="btn btn btn-default-bordered">Ya tengo un dominio</div>
+            <div class="btn btn btn-default-bordered" id="domain-trigger">Ya tengo un dominio</div>
           </div>
         </div>
       </div>
@@ -177,9 +184,9 @@
           </div>
           <div class="col-md-12" id="pricing-tables">
             <div class="price-card">
-              <div class="bordered bordered-starter hidden"></div>
-              <div class="bordered bordered-enterprise hidden"></div>
-              <div class="bordered bordered-corporative hidden"></div>
+              <div class="bordered bordered-starter animated fadeIn hidden"></div>
+              <div class="bordered bordered-enterprise animated fadeIn hidden"></div>
+              <div class="bordered bordered-corporative animated fadeIn hidden"></div>
               <table style="width:100%">
                 <tr>
                   <th colspan="2">
@@ -516,6 +523,12 @@ Corporative
               <span class="highlight"></span>
               <span class="bar"></span>
               <label>Cuéntanos más sobre tu negocio/empresa</label>
+            </div>
+            <div class="pull-right">
+              <a class="btn btn-primary service-btn keppler-btn text-white margin-top-25">
+ENVIAR
+<i class="fa fa-chevron-right"></i>
+</a>
             </div>
           </div>
         </div>

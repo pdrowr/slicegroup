@@ -1,24 +1,83 @@
 body {
   background: #fff !important;
 }
-#web {
-  padding-bottom: 40px;
+
+#service-social {
 
   header {
     height: 90vh;
     background-position: center 0px;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
+
+
+  .btn-floating {
+    width: 60px;
+    height: 60px;
+    background: $social-color;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 10001;
+    cursor: pointer;
+    padding: 17px 20px;
+    transition: all ease .3s;
+
+    i {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 1px 8px 0px rgba(0,0,0,.6);
+    }
+  }
+
 
   .scroll-down-arrow {
     cursor: pointer;
   }
 
+  #description {
+    height: auto;
+    #description-card {
+      width: 95%;
+      position:relative;
+      top: -7em;
+      z-index: 10001;
+      padding: 10px 30px;
+      background: #1d1d1d;
+      // min-height: 500px;
+      height: auto;
+      color: #fff !important;
+
+      img {
+        padding-bottom: 30px;
+        padding-top: 20px;
+      }
+
+      .icons {
+        font-size: 20px;
+        padding: 20px;
+
+        i {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  #proccess {
+    height: 1000px;
+  }
   #plan {
     background: #fff;
     z-index: 1002;
-
+    padding-top: 100px;
     #pricing-tables {
 
       th, td {
@@ -67,7 +126,7 @@ body {
         width: 20%;
         height: 100%;
         background: transparent;
-        border: 2px dashed $keppler-color;
+        border: 2px dashed $social-color;
       }
 
       .hidden {
@@ -118,14 +177,14 @@ body {
 
       h5 {
         padding-top: 9px;
-        color: $keppler-color;
+        color: $social-color;
         font-weight: bold;
         font-size: 14px;
       }
 
       i {
 
-        color: $keppler-color;
+        color: $social-color;
         transition: all ease .3s;
       }
     }
@@ -140,6 +199,9 @@ body {
   #domain-plan {
     background: #fff;
     z-index: 1002;
+    padding-top: 100px;
+    // padding-bottom: 20px;
+    height: auto;
 
     #pricing-tables {
 
@@ -179,6 +241,7 @@ body {
     .heading-title {
       color: #fff;
     }
+
     .price-card {
       width: 100%;
       height: 500px;
@@ -201,47 +264,6 @@ body {
           }
         }
       }
-    }
-
-    #accordion {
-      @include respond-to(lg) {
-        display: none;
-      };
-    }
-
-    .heading-title-ghost {
-      @include respond-to(lg) {
-        font-size: 32px;
-      };
-
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .card-header {
-      height: 45px;
-      background: #fff;
-
-      h5 {
-        padding-top: 9px;
-        color: $e-commerce-color;
-        font-weight: bold;
-        font-size: 14px;
-      }
-
-      i {
-
-        color: $e-commerce-color;
-        transition: all ease .3s;
-      }
-    }
-
-    .card-body {
-      padding: 10px;
-      color: #333;
-      font-size: 12px;
     }
   }
 }

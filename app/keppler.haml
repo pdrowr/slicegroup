@@ -55,11 +55,18 @@
 
 								%hr.hr-width-2.hr-5x
 
+						.col-md-12.file-input#have-domain
+							.md-input
+								%input.md-form-control{:required => "", :type => "text"}/
+								%span.highlight
+								%span.bar
+								%label Indicanos cuál es
+
 						.col-md-12#search-domain
 							%input{type: "text", placeholder: "Busca un dominio..."}
 								%i.fa.fa-search
 						.col-md-12.text-center.margin-top-15
-							.btn.btn.btn-default-bordered Ya tengo un dominio
+							.btn.btn.btn-default-bordered#domain-trigger Ya tengo un dominio
 
 			#plan.briefing-section.bg-dark.angle-left-top.angle-left-bottom
 				.container
@@ -74,9 +81,9 @@
 
 						.col-md-12#pricing-tables
 							.price-card
-								.bordered.bordered-starter.hidden
-								.bordered.bordered-enterprise.hidden
-								.bordered.bordered-corporative.hidden
+								.bordered.bordered-starter.animated.fadeIn.hidden
+								.bordered.bordered-enterprise.animated.fadeIn.hidden
+								.bordered.bordered-corporative.animated.fadeIn.hidden
 								%table{:style => "width:100%"}
 									%tr
 										%th{colspan: "2"}
@@ -373,5 +380,10 @@
 								%span.highlight
 								%span.bar
 								%label Cuéntanos más sobre tu negocio/empresa
+
+							.pull-right
+								%a.btn.btn-primary.service-btn.keppler-btn.text-white.margin-top-25
+									ENVIAR
+									%i.fa.fa-chevron-right
 
 	= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render
