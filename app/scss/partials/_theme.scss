@@ -2648,14 +2648,14 @@ hr.hr-width-10 { max-width: 900px; }
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.portfolio-item:hover .cover {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
+// .portfolio-item:hover {
+// 	opacity: 1;
+// 	-webkit-transform: scale(1);
+// 	-moz-transform: scale(1);
+// 	-o-transform: scale(1);
+// 	-ms-transform: scale(1);
+// 	transform: scale(1);
+// }
 .portfolio-item .item-img {
 }
 .portfolio-item:hover .item-img {

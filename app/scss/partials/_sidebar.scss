@@ -1,18 +1,19 @@
 #sidebar {
-  width: 25%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
-  right: -25%;
+  right: -100%;
   z-index: 100000;
   background: #1e2122;
   transition: all ease .3s;
-  padding: 25px 0;
-
+  padding: 25px 0px;
+  overflow-y: auto;
 
   ul {
     padding-right: 0;
     margin: 0 !important;
+    margin-left: -25px !important;
 
     li {
       margin-bottom: 25px;
@@ -54,7 +55,7 @@
 
   .sidebar-footer {
     position: relative;
-    bottom: 0;
+    bottom: 10px;
 
     .btn-default-bordered {
       margin-top: 220px;
@@ -77,9 +78,4 @@
       font-size: 14px;
     }
   }
-
-  @include respond-to(xs) {
-    width: 100%;
-    right: -100%;
-  };
 }
