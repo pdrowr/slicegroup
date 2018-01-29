@@ -81,3 +81,30 @@ $('#next-social-2').click(function() {
 $('#back-social-2').click(function() {
   $('#plan-social').css('left', '-100%')
 })
+
+
+//////
+
+$('#starter').click(function() {
+  $('.bordered-starter').toggleClass('hidden')
+  $('#enterprise').prop('checked', false);
+  $('.bordered-enterprise').addClass('hidden')
+  $('#corporative').prop('checked', false);
+  $('.bordered-corporative').addClass('hidden')
+})
+
+$('#enterprise').click(function() {
+  $('.bordered-enterprise').toggleClass('hidden')
+  $('#starter').prop('checked', false);
+  $('.bordered-starter').addClass('hidden')
+  $('#corporative').prop('checked', false);
+  $('.bordered-corporative').addClass('hidden')
+})
+
+$('#corporative').click(function() {
+  $('.bordered-corporative').toggleClass('hidden')
+  $('#starter').prop('checked', false);
+  $('.bordered-starter').addClass('hidden')
+  $('#enterprise').prop('checked', false);
+  $('.bordered-enterprise').addClass('hidden')
+})

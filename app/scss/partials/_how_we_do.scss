@@ -10,10 +10,14 @@
       font-size: 32px;
     };
   }
-  
+
   .heading-title-ghost {
     @include respond-to(xs) {
       font-size: 35px;
     };
+  }
+
+  img {
+    width: 100px;
   }
 }
