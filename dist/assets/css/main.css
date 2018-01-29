@@ -5763,10 +5763,10 @@ img.mfp-img {
 .team-box-hover .team-image:before {
   position: absolute;
   content: "";
-  width: 200%;
+  width: 250%;
   height: 100%;
-  left: -150px;
-  top: 140%;
+  left: -250px;
+  top: 200%;
   background-color: rgba(255, 255, 255, 0.35);
   z-index: 1;
   -webkit-transform: rotate(30deg);
@@ -10840,6 +10840,9 @@ ul.social-icons > li + li {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+#blog img:hover.img-blog, #post img:hover.img-blog {
+  opacity: 0.8; }
+
 #blog .btn-link, #post .btn-link {
   color: #81ac4d; }
 
@@ -12372,6 +12375,55 @@ body {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
     #masonry-layer .card:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2); }
+
+#footer {
+  background: #1d3b4a;
+  color: white;
+  font-family: sans-serif;
+  padding: 2rem 0 0 0 !important; }
+  #footer a {
+    color: white;
+    transition: 0.35s all ease; }
+  #footer .whatsapp a:hover {
+    color: #25D366;
+    transition: 0.35s all ease; }
+  #footer a:hover {
+    color: #c15010;
+    transition: 0.35s all ease;
+    text-decoration: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #footer #column-1 {
+      display: none; } }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #footer #column-3 p {
+      font-size: 1.6rem;
+      text-align: center; } }
+  #footer #column-4 {
+    display: none; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #footer #column-4 {
+        display: block;
+        margin-bottom: 2rem; } }
+  #footer .fa-whatsapp {
+    margin: 1rem 0 1rem 0; }
+  #footer .footer-dark {
+    background: #0C181E;
+    padding: 1rem; }
+  #footer .icon-rrss i {
+    margin: 0 0.7rem; }
+  #footer .legal {
+    margin: 0 0.5rem 0 0.5rem; }
+  #footer #logo-footer svg {
+    height: auto;
+    margin-bottom: 2rem;
+    width: 17rem; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #footer #logo-footer svg {
+      width: 15rem; } }
+  #footer #list-footer {
+    font-size: 1.4rem;
+    list-style-type: none;
+    margin-left: -35px; }
 
 html {
   font-size: 10px !important; }

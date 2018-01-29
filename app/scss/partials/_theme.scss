@@ -3098,10 +3098,10 @@ img.mfp-img {
 .team-box-hover .team-image:before {
 	position: absolute;
 	content: "";
-	width: 200%;
+	width: 250%;
 	height: 100%;
-	left: -150px;
-	top: 140%;
+	left: -250px;
+	top: 200%;
 	background-color: rgba(255, 255, 255, 0.35);
 	z-index: 1;
 	-webkit-transform: rotate(30deg);

@@ -1,6 +1,7 @@
 #footer {
   background: $gray-semi-dark;
   color: white;
+  font-family: sans-serif;
   padding: 2rem 0 0 0 !important;
 
   a{
@@ -18,15 +19,57 @@
     transition: 0.35s all ease;
     text-decoration: none; 
   }
+  #column-1 {
+    @include respond-to(xs) {
+      display: none;
+    }
+  }
+  #column-3 p {
+    @include respond-to(xs) {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+  #column-4 {
+    display: none;
+
+    @include respond-to(xs) {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
   .fa-whatsapp{
     margin: 1rem 0 1rem 0;
 
   }
-  
   .footer-dark {
     background: $gray-dark;
     padding: 1rem;
   }
+  .icon-rrss i {
+    margin: 0 0.7rem;
+  }
+  .legal {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  #logo-footer {
+    svg{
+      height: auto;
+      margin-bottom: 2rem;
+      width: 17rem;
+    }
 
+    @include respond-to(xs) {
+      svg{        
+        width: 15rem;
+      }
+    }
+
+  }
+  #list-footer {
+    font-size: 1.4rem;
+    list-style-type: none;
+    margin-left: -35px;
+  }
 
 }
