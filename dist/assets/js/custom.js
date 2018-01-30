@@ -99,7 +99,7 @@ $(window).scroll(function() {
     'background-position-y': -(scroll * .5)+ 'px'
   })
 
-  if (scroll <= 900) {
+  if (scroll <= 700) {
     $('#description-card').css({
       'top': -7+(scroll * 0.0125)+ 'em'
     })
@@ -114,3 +114,22 @@ $('#domain-trigger').click(function() {
   $('#have-domain').css('display', 'block')
   $('#have-domain').addClass('animated fadeInUp')
 })
+
+/////
+// var typed = new Typed('.typed-social', {
+//   strings: ["Marketing Digital", "Social Media", "SEO", "Analitycs", "AdWords"],
+//   typeSpeed: 70,
+//   loop: true,
+//   backSpeed: 50,
+//   startDelay: 50,
+//   backDelay: 1000
+// });
+
+var typedw = new Typed('.typed-web', {
+  strings: ["asd", "Social Media", "SEO", "Analitycs", "AdWords"],
+  typeSpeed: 70,
+  loop: true,
+  backSpeed: 50,
+  startDelay: 50,
+  backDelay: 1000
+});
