@@ -1,6 +1,6 @@
 = Haml::Engine.new(File.read("app/partials/_head.haml")).render
 %body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
-  = Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+  //= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
   = Haml::Engine.new(File.read("app/partials/_sliding_bar.haml")).render
 
   #blog
@@ -8,8 +8,10 @@
       %h1.margin-top-90 Nuestro Blog
       .row
         .col-xs-12.col-sm-6.col-md-8
-          %a{:href => "/blog_post.html"}
-            %img.img-responsive#test{src: "assets/img/blog/blog-1.jpg"}
+          .team-box.team-box-hover
+            .team-image
+              %a{:href => "/blog_post.html"}
+                %img.img-responsive#test{src: "assets/img/blog/blog-1.jpg"}
           %h2 Nuevas ideas para la cria de gárgolas
           %p
             Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y
@@ -22,7 +24,7 @@
           .row
             .col-xs-12.col-md-6
               %a{:href => "/blog_post.html"}
-                %img.img-responsive{src: "assets/img/blog/blog-2.jpg"}
+                %img.img-responsive.img-blog{src: "assets/img/blog/blog-2.jpg"}
               %h2 Slice Group analiza la compra de Google
               %p
                 Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte de ellas.
@@ -34,7 +36,7 @@
                 %a{href: "blog_post.html"}Leer más...
             .col-xs-12.col-md-6
               %a{:href => "/blog_post.html"}
-                %img.img-responsive{src: "assets/img/blog/blog-3.jpg"}
+                %img.img-responsive.img-blog{src: "assets/img/blog/blog-3.jpg"}
               %h2 Una cocina limpia en la oficina aumenta la productividad
               %p
                 Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho,
@@ -46,7 +48,7 @@
                 %a{href: "blog_post.html"}Leer más...
             .col-xs-12.col-md-6
               %a{:href => "/blog_post.html"}
-                %img.img-responsive{src: "assets/img/blog/blog-4.jpg"}
+                %img.img-responsive.img-blog{src: "assets/img/blog/blog-4.jpg"}
               %h2 Marvel predice el futuro de Venezuela
               %p
                 Santiago Rivera fue un dictador militar que tomó el control de la nación sudamericana de San Diablo
@@ -58,7 +60,7 @@
                 %a{href: "blog_post.html"}Leer más...
             .col-xs-12.col-md-6
               %a{:href => "/blog_post.html"}
-                %img.img-responsive{src: "assets/img/blog/blog-5.jpg"}
+                %img.img-responsive.img-blog{src: "assets/img/blog/blog-5.jpg"}
               %h2 Muy lejos más allá
               %p
                 Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y
@@ -72,7 +74,7 @@
                 %a{href: "blog_post.html"}Leer más...
         .col-xs-12.col-sm-6.col-md-4
           %a{:href => "/blog_post.html"}
-            %img.img-responsive{src: "assets/img/blog/blog-6.jpg"}
+            %img.img-responsive.img-blog{src: "assets/img/blog/blog-6.jpg"}
           %h2 Sinergéticamente monetizar nichos funcionales después de las potencialidades sin fisuras
           %p
             Desarrollar globalmente procedimientos de prueba oportunos a través de procesos flexibles.
@@ -83,7 +85,7 @@
           %p.read-more.text-right
             %a{href: "blog_post.html"}Leer más...
           %a{:href => "/blog_post.html"}
-            %img.img-responsive{src: "assets/img/blog/blog-7.jpg"}
+            %img.img-responsive.img-blog{src: "assets/img/blog/blog-7.jpg"}
           %h2 Penas del joven Werther
           %p
             Estoy solo, y me felicito de vivir en este país, el más a propósito para almas como la mía, soy tan dichoso,
