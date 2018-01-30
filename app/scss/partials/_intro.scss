@@ -17,6 +17,16 @@
  	  text-shadow: 0px 0px 7px #666;
  	}
 
+ 	.trama {
+ 	  background-image: url("../img/trama1.png");
+ 	  background-repeat: repeat;
+ 	  position: absolute;
+ 	  top: 0;
+ 	  width: 100%;
+ 	  min-height: 100%;
+ 	  z-index: 2;
+ 	}
+
 	video {
 	  min-width: 100%;
 	  min-height: 100%;
