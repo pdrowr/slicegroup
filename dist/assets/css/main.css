@@ -12053,6 +12053,9 @@ body {
 body {
   background: #fff !important; }
 
+#service-social hr {
+  background: #81ac4d; }
+
 #service-social header {
   height: 95vh;
   background-position: center 0px;
@@ -12105,71 +12108,69 @@ body {
 #service-social #proccess {
   height: 1000px; }
 
-#service-social #plan {
+#service-social #plan-social {
   background: #fff;
   z-index: 1002;
-  padding-top: 100px; }
-  #service-social #plan #pricing-tables th, #service-social #plan #pricing-tables td {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #service-social #plan-social #pricing-tables th, #service-social #plan-social #pricing-tables td {
     padding: 5px 0; }
-  #service-social #plan #pricing-tables th {
+  #service-social #plan-social #pricing-tables th {
     text-align: center; }
-  #service-social #plan #pricing-tables .td-image {
+  #service-social #plan-social #pricing-tables .td-image {
     width: 70px; }
-  #service-social #plan #pricing-tables .tr-bg-1 {
-    background: rgba(0, 0, 0, 0.32); }
-  #service-social #plan #pricing-tables .tr-bg-2 {
+  #service-social #plan-social #pricing-tables .tr-bg-1 {
+    background: rgba(0, 0, 0, 0.52); }
+  #service-social #plan-social #pricing-tables .tr-bg-2 {
     background: #070F13 !important; }
-  #service-social #plan #pricing-tables .td-text {
+  #service-social #plan-social #pricing-tables .td-text {
     width: 300px; }
-  #service-social #plan #pricing-tables img {
+  #service-social #plan-social #pricing-tables img {
     padding-left: 10px; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #service-social #plan #pricing-tables {
-      display: none; } }
-  #service-social #plan .heading-title {
+  #service-social #plan-social .heading-title {
     color: #fff; }
-  #service-social #plan .price-card {
+  #service-social #plan-social .price-card {
     width: 100%;
     height: auto;
-    position: relative; }
-    #service-social #plan .price-card .bordered {
+    position: relative;
+    overflow: auto; }
+    #service-social #plan-social .price-card .bordered {
       position: absolute;
-      width: 20%;
+      width: 15%;
       height: 100%;
       background: transparent;
       border: 2px dashed #81ac4d; }
-    #service-social #plan .price-card .hidden {
+    #service-social #plan-social .price-card .hidden {
       display: none; }
-    #service-social #plan .price-card .bordered-starter {
-      left: 35%; }
-    #service-social #plan .price-card .bordered-enterprise {
-      left: 56%; }
-    #service-social #plan .price-card .bordered-corporative {
-      right: 2%; }
-    #service-social #plan .price-card #services .service {
+    #service-social #plan-social .price-card .bordered-social-starter {
+      left: 33%; }
+    #service-social #plan-social .price-card .bordered-conversion {
+      left: 49%; }
+    #service-social #plan-social .price-card .bordered-social-corporative {
+      right: 17%; }
+    #service-social #plan-social .price-card .bordered-platinum {
+      right: 0%; }
+    #service-social #plan-social .price-card #services .service {
       margin-bottom: 10px; }
-      #service-social #plan .price-card #services .service img {
+      #service-social #plan-social .price-card #services .service img {
         width: 50px; }
   @media (min-width: 1200px) and (max-width: 1600px) {
-    #service-social #plan #accordion {
-      display: none; } }
-  @media (min-width: 1200px) and (max-width: 1600px) {
-    #service-social #plan .heading-title-ghost {
+    #service-social #plan-social .heading-title-ghost {
       font-size: 32px; } }
-  #service-social #plan a {
+  #service-social #plan-social a {
     text-decoration: none; }
-  #service-social #plan .card-header {
+  #service-social #plan-social .card-header {
     height: 45px;
     background: #fff; }
-    #service-social #plan .card-header h5 {
+    #service-social #plan-social .card-header h5 {
       padding-top: 9px;
       color: #81ac4d;
       font-weight: bold;
       font-size: 14px; }
-    #service-social #plan .card-header i {
+    #service-social #plan-social .card-header i {
       color: #81ac4d;
       transition: all ease .3s; }
-  #service-social #plan .card-body {
+  #service-social #plan-social .card-body {
     padding: 10px;
     color: #333;
     font-size: 12px; }

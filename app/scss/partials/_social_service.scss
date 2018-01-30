@@ -4,6 +4,9 @@ body {
 
 #service-social {
 
+  hr {
+    background: $social-color;
+  }
   header {
     height: 95vh;
     background-position: center 0px;
@@ -74,10 +77,11 @@ body {
   #proccess {
     height: 1000px;
   }
-  #plan {
+  #plan-social {
     background: #fff;
     z-index: 1002;
     padding-top: 100px;
+    padding-bottom: 100px;
     #pricing-tables {
 
       th, td {
@@ -94,7 +98,7 @@ body {
       }
 
       .tr-bg-1 {
-        background: rgba(0, 0, 0, 0.32);
+        background: rgba(0, 0, 0, 0.52);
       }
 
       .tr-bg-2 {
@@ -108,9 +112,9 @@ body {
       img {
         padding-left: 10px;
       }
-      @include respond-to(xs) {
-        display: none;
-      };
+      // @include respond-to(xs) {
+      //   display: none;
+      // };
     }
 
     .heading-title {
@@ -120,29 +124,37 @@ body {
       width: 100%;
       height: auto;
       position: relative;
+      overflow: auto;
 
       .bordered {
         position: absolute;
-        width: 20%;
+        width: 15%;
         height: 100%;
         background: transparent;
         border: 2px dashed $social-color;
+
       }
 
       .hidden {
         display: none;
       }
-      .bordered-starter {
-        left: 35%;
+
+      .bordered-social-starter {
+        left: 33%;
       }
 
-      .bordered-enterprise {
-        left: 56%;
+      .bordered-conversion {
+        left: 49%;
       }
 
-      .bordered-corporative {
-        right: 2%;
+      .bordered-social-corporative {
+        right: 17%;
       }
+
+      .bordered-platinum {
+        right: 0%;
+      }
+
       #services {
         .service {
           margin-bottom: 10px;
@@ -152,12 +164,6 @@ body {
           }
         }
       }
-    }
-
-    #accordion {
-      @include respond-to(lg) {
-        display: none;
-      };
     }
 
     .heading-title-ghost {
