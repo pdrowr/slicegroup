@@ -40,4 +40,20 @@
     background-size: cover;
     background-position: center;
   }
+
+
+  .team-box {
+    img{
+      filter: grayscale(100%);
+      transition: all 1s ease;
+    }
+
+    &:hover {
+
+      img {
+        filter: grayscale(0%);
+        transition: all 1s ease;
+      } 
+    }
+  }
 }
