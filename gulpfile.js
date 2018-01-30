@@ -85,6 +85,12 @@ gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/assets/fonts'))
 });
+
+gulp.task('videos', function() {
+  return gulp.src('app/videos/**/*')
+  .pipe(gulp.dest('dist/assets/videos'))
+});
+
 //Move new .css files
 gulp.task('css', function() {
   return gulp.src('app/css/**/*.css')
@@ -140,7 +146,7 @@ gulp.task('default', ['browserSync', 'compile_haml', 'compile_sass', 'css', 'js'
 
 gulp.task('set', function (callback) {
   runSequence('clean:dist', 'add_jquery',
-    ['compile_haml','compile_sass', 'images', 'fonts', 'css', 'js']
+    ['compile_haml','compile_sass', 'images', 'fonts', 'css', 'js', 'videos']
   )
 });
 
