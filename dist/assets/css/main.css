@@ -10809,7 +10809,7 @@ ul.social-icons > li + li {
     color: #81ac4d; }
 
 #blog h1, #post h1 {
-  font-size: calc(2.2rem + 1.0999999999999996 * ((100vw - 42rem) / 86));
+  font-size: calc(2.2rem + 1.0999999999999996 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 500;
   color: #81ac4d; }
@@ -10823,7 +10823,7 @@ ul.social-icons > li + li {
     font-size: 2.2rem; } }
 
 #blog h2, #post h2 {
-  font-size: calc(1.8rem + 0.9999999999999998 * ((100vw - 42rem) / 86));
+  font-size: calc(1.8rem + 0.9999999999999998 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 500;
   color: #777; }
@@ -10845,7 +10845,7 @@ ul.social-icons > li + li {
 
 #blog .meta-line > span, #post .meta-line > span {
   margin-right: 1.5rem;
-  font-size: calc(1rem + 0.30000000000000004 * ((100vw - 42rem) / 86));
+  font-size: calc(1rem + 0.30000000000000004 * ((100vw - 26.25rem) / 53.75));
   color: #777; }
 
 @media screen and (min-width: 1280px){
@@ -10859,7 +10859,7 @@ ul.social-icons > li + li {
     color: #3483C2; }
 
 #blog .post-date, #post .post-date {
-  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 500;
   color: #777; }
@@ -10885,7 +10885,7 @@ ul.social-icons > li + li {
   padding-left: 9rem; }
 
 #blog .read-more a, #post .read-more a {
-  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 400;
   color: #81ac4d; }
@@ -12043,7 +12043,7 @@ body {
   background: #fff !important; }
 
 #service-social header {
-  height: 90vh;
+  height: 95vh;
   background-position: center 0px;
   background-size: cover;
   background-attachment: fixed;
