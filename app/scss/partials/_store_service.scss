@@ -1,0 +1,200 @@
+body {
+  background: #fff;
+}
+
+.bordered {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  background: transparent;
+  border: 2px dashed $e-commerce-color;
+  right: 10px;
+}
+
+#service-store {
+  header {
+    height: 85vh;
+    background-position: center 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .btn-floating {
+    width: 60px;
+    height: 60px;
+    background: $e-commerce-color;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 10001;
+    cursor: pointer;
+    padding: 17px 20px;
+    transition: all ease .3s;
+
+    i {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      // box-shadow: 0px 1px 8px 0px rgba(0,0,0,.6);
+    }
+  }
+
+
+  .scroll-down-arrow {
+    cursor: pointer;
+  }
+
+  #description {
+    height: auto;
+    #description-card {
+      width: 95%;
+      position:relative;
+      top: -7em;
+      z-index: 10001;
+      padding: 20px 30px 50px 30px;
+      background: #1d1d1d;
+      // min-height: 500px;
+      height: auto;
+      color: #fff !important;
+
+      img {
+        padding-bottom: 30px;
+        padding-top: 20px;
+      }
+
+      .store {
+        font-weight: bold;
+        color: $e-commerce-color;
+      }
+    }
+  }
+
+  #proccess {
+    height: 1000px;
+  }
+
+  #plan {
+    background: #fff;
+    z-index: 1002;
+    padding-top: 100px;
+    #pricing-tables {
+
+      th, td {
+        padding: 5px 0;
+      }
+
+      th {
+        text-align: center;
+      }
+
+
+      .td-image {
+        width: 70px;
+      }
+
+      .tr-bg-1 {
+        background: rgba(0, 0, 0, 0.32);
+      }
+
+      .tr-bg-2 {
+        background: #070F13 !important;
+      }
+
+      .td-text {
+        width: 300px;
+      }
+
+      img {
+        padding-left: 10px;
+      }
+      @include respond-to(xs) {
+        display: none;
+      };
+    }
+
+    .heading-title {
+      color: #fff;
+    }
+    .price-card {
+      width: 100%;
+      height: 500px;
+      position: relative;
+    }
+  }
+
+  #domain-plan {
+    background: #fff;
+    z-index: 1002;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    height: auto;
+
+    #pricing-tables {
+
+      th, td {
+        padding: 5px 0;
+      }
+
+      th {
+        text-align: center;
+      }
+
+
+      .td-image {
+        width: 70px;
+      }
+
+      .tr-bg-1 {
+        background: rgba(0, 0, 0, 0.32);
+      }
+
+      .tr-bg-2 {
+        background: #070F13 !important;
+      }
+
+      .td-text {
+        width: 300px;
+      }
+
+      img {
+        padding-left: 10px;
+      }
+      @include respond-to(xs) {
+        display: none;
+      };
+    }
+
+    .heading-title {
+      color: #fff;
+    }
+
+    .price-card {
+      width: 100%;
+      height: 500px;
+      position: relative;
+
+      .bordered {
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        background: transparent;
+        border: 2px dashed $e-commerce-color;
+        right: 10px;
+      }
+      #services {
+        .service {
+          margin-bottom: 10px;
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}

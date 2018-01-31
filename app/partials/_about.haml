@@ -1,16 +1,16 @@
 #about
-	%section.testimonials-section.bg-dark.angle-right-top.angle-left-bottom.bg-image-parallax
+	%section.testimonials-section.bg-dark.angle-left-top.angle-left-bottom
 		%span.cover.bg-transparent-9-5-dark
 		.container
 			.row
 				.col-md-12
-					.heading.heading-lg.heading-hover.text-white.wow.fadeIn
+					.heading.heading-lg.heading-center.heading-hover.text-white.wow.fadeIn
 						%span.heading-title-ghost Quiénes Somos
 						%h2.heading-title Quiénes Somos
 						%hr.hr-width-3.hr-5x.border-main/
 		.container
 			.row.wow.fadeIn{"data-wow-delay" => "0.3s"}
-				.col-md-8
+				.col-md-5
 					%p.font-size-20
 						Una agencia digital con el objetivo primario de llevar la tecnología a todos los niveles
 						corporativos para sus aprovechamiento económico y financiero.
@@ -20,3 +20,82 @@
 
 					%p.font-size-20
 						No importa en que país te encuentres, nuestra frontera no está dibujada.
+
+				.col-md-7
+					= Haml::Engine.new(File.read("app/partials/_map.haml")).render
+
+		%section#section-5.team-section
+			.container
+				.row.wow.fadeIn
+					.col-md-7
+						.heading.heading-lg.heading-hover.text-white
+							%span.heading-title-ghost.font-size-60{style: "font-size: 60px !important"} Slice Team
+							%h2.heading-title Slice Team
+
+							%hr.hr-width-2.hr-5x.border-main/
+
+					.col-md-5
+						%p.lead.margin-top-30.text-white
+							Las caras detrás de las historias de éxito con más de 200 clientes en más de 11 paises.
+
+			.team.wow.fadeIn{"data-wow-delay" => "0.3s"}
+				.container
+
+					.owl-carousel.team-carousel.dots-outside{"data-items" => "4", "data-margin" => "20", "data-mobile-landscape" => "2", "data-mobile-portrait" => "1", "data-tablet-landscape" => "3", "data-tablet-portrait" => "2"}
+
+						.team-box.team-box-hover.team-box-rounded
+							.team-image
+								%img{:alt => "John Doe", :src => "assets/img/team/staff-1.jpg"}/
+							.team-info.text-center
+								%h4.team-info-title John Doe
+								%p.team-info-text General Manager
+
+								%ul.social-icons
+									%li
+										%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+											%i.fa.fa-linkedin
+
+						.team-box.team-box-hover.team-box-rounded
+							.team-image
+								%img{:alt => "Joseph Reeves", :src => "assets/img/team/staff-2.jpg"}/
+							.team-info.text-center
+								%h4.team-info-title Joseph Reeves
+								%p.team-info-text Developer
+
+								%ul.social-icons
+									%li
+										%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+											%i.fa.fa-linkedin
+
+						.team-box.team-box-hover.team-box-rounded
+							.team-image
+								%img{:alt => "Henry Harrison", :src => "assets/img/team/staff-3.jpg"}/
+							.team-info.text-center
+								%h4.team-info-title Miranda Harrison
+								%p.team-info-text Designer
+
+								%ul.social-icons
+									%li
+										%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+											%i.fa.fa-linkedin
+
+						.team-box.team-box-hover.team-box-rounded
+							.team-image
+								%img{:alt => "Henry Harrison", :src => "assets/img/team/staff-4.jpg"}/
+							.team-info.text-center
+								%h4.team-info-title Anna Daniel
+								%p.team-info-text Marketing
+
+								%ul.social-icons
+									%li
+										%a.btn.btn-social-min.btn-default.btn-rounded-full.btn-sm{:href => "", :target => "_blank"}
+											%i.fa.fa-linkedin
+
+						.team-box.team-box-hover.team-box-rounded
+							.team-image
+								%a{:href => "#", :target => "_blank"}
+									%img{:alt => "Henry Harrison", :src => "assets/img/team/staff-5.jpg"}/
+							.team-info.text-center
+								%h4.team-info-title Join Us
+								%p.team-info-text Designer Wanted
+								%a.btn.btn-primary.btn-rounded.btn-sm{:href => ""} Read More!

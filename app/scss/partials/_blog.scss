@@ -15,6 +15,9 @@
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
+	img:hover.img-blog {
+		opacity: 0.8;
+	}
 	.btn-link {
 		color: $social-color;
 	}

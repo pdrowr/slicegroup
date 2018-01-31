@@ -1,43 +1,3 @@
-$('#next-1').click(function() {
-  $('#user-dates').css('left', '0')
-})
-
-$('#back-1').click(function() {
-  $('#user-dates').css('left', '-100%')
-})
-
-$('#next-2').click(function() {
-  $('#domain').css('left', '0')
-})
-
-$('#back-2').click(function() {
-  $('#domain').css('left', '-100%')
-})
-
-$('#next-3').click(function() {
-  $('#plan').css('left', '0')
-})
-
-$('#back-3').click(function() {
-  $('#plan').css('left', '-100%')
-})
-
-$('.card').click(function(){
-  $(this).find('i').toggleClass('rotate')
-})
-
-$('#yes').click(function() {
-  $('#no').prop('checked', false);
-  $('#have-domain').css('display', 'block')
-  $('#search-domain').css('display', 'none')
-})
-
-$('#no').click(function() {
-  $('#yes').prop('checked', false);
-  $('#have-domain').css('display', 'none')
-  $('#search-domain').css('display', 'block')
-})
-
 $('#sidebar-trigger').click(function(event) {
   $('#sidebar').css('right', '0')
 });
@@ -50,61 +10,126 @@ $('#sidebar').find('a').click(function() {
   $('#sidebar').css('right', '-100%')
 })
 
-// social
+var starter = $('#starter')
+    borderStarter = $('.bordered-starter')
+    enterprise = $('#enterprise')
+    borderEnterprise = $('.bordered-enterprise')
+    corporative = $('#corporative')
+    borderCorporative = $('.bordered-corporative');
 
-$('#next-social-1').click(function() {
-  $('#social-media').css('left', '0')
+starter.click(function() {
+  borderStarter.toggleClass('hidden')
+  enterprise.prop('checked', false);
+  borderEnterprise.addClass('hidden')
+  corporative.prop('checked', false);
+  borderCorporative.addClass('hidden')
 })
 
-$('#back-social-1').click(function() {
-  $('#social-media').css('left', '-100%')
+enterprise.click(function() {
+  borderEnterprise.toggleClass('hidden')
+  starter.prop('checked', false);
+  borderStarter.addClass('hidden')
+  corporative.prop('checked', false);
+  borderCorporative.addClass('hidden')
 })
 
-$('.social-card').click(function() {
-  $(this).find('.toggle').toggleClass('item-hidden')
-  var color = $(this).attr('data-color')
-
-  // $(this).css({
-  //   'background': color,
-  //   'color': '#fff'
-  // })
+corporative.click(function() {
+  borderCorporative.toggleClass('hidden')
+  starter.prop('checked', false);
+  borderStarter.addClass('hidden')
+  enterprise.prop('checked', false);
+  borderEnterprise.addClass('hidden')
 })
 
-$('#next-social-2').click(function() {
-  $('#plan-social').css('left', '0')
+var sStarter = $('#social-starter')
+    borderSStarter = $('.bordered-social-starter')
+    conversion = $('#conversion')
+    borderConversion = $('.bordered-conversion')
+    sCorporative = $('#corporative-social')
+    borderSCorporative = $('.bordered-social-corporative')
+    platinum = $('#platinum')
+    borderPlatinum = $('.bordered-platinum');
+
+sStarter.click(function() {
+  borderSStarter.toggleClass('hidden')
+  conversion.prop('checked', false);
+  borderConversion.addClass('hidden')
+  sCorporative.prop('checked', false);
+  borderSCorporative.addClass('hidden')
+  platinum.prop('checked', false);
+  borderPlatinum.addClass('hidden')
 })
 
-$('#next-social-2').click(function() {
-  $('#plan-social').css('left', '0')
+conversion.click(function() {
+  borderConversion.toggleClass('hidden')
+  sStarter.prop('checked', false);
+  borderSStarter.addClass('hidden')
+  sCorporative.prop('checked', false);
+  borderSCorporative.addClass('hidden')
+  platinum.prop('checked', false);
+  borderPlatinum.addClass('hidden')
 })
 
-$('#back-social-2').click(function() {
-  $('#plan-social').css('left', '-100%')
+sCorporative.click(function() {
+  borderSCorporative.toggleClass('hidden')
+  sStarter.prop('checked', false);
+  borderSStarter.addClass('hidden')
+  conversion.prop('checked', false);
+  borderConversion.addClass('hidden')
+  platinum.prop('checked', false);
+  borderPlatinum.addClass('hidden')
 })
 
 
-//////
-
-$('#starter').click(function() {
-  $('.bordered-starter').toggleClass('hidden')
-  $('#enterprise').prop('checked', false);
-  $('.bordered-enterprise').addClass('hidden')
-  $('#corporative').prop('checked', false);
-  $('.bordered-corporative').addClass('hidden')
+platinum.click(function() {
+  borderPlatinum.toggleClass('hidden')
+  sStarter.prop('checked', false);
+  borderSStarter.addClass('hidden')
+  conversion.prop('checked', false);
+  borderConversion.addClass('hidden')
+  sCorporative.prop('checked', false);
+  borderSCorporative.addClass('hidden')
 })
 
-$('#enterprise').click(function() {
-  $('.bordered-enterprise').toggleClass('hidden')
-  $('#starter').prop('checked', false);
-  $('.bordered-starter').addClass('hidden')
-  $('#corporative').prop('checked', false);
-  $('.bordered-corporative').addClass('hidden')
+
+$(window).scroll(function() {
+  scroll = $(window).scrollTop()
+
+  $('.scroll-baneer').css({
+    'background-position-y': -(scroll * .5)+ 'px'
+  })
+
+  if (scroll <= 700) {
+    $('#description-card').css({
+      'top': -7+(scroll * 0.0125)+ 'em'
+    })
+  }
 })
 
-$('#corporative').click(function() {
-  $('.bordered-corporative').toggleClass('hidden')
-  $('#starter').prop('checked', false);
-  $('.bordered-starter').addClass('hidden')
-  $('#enterprise').prop('checked', false);
-  $('.bordered-enterprise').addClass('hidden')
+
+// /////
+$('#domain-trigger').click(function() {
+  $('#search-domain').addClass('animated fadeOutDown')
+  $('#search-domain').css('display', 'none')
+  $('#have-domain').css('display', 'block')
+  $('#have-domain').addClass('animated fadeInUp')
 })
+
+/////
+// var typed = new Typed('.typed-social', {
+//   strings: ["Marketing Digital", "Social Media", "SEO", "Analitycs", "AdWords"],
+//   typeSpeed: 70,
+//   loop: true,
+//   backSpeed: 50,
+//   startDelay: 50,
+//   backDelay: 1000
+// });
+
+var typedw = new Typed('.typed-web', {
+  strings: ["asd", "Social Media", "SEO", "Analitycs", "AdWords"],
+  typeSpeed: 70,
+  loop: true,
+  backSpeed: 50,
+  startDelay: 50,
+  backDelay: 1000
+});

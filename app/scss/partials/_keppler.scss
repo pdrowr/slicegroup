@@ -1,6 +1,15 @@
 #keppler {
   background: #fff;
 
+  .angle-right-bottom {
+    @include respond-to(xs) {
+      padding-bottom: 20px;
+    };
+
+    @include respond-to(lg) {
+      padding-bottom: 60px;
+    };
+  }
   .heading-title-ghost {
     @include respond-to(xs) {
       display: none;
@@ -82,6 +91,9 @@
     z-index: 1000;
     background: #fff;
 
+    @include respond-to(xs) {
+      padding-bottom: 40px;
+    };
     #next-2 {
       @include respond-to(lg) {
         display: none;

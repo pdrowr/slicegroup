@@ -1,0 +1,327 @@
+!!!
+%html{lang: "es"}
+	%head
+		= Haml::Engine.new(File.read("app/partials/_head.haml")).render
+	%body{"data-spy" => "scroll", "data-target" => "#scrollspy"}
+		= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render
+
+		#service-social
+			%a.btn-floating{href: "keppler.html"}
+				%center
+				%i.fa.fa-rocket
+			%header.angle-left-bottom.scroll-baneer{style: "background-image: url(assets/img/banner-social.jpg);"}
+				.intro-inner
+					.vertical-align-center.horisontal-align-center.text-center.text-white
+						%h1.typed-social{style: "margin-top: -150px !important; font-size: 50px"} MARKETING DIGITAL
+
+					%a.scroll-down-arrow.sm-scroll.text-center.text-white{href: "#section-1"}
+						%span
+							%i.fa.fa-chevron-down
+
+
+			#description
+				.container
+					.row
+						.col-md-7
+							.section-description.text-left
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+								%p.padding-top-20
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.col-md-5
+							#description-card
+								.text-left
+									%img{src: "assets/img/logo-social-green.svg", style: "width: 25%"}
+								%strong.strong Slice Social
+								Es la unidad de marketing digital estratégico. Se encarga de los productos y servicios relacionados con el manejo de redes sociales, planes de marketing digital, campañas publicitarias en redes sociales (facebook & instagram Ads), asesoría estratégica para marketing digital y más.
+
+								%center.padding-top-30.icons
+									%i.fa.fa-facebook
+									%i.fa.fa-twitter
+									%i.fa.fa-google-plus
+									%i.fa.fa-linkedin
+									%i.fa.fa-instagram
+									%i.fa.fa-pinterest
+
+			#plan-social.briefing-section.bg-dark.angle-left-top
+				.container
+					.row
+						.col-md-12.margin-top-35
+							.heading.heading-sm.heading-center.heading-hover
+								-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title Tenemos Planes Que se Adaptan a Tus Necesidades
+								%h6.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+
+								%hr.hr-width-4.hr-5x
+
+						.col-md-12#pricing-tables
+							.price-card.margin-top-15
+								%table{:style => "width:100%"}
+									%tr
+										%th{colspan: "2"}
+											Elige tu plan
+										%th Starter
+										%th Conversion
+										%th Corporative
+										%th Platinum
+
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s01.svg"}
+										%td.td-text
+											%span	Publicaciones
+											%br
+											Mensuales
+										%td.text-center
+											70
+										%td.text-center
+											120
+										%td.text-center
+											180
+										%td.text-center
+											300
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s02.svg"}
+											%td.td-text
+												%span Definición de
+												%br
+												Objetivos
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+											%td.text-center
+												%i.fa.fa-check
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s03.svg"}
+										%td.td-text
+											%span Personalidad de la marca
+											%br
+											e identidad gráfica
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s04.svg"}
+										%td.td-text
+											%span	Gestión de
+											%br
+											comunidad digital
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s01.svg"}
+										%td.td-text
+											%span	Análisis de
+											%br
+											competencia
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s05.svg"}
+										%td.td-text
+											%span	Blog Corporativo
+											%br
+											(Opcional)
+										%td
+										%td
+										%td.text-center
+											%i.fa.fa-check
+										%td
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s06.svg"}
+										%td.td-text
+											%span Estdio de
+											%br
+											Mercado
+										%td.text-center
+										%td.text-center
+										%td.text-center
+											%i.fa.fa-check
+										%td.text-center
+											%i.fa.fa-check
+									%tr.tr-image.tr-bg-2
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s07.svg"}
+										%td.td-text
+											%span	Campaña de
+											%br
+											ADS
+										%td
+										%td
+										%td.text-center
+											1
+										%td.text-center
+											2
+									%tr.tr-image.tr-bg-1
+										%td.td-image
+											%img{src: "assets/img/social_services/icono-s08.svg"}
+										%td.td-text
+											%span Landing page
+										%td.text-center
+
+										%td
+										%td.text-center
+											1
+										%td.text-center
+											2
+									%tr
+									%tr
+									%tr
+									%tr
+
+			-# #hosting
+			-# 	.container
+			-# 		.section-description.text-center
+			-# 			%strong.strong Keppler
+			-# 			es una plataforma desarrollada por el equipo de
+			-# 			%strong.strong Slice Group.
+			-# 			Su función principal es ser un administrador de contenidos que le permite al cliente tener el control de lo que se publica en su página web, está desarrollado de tal forma, que facilita el trabajo del webmaster o encargado de administrar un portal web.
+			-#
+			-# 			%p.padding-top-20
+			-# 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			-#
+			-# #domain-plan.bg-dark.angle-left-top
+			-# 	.container
+			-# 		.row
+			-# 			.col-md-12.margin-top-35
+			-# 				.heading.heading-sm.heading-center.heading-hover
+			-# 					-# %span.heading-title-ghost Tenemos Planes Que se Adaptan a Tus Necesidades
+			-# 					%h6.heading-title Planes de Hosting
+			-# 					%h6.heading-title-ghost Planes de Hosting
+			-#
+			-# 					%hr.hr-width-1.hr-5x
+			-#
+			-# 					%p
+			-# 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+			-# 						adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+			-# 			.col-md-12#pricing-tables
+			-# 				.price-card.margin-top-15
+			-# 					%table{:style => "width:100%"}
+			-# 						%tr
+			-# 							%th{colspan: "2"}
+			-# 								Plan
+			-# 							%th Starter
+			-# 							%th Enterprise
+			-# 							%th Corporative
+			-# 							%th E-Commerce
+			-# 						%tr.tr-image.tr-bg-1
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k01.svg"}
+			-# 							%td.td-text
+			-# 								%span	Almacenamiento
+			-# 							%td.text-center
+			-# 								5 GB
+			-# 							%td.text-center
+			-# 								10 GB
+			-# 							%td.text-center
+			-# 							%td.text-center
+			-# 						%tr.tr-image.tr-bg-2
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k02.svg"}
+			-# 								%td.td-text
+			-# 									%span Transferencia
+			-# 									%br
+			-# 									(Mensual)
+			-# 								%td.text-center
+			-# 									50 GB
+			-# 								%td.text-center
+			-# 									100 GB
+			-# 								%td.text-center
+			-# 								%td.text-center
+			-# 						%tr.tr-image.tr-bg-1
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k03.svg"}
+			-# 							%td.td-text
+			-# 								%span Correos
+			-# 							%td.text-center
+			-# 								3
+			-# 							%td.text-center
+			-# 								5
+			-# 							%td.text-center
+			-# 							%td.text-center
+			-# 						%tr.tr-image.tr-bg-2
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k04.svg"}
+			-# 							%td.td-text
+			-# 								%span	Subdominios
+			-# 							%td.text-center
+			-# 								1
+			-# 							%td.text-center
+			-# 								1
+			-# 							%td.text-center
+			-# 							%td.text-center
+			-# 						%tr.tr-image.tr-bg-1
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k01.svg"}
+			-# 							%td.td-text
+			-# 								%span	FTP
+			-# 							%td.text-center
+			-# 								1
+			-# 							%td.text-center
+			-# 								1
+			-# 							%td.text-center
+			-# 							%td
+			-# 						%tr.tr-image.tr-bg-2
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k05.svg"}
+			-# 							%td.td-text
+			-# 								%span	Certificado SSL
+			-# 								%br
+			-# 								(Básico)
+			-# 							%td.text-center
+			-# 								%i.fa.fa-check
+			-# 							%td.text-center
+			-# 								%i.fa.fa-check
+			-# 							%td.text-center
+			-# 								%i.fa.fa-check
+			-# 							%td
+			-# 						%tr.tr-image.tr-bg-1
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k06.svg"}
+			-# 							%td.td-text
+			-# 								%span	Ilimitado
+			-# 							%td
+			-# 							%td
+			-# 							%td.text-center
+			-# 								%i.fa.fa-check
+			-# 							%td.text-center
+			-# 								%i.fa.fa-check
+			-# 						%tr.tr-image.tr-bg-2
+			-# 							%td.td-image
+			-# 								%img{src: "assets/img/keppler_services/icono-k07.svg"}
+			-# 							%td.td-text
+			-# 								%span	Certificado SSL
+			-# 								%br
+			-# 								para compras online
+			-# 							%td
+			-# 							%td
+			-# 							%td.text-center
+			-# 							%td.text-center
+			-# 								%i.fa.fa-check
+
+		= Haml::Engine.new(File.read("app/partials/_footer.haml")).render
+		= Haml::Engine.new(File.read("app/partials/_scripts.haml")).render

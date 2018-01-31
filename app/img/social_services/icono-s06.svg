@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.6146478"
-     inkscape:cx="35.269889"
-     inkscape:cy="6.9721747"
+     inkscape:zoom="9.3545246"
+     inkscape:cx="31.07544"
+     inkscape:cy="21.576462"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,25 +57,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-505.71428,-795.21935)">
-    <g
-       inkscape:export-ydpi="96"
-       inkscape:export-xdpi="96"
-       id="g6196"
-       transform="matrix(3.0623457,0,0,3.2542149,341.00637,231.791)"
-       inkscape:export-filename="E:\Users\Brand1\Downloads\social.png">
-      <circle
-         style="fill:#515151;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         id="circle6192"
-         cx="60.315826"
-         cy="179.28391"
-         r="6.1955833" />
-      <path
-         style="fill:#222222;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         d="m 60.315826,185.47949 c -3.421725,0 -6.195581,-2.77386 -6.195583,-6.19558 -4e-6,-3.42173 2.773854,-6.19559 6.195583,-6.19559 z"
-         id="path6194"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cscc" />
-    </g>
     <g
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"

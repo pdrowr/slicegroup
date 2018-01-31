@@ -18,3 +18,4 @@
 					%a.btn.btn-primary-bordered.btn-xlg.btn-block.rounded-2x{:href => "briefing.html"}
 						-# %i.fa.fa-shopping-cart
 						Comencemos a trabajar
+	= Haml::Engine.new(File.read("app/partials/_services.haml")).render					

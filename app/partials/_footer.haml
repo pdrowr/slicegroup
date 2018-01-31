@@ -1,17 +1,66 @@
 #footer
-	%center
-		%p
-			%a{href: "mailto:support@mail.com"}
-				%i.fa.fa-envelope-o
-				info@slicegroup.xyz
-		%p
-			%i.fa.fa-phone
-			&nbsp;+58 269 2455.55.55
-		%p.whatsapp
-			%a	
-				%i.fa.fa-whatsapp.fa-lg
-				WhatsApp
-				
+	.container
+		.row
+			.col-xs-12.col-md-4#column-1
+				%h3 Terminos y condiciones
+				%ul#list-footer
+					%li
+						%a{href: "#"} Politicas de servicio
+					%li
+						%a{href: "#"} Politicas de privacidad
+					%li
+						%a{href: "#"} Políticas de reembolsos y cancelaciones
+					%li
+						%a{href: "#"} Politicas de cookies
+					%li
+						%a{href: "#"} Politicas de redes sociales
+			.col-xs-12.col-md-4#logo-footer
+				%center
+					= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
+				%center.icon-rrss
+					%a{href: "#"}
+						%i.fa.fa-behance.fa-lg
+					%a{href: "#"}
+						%i.fa.fa-github-alt.fa-lg
+					%a{href: "#"}
+						%i.fa.fa-instagram.fa-lg
+					%a{href: "#"}
+						%i.fa.fa-google-plus.fa-lg
+					%a{href: "#"}
+						%i.fa.fa-facebook-official.fa-lg
+					%a{href: "#"}
+						%i.fa.fa-linkedin.fa-lg
+			.col-xs-12.col-md-4#column-3
+				%br
+				%p
+					%a{href: "mailto:negocios@slicegroup.xyz"}
+						%i.fa.fa-envelope-o
+						negocios@slicegroup.xyz
+				%p
+					%a{href: "mailto:soporte@slicegroupl.xyz"}
+						%i.fa.fa-envelope-o
+						soporte@slicegroupl.xyz
+				%p
+					%i.fa.fa-phone
+					&nbsp;+58 416-6481 
+				%p.whatsapp
+					%a	
+						%i.fa.fa-whatsapp.fa-lg
+						+58 424-6298536				
+			.col-xs-12.col-md-4#column-4
+				%center
+					%h3 Terminos y condiciones					
+					%span.legal
+						%a{href: "#"} Politicas de servicio
+					%span.legal
+						%a{href: "#"} Politicas de privacidad
+					%span.legal
+						%a{href: "#"} Politicas de cookies
+					%span.legal
+						%a{href: "#"} Politicas de redes sociales
+					%span.legal
+						%a{href: "#"} Políticas de reembolsos y cancelaciones
+					
 	%center.footer-dark
 		%p
 			© 2017 Slice Group. All rights reserved. 

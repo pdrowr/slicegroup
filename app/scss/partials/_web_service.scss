@@ -1,0 +1,257 @@
+body {
+  background: #fff !important;
+}
+#web {
+  header {
+    height: 85vh;
+    background-position: center 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .btn-floating {
+    width: 60px;
+    height: 60px;
+    background: $keppler-color;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 10001;
+    cursor: pointer;
+    padding: 17px 20px;
+    transition: all ease .3s;
+
+    i {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      // box-shadow: 0px 1px 8px 0px rgba(0,0,0,.6);
+    }
+  }
+
+
+  .scroll-down-arrow {
+    cursor: pointer;
+  }
+
+  #description {
+    height: auto;
+    #description-card {
+      width: 95%;
+      position:relative;
+      top: -7em;
+      z-index: 10001;
+      padding: 10px 30px;
+      background: #1d1d1d;
+      // min-height: 500px;
+      height: auto;
+      color: #fff !important;
+
+      img {
+        padding-bottom: 30px;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  #proccess {
+    height: 1000px;
+  }
+  #plan {
+    background: #fff;
+    z-index: 1002;
+    padding-top: 100px;
+    #pricing-tables {
+
+      th, td {
+        padding: 5px 0;
+      }
+
+      th {
+        text-align: center;
+      }
+
+
+      .td-image {
+        width: 70px;
+      }
+
+      .tr-bg-1 {
+        background: rgba(0, 0, 0, 0.32);
+      }
+
+      .tr-bg-2 {
+        background: #070F13 !important;
+      }
+
+      .td-text {
+        width: 300px;
+      }
+
+      img {
+        padding-left: 10px;
+      }
+      @include respond-to(xs) {
+        display: none;
+      };
+    }
+
+    .heading-title {
+      color: #fff;
+    }
+    .price-card {
+      width: 100%;
+      height: auto;
+      position: relative;
+
+      .bordered {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        background: transparent;
+        border: 2px dashed $keppler-color;
+      }
+
+      .hidden {
+        display: none;
+      }
+      .bordered-starter {
+        left: 35%;
+      }
+
+      .bordered-enterprise {
+        left: 56%;
+      }
+
+      .bordered-corporative {
+        right: 2%;
+      }
+      #services {
+        .service {
+          margin-bottom: 10px;
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    #accordion {
+      @include respond-to(lg) {
+        display: none;
+      };
+    }
+
+    .heading-title-ghost {
+      @include respond-to(lg) {
+        font-size: 32px;
+      };
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .card-header {
+      height: 45px;
+      background: #fff;
+
+      h5 {
+        padding-top: 9px;
+        color: $keppler-color;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      i {
+
+        color: $keppler-color;
+        transition: all ease .3s;
+      }
+    }
+
+    .card-body {
+      padding: 10px;
+      color: #333;
+      font-size: 12px;
+    }
+  }
+
+  #domain-plan {
+    background: #fff;
+    z-index: 1002;
+    padding-top: 100px;
+    // padding-bottom: 20px;
+    height: auto;
+
+    #pricing-tables {
+
+      th, td {
+        padding: 5px 0;
+      }
+
+      th {
+        text-align: center;
+      }
+
+
+      .td-image {
+        width: 70px;
+      }
+
+      .tr-bg-1 {
+        background: rgba(0, 0, 0, 0.32);
+      }
+
+      .tr-bg-2 {
+        background: #070F13 !important;
+      }
+
+      .td-text {
+        width: 300px;
+      }
+
+      img {
+        padding-left: 10px;
+      }
+      @include respond-to(xs) {
+        display: none;
+      };
+    }
+
+    .heading-title {
+      color: #fff;
+    }
+
+    .price-card {
+      width: 100%;
+      height: 500px;
+      position: relative;
+
+      .bordered {
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        background: transparent;
+        border: 2px dashed $e-commerce-color;
+        right: 10px;
+      }
+      #services {
+        .service {
+          margin-bottom: 10px;
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}

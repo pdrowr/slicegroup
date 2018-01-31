@@ -296,7 +296,38 @@
     }
     .price-card {
       width: 100%;
-      height: 500px;
+      height: auto;
+      position: relative;
+      overflow: auto;
+
+      .bordered {
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        background: transparent;
+        border: 2px dashed $social-color;
+
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .bordered-social-starter {
+        left: 33%;
+      }
+
+      .bordered-conversion {
+        left: 49%;
+      }
+
+      .bordered-social-corporative {
+        right: 17%;
+      }
+
+      .bordered-platinum {
+        right: 0%;
+      }
 
       #services {
         .service {
