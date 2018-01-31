@@ -18,4 +18,17 @@
 					%a.btn.btn-primary-bordered.btn-xlg.btn-block.rounded-2x{:href => "briefing.html"}
 						-# %i.fa.fa-shopping-cart
 						Comencemos a trabajar
-	= Haml::Engine.new(File.read("app/partials/_services.haml")).render					
+
+
+				.col-md-4.team-box.team-box-hover
+					%a{:href => "web_service.html"}
+						.team-image
+							%img.img-responsive{src: "assets/img/service-web-desing.jpg"}
+				.col-md-4.team-box.team-box-hover
+					%a{:href => "social_service.html"}
+						.team-image
+							%img.img-responsive{src: "assets/img/service-mkt.jpg"}
+				.col-md-4.team-box.team-box-hover
+					%a{:href => "store_service.html"}
+						.team-image
+							%img.img-responsive{src: "assets/img/service-e-com.jpg"}
