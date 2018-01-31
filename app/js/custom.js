@@ -106,7 +106,6 @@ $(window).scroll(function() {
   }
 })
 
-
 // /////
 $('#domain-trigger').click(function() {
   $('#search-domain').addClass('animated fadeOutDown')
@@ -115,18 +114,8 @@ $('#domain-trigger').click(function() {
   $('#have-domain').addClass('animated fadeInUp')
 })
 
-/////
-// var typed = new Typed('.typed-social', {
-//   strings: ["Marketing Digital", "Social Media", "SEO", "Analitycs", "AdWords"],
-//   typeSpeed: 70,
-//   loop: true,
-//   backSpeed: 50,
-//   startDelay: 50,
-//   backDelay: 1000
-// });
-
-var typedw = new Typed('.typed-web', {
-  strings: ["asd", "Social Media", "SEO", "Analitycs", "AdWords"],
+var typedw = new Typed('.typed', {
+  strings: ["Agencia Digital desde el 2012", "Agencia Digital desde el 2012", "SEO", "Analitycs", "AdWords"],
   typeSpeed: 70,
   loop: true,
   backSpeed: 50,

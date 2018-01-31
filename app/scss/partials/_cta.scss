@@ -1,9 +1,4 @@
 #cta {
-  .angle-left-bottom:after  {
-    background-color: rgba(0, 7, 10, 0.95) !important;
-  }
-
-
   .call-to-action-text, .call-to-action-title  {
     @include respond-to(xs) {
       text-align: center;
@@ -14,5 +9,31 @@
     @include respond-to(xs) {
       padding-right: 15px !important;
     };
+  }
+
+  .service-card {
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    border-radius: 5px;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .team-box {
+    img{
+      filter: grayscale(100%);
+      transition: all 1s ease;
+    }
+
+    &:hover {
+
+      img {
+        filter: grayscale(0%);
+        transition: all 1s ease;
+      }
+    }
   }
 }
