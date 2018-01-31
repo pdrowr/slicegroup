@@ -12433,6 +12433,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative; }
+<<<<<<< pedro
   #intro #cont-texto {
     width: 100%;
     text-align: center; }
@@ -12447,6 +12448,26 @@ body {
       font-size: 6rem;
       text-shadow: 0px 0px 7px #666;
       width: 100%; }
+=======
+  #intro #cont-texto p {
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    text-shadow: 0px 0px 7px #666; }
+  #intro #cont-texto p#grande {
+    color: white;
+    font-size: 4rem;
+    line-height: 1;
+    text-shadow: 0px 0px 7px #666; }
+  #intro .trama {
+    background-image: url("../img/trama1.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 2; }
+>>>>>>> staging-frontend
   #intro video {
     min-width: 100%;
     min-height: 100%;
