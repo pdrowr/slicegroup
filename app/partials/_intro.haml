@@ -1,23 +1,12 @@
-%section#intro.full-height.bg-image-parallax{style: "background-image: url(assets/img/intro/intro-bg.jpg);"}
+%section#intro.full-height
+	.container{style: "position:relative"}
+		.vertical-align-center.horisontal-align-center
+			#cont-texto
+				%p#grande Hola, somos Slice Group
+				%p Agencia Digital desde el 2012
 
-	.intro-inner
-		%span.cover.bg-transparent-2-dark.bg-transparent-gradient-2
-	-# 	.intro-caption.vertical-align-center.text-center.text-white
-	-#
-	-# 		-# %h6.intro-title
-	-# 			%span Hola, Somos Slice Group
-	-# 			-# %span.wow.fadeInDown{"data-wow-delay" => "0.4s", "data-wow-duration" => "0.5s"} S
-	-# 			-# %span.wow.fadeInDown{"data-wow-delay" => "0.6s", "data-wow-duration" => "0.5s"} L
-	-# 			-# %span.wow.fadeInDown{"data-wow-delay" => "0.6s", "data-wow-duration" => "0.5s"} I
-	-# 			-# %span.wow.fadeInDown{"data-wow-delay" => "0.6s", "data-wow-duration" => "0.5s"} C
-	-# 			-# %span.wow.fadeInDown{"data-wow-delay" => "0.6s", "data-wow-duration" => "0.5s"} E
-	-#
-	-# 		%p.intro-description.wow.fadeIn{"data-wow-delay" => "2.2s"} Agencia Digital desde 2012
-	-# 		.margin-top-30
-	-# 			%a.btn.btn-white-bordered.btn-rounded.sm-scroll.wow.bounceIn{"data-wow-delay" => "0.8s", href: "blog.html"} Our Services
-	-# 			%a.btn.btn-primary.btn-rounded.sm-scroll.margin-top-10.wow.bounceIn{"data-wow-delay" => "1s", href: "#section-8"} Hire Us Now!
-	-# 	%a.scroll-down-arrow.sm-scroll.text-center.text-white{href: "#section-1"}
-	-# 		%span
-	-# 			%i.fa.fa-chevron-down
-
--#
+	%video.hidden-xs{autoplay: "true", loop: "true", poster: "assets/img/video.jpg"}
+		-#%source{src: "assets/videos/video.webm", type: "video/webm"}
+		%source{src: "assets/videos/video.mp4", type: "video/mp4"}
+		Tu navegador no soporta video con HTML5
+	.trama
