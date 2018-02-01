@@ -1,7 +1,6 @@
 #footer {
   background: $gray-semi-dark;
   color: white;
-  font-family: sans-serif;
   padding: 2rem 0 0 0 !important;
 
   a{
@@ -25,6 +24,9 @@
     }
   }
   #column-3 p {
+    
+    text-align: right;
+
     @include respond-to(xs) {
       font-size: 1.6rem;
       text-align: center;
@@ -45,12 +47,18 @@
   .footer-dark {
     background: $gray-dark;
     padding: 1rem;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0rem;
+    }
   }
   .icon-rrss i {
     margin: 0 0.7rem;
   }
   .legal {
     margin: 0 0.5rem 0 0.5rem;
+    font-family: sans-serif;
   }
   #logo-footer {
     svg{
@@ -70,6 +78,10 @@
     font-size: 1.4rem;
     list-style-type: none;
     margin-left: -35px;
+
+    li{
+      font-family: sans-serif;
+    }
   }
 
 }

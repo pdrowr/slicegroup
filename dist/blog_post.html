@@ -17,6 +17,83 @@
 
 <body data-spy="scroll" data-target="#scrollspy">
   <!-- /= Haml::Engine.new(File.read("app/partials/_preloader.haml")).render -->
+  <div id='body-content'>
+    <section class='slidingbar-fixed' id='top-slidingbar-wrapper'>
+      <div id='top-slidingbar'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col col-md-4'>
+              <h4 class='top-slidingbar-heading text-gray-2'>¿Qué es Slice Group?</h4>
+              <hr class='hr-width-2 hr-double margin-top-15'>
+              <p class='small'>
+                Somos una agencia especializada en productos digitales, creemos en el poder de la tecnología para transformar los negocios, desde estrategias de marketing, páginas web y soluciones a medida.
+              </p>
+            </div>
+            <div class='col col-md-4'>
+              <h4 class='top-slidingbar-heading text-gray-2'>Contactos</h4>
+              <hr class='hr-width-1 hr-double margin-top-15'>
+              <ul class='list-unstyled small'>
+                <li>
+                  <i class='fa fa-phone'></i> +58 269 4166481
+                </li>
+                <li>
+                  <i class='fa fa-whatsapp'></i> +58 424 6298536
+                </li>
+                <li>
+                  <i class='fa fa-envelope-o'></i>
+                  <a href='mailto:comercial@slicegroup.xyz'>comercial@slicegroup.xyz</a>
+                </li>
+                <li>
+                  <i class='fa fa-envelope-o'></i>
+                  <a href='mailto:soporte@slicegroupl.xyz'>soporte@slicegroupl.xyz</a>
+                </li>
+              </ul>
+            </div>
+            <div class='col col-md-4'>
+              <h4 class='top-slidingbar-heading text-gray-2'>Nuestro Instagram</h4>
+              <hr class='hr-width-1 hr-double margin-top-15'>
+              <ul class='thumb-list col-5 gutter-3'>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-1.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-2.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-3.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-4.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-5.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-6.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-7.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-8.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-9.jpg);' target='_blank'></a>
+                </li>
+                <li>
+                  <a class='thumb-list-item bg-image' href='https://www.instagram.com' style='background-image: url(assets/img/misc/small/img-11.jpg);' target='_blank'></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='top-slidingbar-trigger-wrapper'>
+        <span class='top-slidingbar-trigger'>+</span>
+      </div>
+    </section>
+  </div>
+
   <div id="post">
     <div class="container margin-top-30">
       <div class="row">
@@ -219,26 +296,26 @@ Iterar vectores de calidad de próxima generación
       </center>
     </div>
   </div>
-  <div id='footer'>
-    <div class='container'>
+  <div class='angle-left-top' id='footer'>
+    <div class='container padding-top-60'>
       <div class='row'>
         <div class='col-xs-12 col-md-4' id='column-1'>
-          <h3>Terminos y condiciones</h3>
+          <h3>Términos y condiciones</h3>
           <ul id='list-footer'>
             <li>
-              <a href='#'>Politicas de servicio</a>
+              <a href='#'>Políticas de servicio</a>
             </li>
             <li>
-              <a href='#'>Politicas de privacidad</a>
+              <a href='#'>Políticas de privacidad</a>
             </li>
             <li>
               <a href='#'>Políticas de reembolsos y cancelaciones</a>
             </li>
             <li>
-              <a href='#'>Politicas de cookies</a>
+              <a href='#'>Políticas de cookies</a>
             </li>
             <li>
-              <a href='#'>Politicas de redes sociales</a>
+              <a href='#'>Políticas de redes sociales</a>
             </li>
           </ul>
         </div>
@@ -289,9 +366,9 @@ Iterar vectores de calidad de próxima generación
         <div class='col-xs-12 col-md-4' id='column-3'>
           <br>
           <p>
-            <a href='mailto:negocios@slicegroup.xyz'>
+            <a href='mailto:comercial@slicegroup.xyz'>
 <i class='fa fa-envelope-o'></i>
-negocios@slicegroup.xyz
+comercial@slicegroup.xyz
 </a>
           </p>
           <p>
@@ -301,29 +378,27 @@ soporte@slicegroupl.xyz
 </a>
           </p>
           <p>
-            <i class='fa fa-phone'></i> &nbsp;+58 416-6481
+            <i class='fa fa-phone'></i> &nbsp;+58 269 4166481
           </p>
-          <p class='whatsapp'>
-            <a>
+          <a class='btn btn-success-bordered btn-sm btn-block rounded-2x' href='whatsapp://send?phone=584246298536&amp;text=%C2%A1Hola!%20estoy%20interesado%20en%20un%20proyecto%20web' target='_blank'>
 <i class='fa fa-whatsapp fa-lg'></i>
-+58 424-6298536
+Escríbenos por whatsApp
 </a>
-          </p>
         </div>
         <div class='col-xs-12 col-md-4' id='column-4'>
           <center>
             <h3>Terminos y condiciones</h3>
             <span class='legal'>
-<a href='#'>Politicas de servicio</a>
+<a href='#'>Políticas de servicio</a>
 </span>
             <span class='legal'>
-<a href='#'>Politicas de privacidad</a>
+<a href='#'>Políticas de privacidad</a>
 </span>
             <span class='legal'>
-<a href='#'>Politicas de cookies</a>
+<a href='#'>Políticas de cookies</a>
 </span>
             <span class='legal'>
-<a href='#'>Politicas de redes sociales</a>
+<a href='#'>Políticas de redes sociales</a>
 </span>
             <span class='legal'>
 <a href='#'>Políticas de reembolsos y cancelaciones</a>
@@ -334,7 +409,7 @@ soporte@slicegroupl.xyz
     </div>
     <center class='footer-dark'>
       <p>
-        © 2017 Slice Group. All rights reserved.
+        © 2018 Slice Group. All rights reserved.
       </p>
     </center>
   </div>

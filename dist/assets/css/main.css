@@ -10809,7 +10809,7 @@ ul.social-icons > li + li {
     color: #81ac4d; }
 
 #blog h1, #post h1 {
-  font-size: calc(2.2rem + 1.0999999999999996 * ((100vw - 42rem) / 86));
+  font-size: calc(2.2rem + 1.0999999999999996 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 500;
   color: #81ac4d; }
@@ -10823,7 +10823,7 @@ ul.social-icons > li + li {
     font-size: 2.2rem; } }
 
 #blog h2, #post h2 {
-  font-size: calc(1.8rem + 0.9999999999999998 * ((100vw - 42rem) / 86));
+  font-size: calc(1.8rem + 0.9999999999999998 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 500;
   color: #777; }
@@ -10848,7 +10848,7 @@ ul.social-icons > li + li {
 
 #blog .meta-line > span, #post .meta-line > span {
   margin-right: 1.5rem;
-  font-size: calc(1rem + 0.30000000000000004 * ((100vw - 42rem) / 86));
+  font-size: calc(1rem + 0.30000000000000004 * ((100vw - 26.25rem) / 53.75));
   color: #777; }
 
 @media screen and (min-width: 1280px){
@@ -10862,7 +10862,7 @@ ul.social-icons > li + li {
     color: #3483C2; }
 
 #blog .post-date, #post .post-date {
-  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 500;
   color: #777; }
@@ -10888,7 +10888,7 @@ ul.social-icons > li + li {
   padding-left: 9rem; }
 
 #blog .read-more a, #post .read-more a {
-  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 42rem) / 86));
+  font-size: calc(1.2rem + 0.19999999999999996 * ((100vw - 26.25rem) / 53.75));
   font-family: "Roboto Mono", Helvetica, Arial;
   font-weight: 400;
   color: #81ac4d; }
@@ -12361,7 +12361,6 @@ body {
 #footer {
   background: #545A5F;
   color: white;
-  font-family: sans-serif;
   padding: 2rem 0 0 0 !important; }
   #footer a {
     color: white;
@@ -12376,10 +12375,12 @@ body {
   @media (min-width: 0px) and (max-width: 767px) {
     #footer #column-1 {
       display: none; } }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #footer #column-3 p {
-      font-size: 1.6rem;
-      text-align: center; } }
+  #footer #column-3 p {
+    text-align: right; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #footer #column-3 p {
+        font-size: 1.6rem;
+        text-align: center; } }
   #footer #column-4 {
     display: none; }
     @media (min-width: 0px) and (max-width: 767px) {
@@ -12391,10 +12392,14 @@ body {
   #footer .footer-dark {
     background: #141718;
     padding: 1rem; }
+    #footer .footer-dark p {
+      margin-top: 0;
+      margin-bottom: 0rem; }
   #footer .icon-rrss i {
     margin: 0 0.7rem; }
   #footer .legal {
-    margin: 0 0.5rem 0 0.5rem; }
+    margin: 0 0.5rem 0 0.5rem;
+    font-family: sans-serif; }
   #footer #logo-footer svg {
     height: auto;
     margin-bottom: 2rem;
@@ -12406,6 +12411,8 @@ body {
     font-size: 1.4rem;
     list-style-type: none;
     margin-left: -35px; }
+    #footer #list-footer li {
+      font-family: sans-serif; }
 
 #masonry-layer {
   width: 100%;
@@ -12442,7 +12449,7 @@ body {
     min-height: 100%;
     z-index: 2; }
   #intro .superh1 {
-    font-size: calc(3rem + 2 * ((100vw - 42rem) / 86));
+    font-size: calc(3rem + 2 * ((100vw - 26.25rem) / 53.75));
     font-weight: 700; }
   @media screen and (min-width: 1280px){
   #intro .superh1{
@@ -12451,7 +12458,7 @@ body {
   #intro .superh1{
     font-size: 3rem; } }
   #intro .intro-caption .intro-description {
-    font-size: calc(2rem + 1 * ((100vw - 42rem) / 86));
+    font-size: calc(2rem + 1 * ((100vw - 26.25rem) / 53.75));
     font-weight: 500;
     color: #c15010;
     height: 30px; }
