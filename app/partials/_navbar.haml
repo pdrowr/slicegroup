@@ -1,21 +1,30 @@
-.pull-right#navbar
-  %ul
-    %li
-      %a.sm-scroll{href: "#intro"}
-        Inicio
-    %li
-      %a.sm-scroll{href: "#services"}
-        ¿Que ofrecemos?
-    %li
-      %a.sm-scroll{href: "#how"}
-        ¿Cómo lo hacemos?
-    %li
-      %a.sm-scroll{href: "#about"}
-        ¿Quiénes Somos?
-    %li
-      %a.sm-scroll{href: "/portfolio.html"}
-        Casos de Éxito
+%header#header-wrap
+	#header.header-md.show-hide-on-scroll.header-dark.transparent
+		#scrollspy.container.header-container
+			.logo.font-alter-1
+				%a{:href => "index.html"}
+					= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
+			.pull-right#hamburguer
+				%i.fa.fa-navicon#sidebar-trigger
+				= Haml::Engine.new(File.read("app/partials/_sidebar.haml")).render
+			.pull-right#navbar
+				%ul
+					%li
+						%a.sm-scroll{href: "#intro"}
+							Inicio
+					%li
+						%a.sm-scroll{href: "#services"}
+							¿Que ofrecemos?
+					%li
+						%a.sm-scroll{href: "#how"}
+							¿Cómo lo hacemos?
+					%li
+						%a.sm-scroll{href: "#about"}
+							¿Quiénes Somos?
+					%li
+						%a.sm-scroll{href: "/portfolio.html"}
+							Casos de Éxito
 
-    %li
-      %a{href: "blog.html"}
-        Blog
+					%li
+						%a{href: "blog.html"}
+							Blog

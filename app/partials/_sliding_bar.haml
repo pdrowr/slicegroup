@@ -57,14 +57,3 @@
 
 		.top-slidingbar-trigger-wrapper
 			%span.top-slidingbar-trigger +
-
-	%header#header-wrap
-		#header.header-md.show-hide-on-scroll.header-dark.transparent
-			#scrollspy.container.header-container
-				.logo.font-alter-1
-					%a{:href => "index.html"}
-						= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
-				.pull-right#hamburguer
-					%i.fa.fa-navicon#sidebar-trigger
-				= Haml::Engine.new(File.read("app/partials/_navbar.haml")).render
-				= Haml::Engine.new(File.read("app/partials/_sidebar.haml")).render

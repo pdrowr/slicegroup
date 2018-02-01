@@ -12359,7 +12359,7 @@ body {
         width: 50px; }
 
 #footer {
-  background: #1d3b4a;
+  background: #545A5F;
   color: white;
   font-family: sans-serif;
   padding: 2rem 0 0 0 !important; }
@@ -12389,7 +12389,7 @@ body {
   #footer .fa-whatsapp {
     margin: 1rem 0 1rem 0; }
   #footer .footer-dark {
-    background: #0C181E;
+    background: #141718;
     padding: 1rem; }
   #footer .icon-rrss i {
     margin: 0 0.7rem; }
@@ -12442,14 +12442,27 @@ body {
     min-height: 100%;
     z-index: 2; }
   #intro .superh1 {
-    font-size: calc(30px + 20 * ((100vw - 420px) / 860));
+    font-size: calc(3rem + 2 * ((100vw - 42rem) / 86));
     font-weight: 700; }
   @media screen and (min-width: 1280px){
   #intro .superh1{
-    font-size: 50px; } }
+    font-size: 5rem; } }
   @media screen and (max-width: 420px){
   #intro .superh1{
-    font-size: 30px; } }
+    font-size: 3rem; } }
+  #intro .intro-caption .intro-description {
+    font-size: calc(2rem + 1 * ((100vw - 42rem) / 86));
+    font-weight: 500;
+    color: #c15010;
+    height: 30px; }
+  @media screen and (min-width: 1280px){
+  #intro .intro-caption .intro-description{
+    font-size: 3rem; } }
+  @media screen and (max-width: 420px){
+  #intro .intro-caption .intro-description{
+    font-size: 2rem; } }
+  #intro .typed-cursor {
+    display: none !important; }
   #intro video {
     min-width: 100%;
     min-height: 100%;
@@ -12477,6 +12490,9 @@ body {
 @media screen and (max-width: 420px){
   body{
     font-size: 1.3rem; } }
+
+p {
+  font-family: sans-serif; }
 
 .btn {
   cursor: pointer; }
@@ -12700,3 +12716,23 @@ input[type="radio"]:disabled + .label-text:before {
     left: 10px;
     color: #fff;
     transition: all ease .3s; }
+
+#top-slidingbar-wrapper .top-slidingbar-trigger {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  line-height: 18px;
+  bottom: 25px;
+  right: 5px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: #FFF;
+  cursor: pointer; }
+
+#top-slidingbar-wrapper .top-slidingbar-trigger-wrapper {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  border-top: 50px solid #c15010;
+  border-left: 50px solid transparent; }

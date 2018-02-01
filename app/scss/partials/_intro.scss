@@ -16,8 +16,19 @@
  	}
 
  	.superh1{
- 		font-size: responsive 30px 50px;
+ 		font-size: responsive 3rem 5rem !important;
  		font-weight: 700;
+ 	}
+
+ 	.intro-caption .intro-description{
+ 		font-size: responsive 2rem 3rem !important;
+ 		font-weight: 500;
+ 		color: $primary-color;
+ 		height: 30px;
+ 	}
+
+ 	.typed-cursor {
+ 		display: none !important;
  	}
 
 	video {
