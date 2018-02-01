@@ -4,9 +4,6 @@
 	overflow: hidden;
  	position: relative;
 
-  }
-
-
 
  	.trama {
  	  background-image: url("../img/trama1.png");
@@ -16,6 +13,11 @@
  	  width: 100%;
  	  min-height: 100%;
  	  z-index: 2;
+ 	}
+
+ 	.superh1{
+ 		font-size: responsive 30px 50px;
+ 		font-weight: 700;
  	}
 
 	video {
