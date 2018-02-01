@@ -1,21 +1,12 @@
 #intro {
 	width: 100%;
-  	height: 100vh;
-  	overflow: hidden;
+	height: 100vh;
+	overflow: hidden;
  	position: relative;
 
- 	#cont-texto p {
- 	  color: white;
- 	  font-size: 2rem;
- 	  line-height: 1;
- 	  text-shadow: 0px 0px 7px #666;
- 	}
- 	#cont-texto p#grande {
- 	  color: white;
- 	  font-size: 4rem;
- 	  line-height: 1;
- 	  text-shadow: 0px 0px 7px #666;
- 	}
+  }
+
+
 
  	.trama {
  	  background-image: url("../img/trama1.png");
@@ -33,15 +24,15 @@
 	  width: auto;
 	  height: auto;
 
-	  position: absolute;  
+	  position: absolute;
 	  top: 50%;
 	  left: 50%;
 	  -webkit-transform: translateX(-50%) translateY(-50.1%);
 	      -ms-transform: translateX(-50%) translateY(-50.1%);
-	          transform: translateX(-50%) translateY(-50.1%); 
+	          transform: translateX(-50%) translateY(-50.1%);
 
 	  z-index: -100;
 
-	  background-size: 100%; 
-	}  
+	  background-size: 100%;
+	}
 }
