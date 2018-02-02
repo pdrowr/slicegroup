@@ -17,6 +17,7 @@ var starter = $('#starter')
     corporative = $('#corporative')
     borderCorporative = $('.bordered-corporative');
 
+
 starter.click(function() {
   borderStarter.toggleClass('hidden')
   enterprise.prop('checked', false);

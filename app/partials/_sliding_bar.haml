@@ -16,21 +16,21 @@
 						%ul.list-unstyled.small
 							%li
 								%i.fa.fa-phone
-								+58 416-6481
+								+58 269 4166481
 							%li
 								%i.fa.fa-whatsapp
-								+58 424-6298536
+								+58 424 6298536
 							%li
 								%i.fa.fa-envelope-o
 								-# Correo principal:
-								%a{:href => "mailto:support@mail.com"} negocios@slicegroup.xyz
+								%a{:href => "mailto:comercial@slicegroup.xyz"} comercial@slicegroup.xyz
 							%li
 								%i.fa.fa-envelope-o
 								-# Soporte:
-								%a{:href => "mailto:support@mail.com"} soporte@slicegroupl.xyz
+								%a{:href => "mailto:soporte@slicegroupl.xyz"} soporte@slicegroupl.xyz
 
 					.col.col-md-4
-						%h4.top-slidingbar-heading.text-gray-2 Our Instagram
+						%h4.top-slidingbar-heading.text-gray-2 Nuestro Instagram
 						%hr.hr-width-1.hr-double.margin-top-15/
 
 						%ul.thumb-list.col-5.gutter-3
@@ -57,14 +57,3 @@
 
 		.top-slidingbar-trigger-wrapper
 			%span.top-slidingbar-trigger +
-
-	%header#header-wrap
-		#header.header-md.show-hide-on-scroll.header-dark.transparent
-			#scrollspy.container.header-container
-				.logo.font-alter-1
-					%a{:href => "index.html"}
-						= Haml::Engine.new(File.read("app/partials/_brand.haml")).render
-				.pull-right#hamburguer
-					%i.fa.fa-navicon#sidebar-trigger
-				= Haml::Engine.new(File.read("app/partials/_navbar.haml")).render
-				= Haml::Engine.new(File.read("app/partials/_sidebar.haml")).render

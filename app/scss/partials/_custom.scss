@@ -5,6 +5,9 @@ html {
 body {
 	font-size: responsive 1.3rem 1.6rem !important;
 }
+p {
+	font-family: sans-serif;
+}
 
 .btn {
 	cursor: pointer;
@@ -264,4 +267,28 @@ body {
 		color: #fff;
 		transition: all ease .3s;
 	}
+}
+
+//slidingbar
+
+#top-slidingbar-wrapper .top-slidingbar-trigger {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	line-height: 18px;
+	bottom: 25px;
+	right: 5px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 400;
+	color: #FFF;
+	cursor: pointer;
+}
+
+#top-slidingbar-wrapper .top-slidingbar-trigger-wrapper {
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	border-top: 50px solid #c15010;
+	border-left: 50px solid transparent;
 }
