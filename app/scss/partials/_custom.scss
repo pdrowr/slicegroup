@@ -292,3 +292,14 @@ p {
 	border-top: 50px solid #c15010;
 	border-left: 50px solid transparent;
 }
+
+.go-back {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+
+	i {
+		font-size: 40px;
+		color: $primary-color;
+	}
+}
